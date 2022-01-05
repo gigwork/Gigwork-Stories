@@ -58,36 +58,36 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: 'Second Title',
-            chart: '',
-            description: 'Copy these sections to add to your story.',
+            title: '',
+            chart: {},
+            description: '.',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-2',
-            title: 'Second Title',
+            title: '',
             image: './riders/artwork/Jerome/jerome4.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-3',
-            title: 'Second Title',
+            title: '',
             image: './riders/artwork/Jerome/jerome5.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-4',
-            title: 'Second Title',
+            title: '',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {
             },
             onChapterEnter: [],
@@ -98,9 +98,9 @@ var config = {
         // You can add a normal slide in the middle of the drive slides to take a break
         {
             id: 'slide-4',
-            title: 'Second Title',
+            title: '',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {
             },
             onChapterEnter: [],
@@ -108,27 +108,27 @@ var config = {
         },
         {
             id: 'drive-slide-5',
-            title: 'Second Title',
+            title: '',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-6',
-            title: 'Second Title',
+            title: '',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'slide-2',
-            title: 'Second Title',
+            title: '',
             image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: '.',
             location: {
                 center: [-2.244644, 53.483959],
                 zoom: 1.5,
