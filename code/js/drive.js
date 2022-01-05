@@ -32,9 +32,6 @@ function createLine() {
     // calculate the distance between each point on the path
     const segments = lineDistance / rects;
 
-    // what units do you want to use?
-    const units = 'kilometers';
-
     // based on the number of points...
     for(let i = 0; i <= rects; i++) {
 
@@ -44,7 +41,6 @@ function createLine() {
         // push new x,y
         let newX = pointonline.geometry.coordinates[0];
         let newY = pointonline.geometry.coordinates[1];
-
         geojsonPoint.features[0].geometry.coordinates.push([newX, newY]);
 
         // draw our initinal point
@@ -97,6 +93,8 @@ function changeCenter(index) {
         map.jumpTo({
   	        center: [centerX, centerY]
   	    });
+
+
       }
     }
 }

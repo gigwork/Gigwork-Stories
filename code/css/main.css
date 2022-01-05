@@ -116,3 +116,11 @@ a:visited {
         }
     }
 }
+
+#earnings {
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 12em;
+    background-color: aqua;
+}

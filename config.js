@@ -35,6 +35,7 @@ var config = {
             description: '<b>Location:</b> Manchester </br> <b>Time:</b> 23/03/2020 | 10:45AM </br> <b>Platform:</b> Uber Eats </br> </br> <b>Artist:</b> Lorem Ipsum',
             location: {
             },
+            earnings: '',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -45,6 +46,7 @@ var config = {
             description: '<h3> Transcript </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. Integer elit sapien, scelerisque semper tempor in, ultricies sit amet arcu. Donec a vehicula metus.',
             location: {
             },
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -53,6 +55,7 @@ var config = {
             title: 'privileged',
             image: './riders/artwork/Jerome/jerome.png',
             location: {},
+            earnings: '3.21',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -62,6 +65,7 @@ var config = {
             chart: {},
             description: '.',
             location: {},
+            earnings: '6.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -71,6 +75,7 @@ var config = {
             image: './riders/artwork/Jerome/jerome4.png',
             description: '.',
             location: {},
+            earnings: '10.82',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -80,6 +85,7 @@ var config = {
             image: './riders/artwork/Jerome/jerome5.png',
             description: '.',
             location: {},
+            earnings: '12.41',
             onChapterEnter: [],
             onChapterExit: []
         },
