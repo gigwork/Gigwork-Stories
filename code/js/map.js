@@ -87,6 +87,12 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(audio)
     }
 
+    if(record.chart){
+        var chart = document.createElement('div')
+        chart.id = 'my_dataviz'
+        chapter.appendChild(chart)
+    }
+
     container.setAttribute('id', record.id);
     container.classList.add('step');
     if (idx === 0) {

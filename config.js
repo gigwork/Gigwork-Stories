@@ -59,6 +59,7 @@ var config = {
         {
             id: 'drive-slide-1',
             title: 'Second Title',
+            chart: '',
             description: 'Copy these sections to add to your story.',
             location: {},
             onChapterEnter: [],
