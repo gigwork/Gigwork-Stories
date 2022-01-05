@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
         rel="stylesheet">
     <!-- Internal css styling -->
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="./code/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
     <script>
         $(document).ready(function () {
             $.ajax({
-                url: "./data/jerometes1t.geojson",
+                url: "./riders/data/Jerome/jerometes1t.geojson",
                 dataType: "json",
                 success: function (data) {
                     console.log('data', data.features[0]);
@@ -44,8 +44,8 @@
     </script>
     <!-- Local JS -->
     <script src="./config.js"></script>
-    <script src="./js/drive.js"></script>
-    <script src="./js/map.js"></script>
+    <script src="./code/js/drive.js"></script>
+    <script src="./code/js/map.js"></script>
 </body>
 
 </html>
