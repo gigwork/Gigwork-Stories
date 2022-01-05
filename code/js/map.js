@@ -286,7 +286,7 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv",
+d3.csv("../../adeb.csv",
 
     // When reading the csv, I must format variables:
     function (d) {
