@@ -51,7 +51,7 @@ var config = {
         {
             id: 'drive-slide-0',
             title: 'privileged',
-            image: './images/jerome.png',
+            image: './riders/artwork/Jerome/jerome.png',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -67,7 +67,7 @@ var config = {
         {
             id: 'drive-slide-2',
             title: 'Second Title',
-            image: './images/jerome4.png',
+            image: './riders/artwork/Jerome/jerome4.png',
             description: 'Copy these sections to add to your story.',
             location: {},
             onChapterEnter: [],
@@ -76,7 +76,7 @@ var config = {
         {
             id: 'drive-slide-3',
             title: 'Second Title',
-            image: './images/jerome5.png',
+            image: './riders/artwork/Jerome/jerome5.png',
             description: 'Copy these sections to add to your story.',
             location: {},
             onChapterEnter: [],
