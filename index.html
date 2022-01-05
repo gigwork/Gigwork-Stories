@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Data -->
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- Geospatia Librarys -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script> <!-- Mapbox -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> <!-- Intersection Observer -->
+    <!-- UI Librarys -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
+    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- Internal css styling -->
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Load map and story -->
+    <div id="map"></div>
+    <div id="story"></div>
+    <!-- On document ready fetch riders geojson path -->
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "./data/jerometes1t.geojson",
+                dataType: "json",
+                success: function (data) {
+                    console.log('data', data.features[0]);
+                    routeData = data;
+                },
+                error: function () {
+                    console.log('error loading data');
+                }
+            });
+        });
+    </script>
+    <!-- Local JS -->
+    <script src="./config.js"></script>
+    <script src="./js/drive.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>
