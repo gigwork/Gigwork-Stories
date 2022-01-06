@@ -32,7 +32,7 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Jerome',
-            description: '<b>Location:</b> Manchester </br> <b>Time:</b> 23/03/2020 | 10:45AM </br> <b>Platform:</b> Uber Eats </br> </br> <b>Artist:</b> Lorem Ipsum',
+            description: '<b>Location:</b> Manchester </br> <b>Time:</b> 23/03/2020 | 10:45AM </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio:</b> <b>Jerome</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. </br> </br> <p style="text-align:center"> Art by <a href="#">Rafeal</a> </p>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -42,7 +42,7 @@ var config = {
             id: 'slide-1',
             title: '1st Audio',
             audio: './riders/audio/Jerome/20210327_103636.m4a',
-            description: '<h3> Transcript </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. Integer elit sapien, scelerisque semper tempor in, ultricies sit amet arcu. Donec a vehicula metus.',
+            description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -50,7 +50,8 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: 'privileged',
+            title: '',
+            description: '<p style="text-align:center;"> privileged </p>',
             image: './riders/artwork/Jerome/jerome.png',
             location: {},
             earnings: '3.21',
@@ -70,7 +71,7 @@ var config = {
         {
             id: 'drive-slide-2',
             title: '',
-            image: './riders/artwork/Jerome/jerome4.png',
+            image: './riders/artwork/Jerome/jerome2.png',
             description: '',
             location: {},
             earnings: '10.82',
@@ -90,7 +91,7 @@ var config = {
         {
             id: 'drive-slide-4',
             title: '',
-            image: './riders/artwork/Jerome/jerome5.png',
+            image: './riders/artwork/Jerome/jerome3.png',
             description: '',
             location: {},
             onChapterEnter: [],
@@ -99,8 +100,7 @@ var config = {
         // You can add a normal slide in the middle of the drive slides to take a break
         {
             id: 'slide-4',
-            title: '',
-
+            title: '14:28PM',
             description: 'Jerome signs off Uber Eats',
             location: {},
             onChapterEnter: [],
@@ -108,8 +108,7 @@ var config = {
         },
         {
             id: 'slide-5',
-            title: '',
-
+            title: '16:58PM',
             description: 'Jerome signs on Uber Eats',
             location: {},
             onChapterEnter: [],

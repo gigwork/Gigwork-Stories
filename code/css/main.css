@@ -10,13 +10,14 @@ h1 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 a,
 a:hover,
 a:visited {
-    color: #0071bc;
+    color: white;
 }
 
 /* MAP */
@@ -95,7 +96,6 @@ a:visited {
     line-height: 25px;
     backdrop-filter: blur(15px) saturate(180%);
     -webkit-backdrop-filter: blur(15px) saturate(180%);
-    background-color: #ff5722;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     font-size: 13px;
@@ -106,7 +106,7 @@ a:visited {
 }
 
 .step img:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 
     @media (max-width: 750px) {

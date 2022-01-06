@@ -195,12 +195,13 @@ map.on("load", function () {
                     right: -100,
                     left: 200
                 },
-                duration: 0
+                duration: 5
             });
+            document.createElement('h1').innerHTML = "Manchester"
         } else {
             map.fitBounds(bounds, {
                 padding: 20,
-                duration: 0
+                duration: 2
             });
         }
     } else {
