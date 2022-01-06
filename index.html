@@ -16,7 +16,7 @@
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
     <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
     <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://unpkg.com/peaks.js/dist/peaks.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
@@ -28,8 +28,8 @@
 <body>
     <!-- Load map and story -->
     <div id="map"></div>
-    <div id="story">
-    </div>
+    <div id="story"></div>
+    <div id="earnings"></div>
     <!-- On document ready fetch riders geojson path -->
     <script>
         $(document).ready(function () {

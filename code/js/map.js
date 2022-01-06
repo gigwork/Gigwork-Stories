@@ -66,6 +66,7 @@ if (header.innerText.length > 0) {
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
+    var earnings = document.getElementById('earnings');
 
     if (record.title) {
         var title = document.createElement('h1');
@@ -76,7 +77,7 @@ config.chapters.forEach((record, idx) => {
     if (record.image) {
         var image = new Image();
         image.src = record.image;
-        image.onclick = function(){
+        image.onclick = function () {
             window.location.href = record.image
         }
         chapter.appendChild(image);
@@ -94,15 +95,28 @@ config.chapters.forEach((record, idx) => {
         audio.id = 'audio-player';
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
-        chapter.appendChild(audio)
 
- 
+        var zc = document.createElement('div')
+        zc.id = 'zoomview-container'
+
+        var oc = document.createElement('div')
+        oc.id = 'overview-container'
+
+
+        chapter.appendChild(zc)
+        chapter.appendChild(oc)
+        chapter.appendChild(audio)
     }
 
     if (record.chart) {
         var chart = document.createElement('div')
         chart.id = 'my_dataviz'
         chapter.appendChild(chart)
+    }
+
+    if (record.earnings) {
+        container.innerHTML = '<p style="background-color: #f5f5f5c2;"> Current Earnings: £' + record.earnings + '</p>'
+
     }
 
     container.setAttribute('id', record.id);
@@ -176,6 +190,25 @@ function handleStepProgress(response) {
     }
 }
 
+(function (Peaks) {
+    const options = {
+        zoomview: {
+            container: document.getElementById('zoomview-container')
+        },
+        overview: {
+            container: document.getElementById('overview-container')
+        },
+        mediaElement: document.querySelector('audio'),
+        webAudio: {
+            audioContext: new AudioContext()
+        }
+    };
+
+    Peaks.init(options, function (err, peaks) {
+        // Do something when the waveform is displayed and ready
+    });
+})(peaks);
+
 // On load of mapbox map
 map.on("load", function () {
 
@@ -198,6 +231,7 @@ map.on("load", function () {
                 duration: 5
             });
             document.createElement('h1').innerHTML = "Manchester"
+            append
         } else {
             map.fitBounds(bounds, {
                 padding: 20,
@@ -281,74 +315,99 @@ window.addEventListener('resize', scroller.resize);
 // D3 GRAPH 
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 60},
+var margin = {
+        top: 10,
+        right: 30,
+        bottom: 30,
+        left: 60
+    },
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
-  .append("svg")
+    .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+        "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
 d3.csv("https://raw.githubusercontent.com/gigwork/gigwork-bike/main/jerome.csv",
 
-  // When reading the csv, I must format variables:
-  function(d){
-    return { date : d3.timeParse("%H:%M:%S")(d.time), value : d.ele }
-  },
+    // When reading the csv, I must format variables:
+    function (d) {
+        return {
+            date: d3.timeParse("%H:%M:%S")(d.time),
+            value: d.ele
+        }
+    },
 
-  // Now I can use this dataset:
-  function(data) {
+    // Now I can use this dataset:
+    function (data) {
 
-    // Add X axis --> it is a date format
-    var x = d3.scaleTime()
-      .domain(d3.extent(data, function(d) { return d.time; }))
-      .range([ 0, width ]);
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+        // Add X axis --> it is a date format
+        var x = d3.scaleTime()
+            .domain(d3.extent(data, function (d) {
+                return d.time;
+            }))
+            .range([0, width]);
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x));
 
-    // Max value observed:
-    const max = d3.max(data, function(d) { return +d.ele; })
+        // Max value observed:
+        const max = d3.max(data, function (d) {
+            return +d.ele;
+        })
 
-    // Add Y axis
-    var y = d3.scaleLinear()
-      .domain([0, max])
-      .range([ height, 0 ]);
-    svg.append("g")
-      .call(d3.axisLeft(y));
+        // Add Y axis
+        var y = d3.scaleLinear()
+            .domain([0, max])
+            .range([height, 0]);
+        svg.append("g")
+            .call(d3.axisLeft(y));
 
-    // Set the gradient
-    svg.append("linearGradient")
-      .attr("id", "line-gradient")
-      .attr("gradientUnits", "userSpaceOnUse")
-      .attr("x1", 0)
-      .attr("y1", y(0))
-      .attr("x2", 0)
-      .attr("y2", y(max))
-      .selectAll("stop")
-        .data([
-          {offset: "0%", color: "blue"},
-          {offset: "100%", color: "red"}
-        ])
-      .enter().append("stop")
-        .attr("offset", function(d) { return d.offset; })
-        .attr("stop-color", function(d) { return d.color; });
+        // Set the gradient
+        svg.append("linearGradient")
+            .attr("id", "line-gradient")
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", 0)
+            .attr("y1", y(0))
+            .attr("x2", 0)
+            .attr("y2", y(max))
+            .selectAll("stop")
+            .data([{
+                    offset: "0%",
+                    color: "blue"
+                },
+                {
+                    offset: "100%",
+                    color: "red"
+                }
+            ])
+            .enter().append("stop")
+            .attr("offset", function (d) {
+                return d.offset;
+            })
+            .attr("stop-color", function (d) {
+                return d.color;
+            });
 
-    // Add the line
-    svg.append("path")
-      .datum(data)
-      .attr("fill", "none")
-      .attr("stroke", "url(#line-gradient)" )
-      .attr("stroke-width", 2)
-      .attr("d", d3.line()
-        .x(function(d) { return x(d.time) })
-        .y(function(d) { return y(d.ele) })
-        )
+        // Add the line
+        svg.append("path")
+            .datum(data)
+            .attr("fill", "none")
+            .attr("stroke", "url(#line-gradient)")
+            .attr("stroke-width", 2)
+            .attr("d", d3.line()
+                .x(function (d) {
+                    return x(d.time)
+                })
+                .y(function (d) {
+                    return y(d.ele)
+                })
+            )
 
-})
+    })

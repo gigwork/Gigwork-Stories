@@ -32,7 +32,7 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Jerome',
-            description: '<b>Location:</b> Manchester </br> <b>Time:</b> 23/03/2020 | 10:45AM </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio:</b> <b>Jerome</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. </br> </br> <p style="text-align:center"> Art by <a href="#">Rafeal</a> </p>',
+            description: '<b>Location:</b> Manchester </br> <b>Time:</b> 23/03/2020 | 10:45AM </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio:</b> <b>Jerome</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -54,7 +54,7 @@ var config = {
             description: '<p style="text-align:center;"> privileged </p>',
             image: './riders/artwork/Jerome/jerome.png',
             location: {},
-            earnings: '3.21',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -62,7 +62,7 @@ var config = {
             id: 'drive-slide-1',
             title: '',
             audio: './riders/audio/Jerome/20210327_103636.m4a',
-            description: '<h3> Transcript </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. Integer elit sapien, scelerisque semper tempor in, ultricies sit amet arcu. Donec a vehicula metus.',
+            description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '6.41',
             onChapterEnter: [],
@@ -74,7 +74,7 @@ var config = {
             image: './riders/artwork/Jerome/jerome2.png',
             description: '',
             location: {},
-            earnings: '10.82',
+            earnings: '6.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -82,9 +82,9 @@ var config = {
             id: 'drive-slide-3',
             title: '',
             audio: './riders/audio/Jerome/20210327_103636.m4a',
-            description: '<h3> Transcript </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. Integer elit sapien, scelerisque semper tempor in, ultricies sit amet arcu. Donec a vehicula metus.',
+            description: '<a href="#"> Read Transcript </a> ',
             location: {},
-            earnings: '12.41',
+            earnings: '6.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -93,6 +93,7 @@ var config = {
             title: '',
             image: './riders/artwork/Jerome/jerome3.png',
             description: '',
+            earnings: '12.21',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -102,6 +103,7 @@ var config = {
             id: 'slide-4',
             title: '14:28PM',
             description: 'Jerome signs off Uber Eats',
+            image: './riders/artwork/Jerome/jerome4.png',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -110,6 +112,7 @@ var config = {
             id: 'slide-5',
             title: '16:58PM',
             description: 'Jerome signs on Uber Eats',
+            image: './riders/artwork/Jerome/jerome5.png',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -117,8 +120,9 @@ var config = {
         {
             id: 'drive-slide-5',
             title: '',
-
-            description: '',
+            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '12.21',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -126,8 +130,9 @@ var config = {
         {
             id: 'drive-slide-6',
             title: '',
-
-            description: '',
+            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '19.21',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -135,6 +140,7 @@ var config = {
         {
             id: 'slide-2',
             title: '',
+            earnings: '32.21',
             chart: {},
             description: '',
             location: {
