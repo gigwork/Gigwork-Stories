@@ -1,3 +1,4 @@
+// Create layer types
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -7,17 +8,20 @@ var layerTypes = {
     'fill-extrusion': ['fill-extrusion-opacity']
 }
 
+// Story alignments
 var alignments = {
     'left': 'lefty',
     'center': 'centered',
     'right': 'righty'
 }
 
+// FUNCTION: Apply paint layer type to map
 function getLayerPaintType(layer) {
     var layerType = map.getLayer(layer).type;
     return layerTypes[layerType];
 }
 
+// FUNCTION: Apply opacity layer type to map
 function setLayerOpacity(layer) {
     var paintProps = getLayerPaintType(layer.layer);
     paintProps.forEach(function (prop) {
@@ -25,6 +29,8 @@ function setLayerOpacity(layer) {
     });
 }
 
+
+// Create story elements
 var story = document.getElementById('story');
 var features = document.createElement('div');
 features.classList.add(alignments[config.alignment]);
@@ -32,6 +38,7 @@ features.setAttribute('id', 'features');
 
 var header = document.createElement('div');
 
+// CONFIG SET UP
 if (config.title) {
     var titleText = document.createElement('h1');
     titleText.innerText = config.title;
@@ -87,13 +94,6 @@ config.chapters.forEach((record, idx) => {
     audio.controls = 'controls';
     audio.type = 'audio/mpeg';
     chapter.appendChild(audio)
-
-        // audio.src = record.audio
-        // audio.id = 'audio-player';
-        // audio.controls = 'controls';
-        // audio.type = 'audio/mpeg';
-   
-
     }
 
     if (record.chart) {
@@ -113,7 +113,7 @@ config.chapters.forEach((record, idx) => {
     container.appendChild(chapter);
     features.appendChild(container);
 });
-
+// Add features to story
 story.appendChild(features);
 
 var footer = document.createElement('div');
@@ -129,7 +129,7 @@ if (footer.innerText.length > 0) {
     footer.setAttribute('id', 'footer');
     story.appendChild(footer);
 }
-
+// Fetch mapbox scrollytelling plugin
 mapboxgl.accessToken = config.accessToken;
 
 const transformRequest = (url) => {
@@ -141,6 +141,7 @@ const transformRequest = (url) => {
     }
 }
 
+// Set up mapbox 
 var map = new mapboxgl.Map({
     container: 'map',
     style: config.style,
@@ -148,6 +149,7 @@ var map = new mapboxgl.Map({
     transformRequest: transformRequest
 });
 
+// Show markers
 var marker = new mapboxgl.Marker();
 if (config.showMarkers) {
     marker.setLngLat(config.chapters[0].location.center).addTo(map);
@@ -171,6 +173,7 @@ function handleStepProgress(response) {
     }
 }
 
+// On load of mapbox map
 map.on("load", function () {
 
     let w = window.innerWidth;
@@ -235,9 +238,6 @@ map.on("load", function () {
             'circle-radius': 7,
             'circle-opacity': 0.7,
             'circle-color': '#ff5722'
-        },
-        'layout': {
-            // 'visibility': 'none'
         }
     });
 
@@ -273,6 +273,9 @@ map.on("load", function () {
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
+
+// D3 GRAPH 
+
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 30, left: 60},
     width = 460 - margin.left - margin.right,
