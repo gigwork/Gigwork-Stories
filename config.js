@@ -12,7 +12,7 @@ var driveTime = driveSlides * driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 14;
+var followZoomLevel = 12;
 var followBearing = 29;
 var followPitch = 0;
 
@@ -60,8 +60,8 @@ var config = {
         {
             id: 'drive-slide-1',
             title: '',
-            chart: {},
-            description: '',
+            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            description: '<h3> Transcript </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. Integer elit sapien, scelerisque semper tempor in, ultricies sit amet arcu. Donec a vehicula metus.',
             location: {},
             earnings: '6.41',
             onChapterEnter: [],
@@ -80,8 +80,8 @@ var config = {
         {
             id: 'drive-slide-3',
             title: '',
-            image: './riders/artwork/Jerome/jerome5.png',
-            description: '',
+            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            description: '<h3> Transcript </h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. Integer elit sapien, scelerisque semper tempor in, ultricies sit amet arcu. Donec a vehicula metus.',
             location: {},
             earnings: '12.41',
             onChapterEnter: [],
@@ -90,7 +90,7 @@ var config = {
         {
             id: 'drive-slide-4',
             title: '',
-
+            image: './riders/artwork/Jerome/jerome5.png',
             description: '',
             location: {},
             onChapterEnter: [],
@@ -101,7 +101,16 @@ var config = {
             id: 'slide-4',
             title: '',
 
-            description: '',
+            description: 'Jerome signs off Uber Eats',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-5',
+            title: '',
+
+            description: 'Jerome signs on Uber Eats',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -127,10 +136,11 @@ var config = {
         {
             id: 'slide-2',
             title: '',
+            chart: {},
             description: '',
             location: {
                 center: [-77.07567, 38.89583],
-                zoom: 11.23,
+                zoom: 15.23,
                 pitch: 60.00,
                 bearing: 43.61
             },

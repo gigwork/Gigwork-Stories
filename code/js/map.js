@@ -66,7 +66,6 @@ if (header.innerText.length > 0) {
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
-    var body = document.getElementById('story')
 
     if (record.title) {
         var title = document.createElement('h1');
@@ -77,6 +76,9 @@ config.chapters.forEach((record, idx) => {
     if (record.image) {
         var image = new Image();
         image.src = record.image;
+        image.onclick = function(){
+            window.location.href = record.image
+        }
         chapter.appendChild(image);
     }
 
@@ -86,14 +88,15 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(story);
     }
     if (record.audio) {
-     
-    var waveform = document.createElement('div');
-    var audio = document.createElement('audio');
-    audio.src = record.audio
-    audio.id = 'audio-player';
-    audio.controls = 'controls';
-    audio.type = 'audio/mpeg';
-    chapter.appendChild(audio)
+
+        var audio = document.createElement('audio');
+        audio.src = record.audio
+        audio.id = 'audio-player';
+        audio.controls = 'controls';
+        audio.type = 'audio/mpeg';
+        chapter.appendChild(audio)
+
+ 
     }
 
     if (record.chart) {
