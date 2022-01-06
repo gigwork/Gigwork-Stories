@@ -78,14 +78,22 @@ config.chapters.forEach((record, idx) => {
         story.innerHTML = record.description;
         chapter.appendChild(story);
     }
-
     if (record.audio) {
-        var audio = document.createElement('audio');
-        audio.src = record.audio
-        audio.id = 'audio-player';
-        audio.controls = 'controls';
-        audio.type = 'audio/mpeg';
-        chapter.appendChild(audio)
+     
+    var waveform = document.createElement('div');
+    var audio = document.createElement('audio');
+    audio.src = record.audio
+    audio.id = 'audio-player';
+    audio.controls = 'controls';
+    audio.type = 'audio/mpeg';
+    chapter.appendChild(audio)
+
+        // audio.src = record.audio
+        // audio.id = 'audio-player';
+        // audio.controls = 'controls';
+        // audio.type = 'audio/mpeg';
+   
+
     }
 
     if (record.chart) {
@@ -211,7 +219,7 @@ map.on("load", function () {
         "source": "lineSource",
         'paint': {
             'line-opacity': 1,
-            'line-color': '#333',
+            'line-color': '#ff5722',
             'line-width': 3.5
         },
         'layout': {
@@ -224,9 +232,9 @@ map.on("load", function () {
         "type": "circle",
         "source": "pointSource",
         'paint': {
-            'circle-radius': 5,
-            'circle-opacity': 1,
-            'circle-color': '#333'
+            'circle-radius': 7,
+            'circle-opacity': 0.7,
+            'circle-color': '#ff5722'
         },
         'layout': {
             // 'visibility': 'none'
@@ -267,8 +275,8 @@ map.on("load", function () {
 window.addEventListener('resize', scroller.resize);
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 30, left: 60},
-    width = 200 - margin.left - margin.right,
-    height = 180 - margin.top - margin.bottom;
+    width = 460 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -280,11 +288,11 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv",
+d3.csv("https://raw.githubusercontent.com/gigwork/gigwork-bike/main/jerome.csv",
 
   // When reading the csv, I must format variables:
   function(d){
-    return { date : d3.timeParse("%Y-%m-%d")(d.date), value : d.value }
+    return { date : d3.timeParse("%H:%M:%S")(d.time), value : d.ele }
   },
 
   // Now I can use this dataset:
@@ -292,28 +300,48 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
 
     // Add X axis --> it is a date format
     var x = d3.scaleTime()
-      .domain(d3.extent(data, function(d) { return d.date; }))
+      .domain(d3.extent(data, function(d) { return d.time; }))
       .range([ 0, width ]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
+    // Max value observed:
+    const max = d3.max(data, function(d) { return +d.ele; })
+
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.value; })])
+      .domain([0, max])
       .range([ height, 0 ]);
     svg.append("g")
       .call(d3.axisLeft(y));
+
+    // Set the gradient
+    svg.append("linearGradient")
+      .attr("id", "line-gradient")
+      .attr("gradientUnits", "userSpaceOnUse")
+      .attr("x1", 0)
+      .attr("y1", y(0))
+      .attr("x2", 0)
+      .attr("y2", y(max))
+      .selectAll("stop")
+        .data([
+          {offset: "0%", color: "blue"},
+          {offset: "100%", color: "red"}
+        ])
+      .enter().append("stop")
+        .attr("offset", function(d) { return d.offset; })
+        .attr("stop-color", function(d) { return d.color; });
 
     // Add the line
     svg.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-width", 1.5)
+      .attr("stroke", "url(#line-gradient)" )
+      .attr("stroke-width", 2)
       .attr("d", d3.line()
-        .x(function(d) { return x(d.date) })
-        .y(function(d) { return y(d.value) })
+        .x(function(d) { return x(d.time) })
+        .y(function(d) { return y(d.ele) })
         )
 
 })
