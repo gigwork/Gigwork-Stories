@@ -381,23 +381,23 @@ d3.csv("../../adeb.csv",
         svg.append("g")
             .call(d3.axisLeft(y));
 
-            svg.append("text")
+        svg.append("text")
             .attr("transform", "rotate(-90)")
             .attr("y", 0 - margin.left)
-            .attr("x",0 - (height / 2))
+            .attr("x", 0 - (height / 2))
             .attr("dy", "1em")
             .attr("font-family", " Rajdhani', sans-serif")
             .style("text-anchor", "middle")
-            .style("font-size", "34px")
+            .style("font-size", "24px")
             .text("Speed kmph");
 
-            svg.append("text")             
+        svg.append("text")
             .attr("transform",
-                  "translate(" + (width/2) + " ," + 
-                                 (height + margin.top + 20) + ")")
+                "translate(" + (width / 2) + " ," +
+                (height + margin.top + 20) + ")")
             .style("text-anchor", "middle")
             .attr("font-family", " Rajdhani', sans-serif")
-            .style("font-size", "34px")
+            .style("font-size", "24px")
             .text("Total KM");
 
         // Add the line
