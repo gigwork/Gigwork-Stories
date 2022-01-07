@@ -12,7 +12,7 @@ var driveTime = driveSlides * driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 13;
+var followZoomLevel = 12;
 var followBearing = 29;
 var followPitch = 0;
 
@@ -103,7 +103,6 @@ var config = {
             id: 'slide-4',
             title: '14:28PM',
             description: 'Jerome signs off Uber Eats',
-            image: './riders/artwork/Jerome/jerome4.png',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -112,7 +111,6 @@ var config = {
             id: 'slide-5',
             title: '16:58PM',
             description: 'Jerome signs on Uber Eats',
-            image: './riders/artwork/Jerome/jerome5.png',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -120,6 +118,7 @@ var config = {
         {
             id: 'drive-slide-5',
             title: '',
+            image: './riders/artwork/Jerome/jerome4.png',
             audio: './riders/audio/Jerome/4.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '12.21',
@@ -131,6 +130,7 @@ var config = {
             id: 'drive-slide-6',
             title: '',
             audio: './riders/audio/Jerome/5.m4a',
+            image: './riders/artwork/Jerome/jerome5.png',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '19.21',
             location: {},
