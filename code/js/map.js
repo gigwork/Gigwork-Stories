@@ -107,8 +107,6 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(audio)
     }
 
-
-
     if (record.chart) {
         var chart = document.createElement('div')
         chart.id = 'my_dataviz'
@@ -133,24 +131,27 @@ config.chapters.forEach((record, idx) => {
 
 // Add features to story
 story.appendChild(features);
-(function (Peaks) {
+
+
+(function(Peaks) {
     const options = {
-        zoomview: {
-            container: document.getElementById('zoomview-container')
-        },
-        overview: {
-            container: document.getElementById('overview-container')
-        },
-        mediaElement: document.querySelector('audio'),
-        webAudio: {
-            audioContext: new AudioContext()
-        }
+      zoomview: {
+        container: document.getElementById('zoomview-container')
+      },
+      overview: {
+        container: document.getElementById('overview-container')
+      },
+      mediaElement: document.querySelector('audio'),
+      webAudio: {
+        audioContext: new AudioContext()
+      }
     };
-
-    Peaks.init(options, function (err, peaks) {
-
+  
+    Peaks.init(options, function(err, peaks) {
+      // Do something when the waveform is displayed and ready
     });
-})(peaks);
+  })(peaks);
+
 var footer = document.createElement('div');
 
 if (config.footer) {
@@ -209,17 +210,6 @@ function handleStepProgress(response) {
         changeCenter(stepProgress);
     }
 }
-
-
-const audioCtx = new AudioContext();
-const button = document.querySelector('audio');
-
-button.addEventListener('click', function () {
-    // check if context is in suspended state (autoplay policy)
-    if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
-    }
-}, false);
 
 
 // On load of mapbox map
