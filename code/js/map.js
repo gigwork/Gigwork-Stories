@@ -88,8 +88,8 @@ config.chapters.forEach((record, idx) => {
         story.innerHTML = record.description;
         chapter.appendChild(story);
     }
-    if (record.audio) {
 
+    if (record.audio) {
         var audio = document.createElement('audio');
         audio.src = record.audio
         audio.id = 'audio-player';
@@ -102,11 +102,12 @@ config.chapters.forEach((record, idx) => {
         var oc = document.createElement('div')
         oc.id = 'overview-container'
 
-
         chapter.appendChild(zc)
         chapter.appendChild(oc)
         chapter.appendChild(audio)
     }
+
+
 
     if (record.chart) {
         var chart = document.createElement('div')
@@ -116,7 +117,6 @@ config.chapters.forEach((record, idx) => {
 
     if (record.earnings) {
         container.innerHTML = '<p style="background-color: #f5f5f5c2;"> Current Earnings: £' + record.earnings + '</p>'
-
     }
 
     container.setAttribute('id', record.id);
@@ -130,9 +130,27 @@ config.chapters.forEach((record, idx) => {
     container.appendChild(chapter);
     features.appendChild(container);
 });
+
 // Add features to story
 story.appendChild(features);
+(function (Peaks) {
+    const options = {
+        zoomview: {
+            container: document.getElementById('zoomview-container')
+        },
+        overview: {
+            container: document.getElementById('overview-container')
+        },
+        mediaElement: document.querySelector('audio'),
+        webAudio: {
+            audioContext: new AudioContext()
+        }
+    };
 
+    Peaks.init(options, function (err, peaks) {
+
+    });
+})(peaks);
 var footer = document.createElement('div');
 
 if (config.footer) {
@@ -176,10 +194,12 @@ if (config.showMarkers) {
 var scroller = scrollama();
 
 function handleStepProgress(response) {
+
     let stepProgress;
 
     if (response.element.id.slice(0, 5) === 'drive') {
         let driveSlideNum = parseInt(response.element.id.slice(-1));
+
         if (driveSlideNum === 0) {
             map.setLayoutProperty('animatedLine', 'visibility', 'visible');
             stepProgress = Math.round(response.progress * driveSmoothness);
@@ -190,27 +210,22 @@ function handleStepProgress(response) {
     }
 }
 
-(function (Peaks) {
-    const options = {
-        zoomview: {
-            container: document.getElementById('zoomview-container')
-        },
-        overview: {
-            container: document.getElementById('overview-container')
-        },
-        mediaElement: document.querySelector('audio'),
-        webAudio: {
-            audioContext: new AudioContext()
-        }
-    };
 
-    Peaks.init(options, function (err, peaks) {
-        // Do something when the waveform is displayed and ready
-    });
-})(peaks);
+const audioCtx = new AudioContext();
+const button = document.querySelector('audio');
+
+button.addEventListener('click', function () {
+    // check if context is in suspended state (autoplay policy)
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+}, false);
+
 
 // On load of mapbox map
 map.on("load", function () {
+
+
 
     let w = window.innerWidth;
     let initBounds = routeData.features[0].geometry.coordinates;
@@ -289,6 +304,7 @@ map.on("load", function () {
         .onStepEnter(response => {
             var chapter = config.chapters.find(chap => chap.id === response.element.id);
             response.element.classList.add('active');
+
             // map.flyTo(chapter.location);
             if (config.showMarkers) {
                 marker.setLngLat(chapter.location.center);
@@ -312,9 +328,10 @@ map.on("load", function () {
 // setup resize event
 window.addEventListener('resize', scroller.resize);
 
+
 // D3 GRAPH 
 
-// set the dimensions and margins of the graph
+/// set the dimensions and margins of the graph
 var margin = {
         top: 10,
         right: 30,
@@ -334,79 +351,67 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/gigwork/gigwork-bike/main/jerome.csv",
-
+d3.csv("../../adeb.csv",
     // When reading the csv, I must format variables:
     function (d) {
         return {
-            date: d3.timeParse("%H:%M:%S")(d.time),
-            value: d.ele
+            date: d.dist_total,
+            value: d.speed
         }
     },
 
     // Now I can use this dataset:
     function (data) {
-
         // Add X axis --> it is a date format
-        var x = d3.scaleTime()
-            .domain(d3.extent(data, function (d) {
-                return d.time;
-            }))
+        var x = d3.scaleLinear()
+            .domain([0, d3.max(data, function (d) {
+                return +d.date;
+            })])
             .range([0, width]);
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
 
-        // Max value observed:
-        const max = d3.max(data, function (d) {
-            return +d.ele;
-        })
-
         // Add Y axis
         var y = d3.scaleLinear()
-            .domain([0, max])
+            .domain([0, d3.max(data, function (d) {
+                return +d.value;
+            })])
             .range([height, 0]);
         svg.append("g")
             .call(d3.axisLeft(y));
 
-        // Set the gradient
-        svg.append("linearGradient")
-            .attr("id", "line-gradient")
-            .attr("gradientUnits", "userSpaceOnUse")
-            .attr("x1", 0)
-            .attr("y1", y(0))
-            .attr("x2", 0)
-            .attr("y2", y(max))
-            .selectAll("stop")
-            .data([{
-                    offset: "0%",
-                    color: "blue"
-                },
-                {
-                    offset: "100%",
-                    color: "red"
-                }
-            ])
-            .enter().append("stop")
-            .attr("offset", function (d) {
-                return d.offset;
-            })
-            .attr("stop-color", function (d) {
-                return d.color;
-            });
+            svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - margin.left)
+            .attr("x",0 - (height / 2))
+            .attr("dy", "1em")
+            .attr("font-family", " Rajdhani', sans-serif")
+            .style("text-anchor", "middle")
+            .style("font-size", "34px")
+            .text("Speed kmph");
+
+            svg.append("text")             
+            .attr("transform",
+                  "translate(" + (width/2) + " ," + 
+                                 (height + margin.top + 20) + ")")
+            .style("text-anchor", "middle")
+            .attr("font-family", " Rajdhani', sans-serif")
+            .style("font-size", "34px")
+            .text("Total KM");
 
         // Add the line
         svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("stroke", "url(#line-gradient)")
-            .attr("stroke-width", 2)
+            .attr("stroke", "steelblue")
+            .attr("stroke-width", 1.5)
             .attr("d", d3.line()
                 .x(function (d) {
-                    return x(d.time)
+                    return x(d.date)
                 })
                 .y(function (d) {
-                    return y(d.ele)
+                    return y(d.value)
                 })
             )
 

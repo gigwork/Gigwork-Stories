@@ -3,7 +3,7 @@
 var driveSlides = 7;
 
 // Number of points on drive route (more = higher quality, but slower to process)
-var driveSmoothness = 500;
+var driveSmoothness = 200;
 
 // Value used to drive
 var driveTime = driveSlides * driveSmoothness;
@@ -12,7 +12,7 @@ var driveTime = driveSlides * driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 12;
+var followZoomLevel = 13;
 var followBearing = 29;
 var followPitch = 0;
 
@@ -41,7 +41,7 @@ var config = {
         {
             id: 'slide-1',
             title: '1st Audio',
-            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            audio: './riders/audio/Jerome/1.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '',
@@ -61,7 +61,7 @@ var config = {
         {
             id: 'drive-slide-1',
             title: '',
-            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            audio: './riders/audio/Jerome/2.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '6.41',
@@ -81,7 +81,7 @@ var config = {
         {
             id: 'drive-slide-3',
             title: '',
-            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            audio: './riders/audio/Jerome/3.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '6.41',
@@ -120,7 +120,7 @@ var config = {
         {
             id: 'drive-slide-5',
             title: '',
-            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            audio: './riders/audio/Jerome/4.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '12.21',
             location: {},
@@ -130,7 +130,7 @@ var config = {
         {
             id: 'drive-slide-6',
             title: '',
-            audio: './riders/audio/Jerome/20210327_103636.m4a',
+            audio: './riders/audio/Jerome/5.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '19.21',
             location: {},
