@@ -94,6 +94,7 @@ config.chapters.forEach((record, idx) => {
         audio.src = record.audio
         audio.id = 'audio-player';
         audio.controls = 'controls';
+        audio.autostart = 'false';
         audio.type = 'audio/mpeg';
 
         var zc = document.createElement('div')
@@ -132,7 +133,7 @@ config.chapters.forEach((record, idx) => {
 // Add features to story
 story.appendChild(features);
 
-
+audioContext = new AudioContext;
 (function(Peaks) {
     const options = {
       zoomview: {
@@ -143,7 +144,7 @@ story.appendChild(features);
       },
       mediaElement: document.querySelector('audio'),
       webAudio: {
-        audioContext: new AudioContext()
+        audioContext: getAudioContext.resume()
       }
     };
   
