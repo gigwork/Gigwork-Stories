@@ -94,18 +94,22 @@ config.chapters.forEach((record, idx) => {
         audio.src = record.audio
         audio.id = 'audio-player';
         audio.controls = 'controls';
-        audio.autostart = 'false';
         audio.type = 'audio/mpeg';
+        audio.style.visibility = 'none'
+        // var zc = document.createElement('div')
+        // zc.id = 'zoomview-container'
 
-        var zc = document.createElement('div')
-        zc.id = 'zoomview-container'
+        // var oc = document.createElement('div')
+        // oc.id = 'overview-container'
 
-        var oc = document.createElement('div')
-        oc.id = 'overview-container'
-
-        chapter.appendChild(zc)
-        chapter.appendChild(oc)
+        // chapter.appendChild(zc)
+        // chapter.appendChild(oc)
         chapter.appendChild(audio)
+
+        var transcript = document.createElement('button')
+        transcript.innerHTML = "Hello"
+        transcript.id = "transcript"
+        chapter.appendChild(transcript)
     }
 
     if (record.chart) {
@@ -132,26 +136,6 @@ config.chapters.forEach((record, idx) => {
 
 // Add features to story
 story.appendChild(features);
-
-audioContext = new AudioContext;
-(function(Peaks) {
-    const options = {
-      zoomview: {
-        container: document.getElementById('zoomview-container')
-      },
-      overview: {
-        container: document.getElementById('overview-container')
-      },
-      mediaElement: document.querySelector('audio'),
-      webAudio: {
-        audioContext: getAudioContext.resume()
-      }
-    };
-  
-    Peaks.init(options, function(err, peaks) {
-      // Do something when the waveform is displayed and ready
-    });
-  })(peaks);
 
 var footer = document.createElement('div');
 
@@ -216,7 +200,39 @@ function handleStepProgress(response) {
 // On load of mapbox map
 map.on("load", function () {
 
+    const transcript = document.getElementById('transcript')
 
+    transcript.onclick{
+
+        var chapter = document.getElementById('chapter')
+                var zc = document.createElement('div')
+        zc.id = 'zoomview-container'
+
+        var oc = document.createElement('div')
+        oc.id = 'overview-container'
+
+        chapter.appendChild(zc)
+        chapter.appendChild(oc)
+    
+        (function (Peaks) {
+            const options = {
+                zoomview: {
+                    container: document.getElementById('zoomview-container')
+                },
+                overview: {
+                    container: document.getElementById('overview-container')
+                },
+                mediaElement: document.querySelector('audio'),
+                webAudio: {
+                    audioContext: new AudioContext()
+                }
+            };
+        
+            Peaks.init(options, function (err, peaks) {
+        
+            });
+        })(peaks);
+    })
 
     let w = window.innerWidth;
     let initBounds = routeData.features[0].geometry.coordinates;
