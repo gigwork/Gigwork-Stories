@@ -96,14 +96,14 @@ config.chapters.forEach((record, idx) => {
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
         audio.style.visibility = 'none'
-        // var zc = document.createElement('div')
-        // zc.id = 'zoomview-container'
+        var zc = document.createElement('div')
+        zc.id = 'zoomview-container'
 
-        // var oc = document.createElement('div')
-        // oc.id = 'overview-container'
+        var oc = document.createElement('div')
+        oc.id = 'overview-container'
 
-        // chapter.appendChild(zc)
-        // chapter.appendChild(oc)
+        chapter.appendChild(zc)
+        chapter.appendChild(oc)
         chapter.appendChild(audio)
 
         var transcript = document.createElement('button')
@@ -133,6 +133,26 @@ config.chapters.forEach((record, idx) => {
     container.appendChild(chapter);
     features.appendChild(container);
 });
+
+
+(function (Peaks) {
+    const options = {
+        zoomview: {
+            container: document.getElementById('zoomview-container')
+        },
+        overview: {
+            container: document.getElementById('overview-container')
+        },
+        mediaElement: document.querySelector('audio'),
+        webAudio: {
+            audioContext: new AudioContext()
+        }
+    };
+
+    Peaks.init(options, function (err, peaks) {
+
+    });
+})(peaks);
 
 // Add features to story
 story.appendChild(features);
@@ -199,40 +219,6 @@ function handleStepProgress(response) {
 
 // On load of mapbox map
 map.on("load", function () {
-
-    const transcript = document.getElementById('transcript')
-
-    transcript.onclick {
-
-        var chapter = document.getElementById('chapter')
-                var zc = document.createElement('div')
-        zc.id = 'zoomview-container'
-
-        var oc = document.createElement('div')
-        oc.id = 'overview-container'
-
-        chapter.appendChild(zc)
-        chapter.appendChild(oc)
-    
-        (function (Peaks) {
-            const options = {
-                zoomview: {
-                    container: document.getElementById('zoomview-container')
-                },
-                overview: {
-                    container: document.getElementById('overview-container')
-                },
-                mediaElement: document.querySelector('audio'),
-                webAudio: {
-                    audioContext: new AudioContext()
-                }
-            };
-        
-            Peaks.init(options, function (err, peaks) {
-        
-            });
-        })(peaks);
-    })
 
     let w = window.innerWidth;
     let initBounds = routeData.features[0].geometry.coordinates;
