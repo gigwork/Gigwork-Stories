@@ -202,7 +202,7 @@ map.on("load", function () {
 
     const transcript = document.getElementById('transcript')
 
-    transcript.onclick{
+    transcript.onclick {
 
         var chapter = document.getElementById('chapter')
                 var zc = document.createElement('div')
