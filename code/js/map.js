@@ -97,17 +97,17 @@ config.chapters.forEach((record, idx) => {
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
 
-        console.log(idx)
+        // console.log(idx)
 
 
-        var zc = document.createElement('div')
-        zc.id = 'zoomview-container'
+        // var zc = document.createElement('div')
+        // zc.id = 'zoomview-container'
 
-        var oc = document.createElement('div')
-        oc.id = 'overview-container'
+        // var oc = document.createElement('div')
+        // oc.id = 'overview-container'
 
-        chapter.appendChild(zc)
-        chapter.appendChild(oc)
+        // chapter.appendChild(zc)
+        // chapter.appendChild(oc)
         chapter.appendChild(audio)
 
     }
@@ -119,7 +119,7 @@ config.chapters.forEach((record, idx) => {
     }
 
     if (record.earnings) {
-        container.innerHTML = '<p style="background-color: #f5f5f5c2;"> Current Earnings: £' + record.earnings + '</p>'
+        container.innerHTML = '<p style="background-color: #f5f5f5c2;"> Total Earnings: £' + record.earnings + '</p>'
     }
 
     container.setAttribute('id', record.id);
@@ -138,24 +138,24 @@ config.chapters.forEach((record, idx) => {
 // Add features to story
 story.appendChild(features);
 
-(function(Peaks) {
-    const options = {
-      zoomview: {
-        container: document.getElementById('zoomview-container')
-      },
-      overview: {
-        container: document.getElementById('overview-container')
-      },
-      mediaElement: document.querySelector('audio'),
-      webAudio: {
-        audioContext: new AudioContext()
-      }
-    };
+// (function(Peaks) {
+//     const options = {
+//       zoomview: {
+//         container: document.getElementById('zoomview-container')
+//       },
+//       overview: {
+//         container: document.getElementById('overview-container')
+//       },
+//       mediaElement: document.querySelector('audio'),
+//       webAudio: {
+//         audioContext: new AudioContext()
+//       }
+//     };
   
-    Peaks.init(options, function(err, peaks) {
-      // Do something when the waveform is displayed and ready
-    });
-  })(peaks);
+//     Peaks.init(options, function(err, peaks) {
+//       // Do something when the waveform is displayed and ready
+//     });
+//   })(peaks);
 
 var footer = document.createElement('div');
 
@@ -337,8 +337,7 @@ var margin = {
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
     .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("viewBox", '0 0 300 600')
     .append("g")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
@@ -349,7 +348,7 @@ d3.csv("../../adeb.csv",
     function (d) {
         return {
             date: d.dist_total,
-            value: d.speed
+            value: d.ele
         }
     },
 
@@ -382,7 +381,7 @@ d3.csv("../../adeb.csv",
             .attr("font-family", " Rajdhani', sans-serif")
             .style("text-anchor", "middle")
             .style("font-size", "24px")
-            .text("Speed kmph");
+            .text("Elevation");
 
         svg.append("text")
             .attr("transform",
