@@ -92,12 +92,12 @@ config.chapters.forEach((record, idx) => {
     if (record.audio) {
         var audio = document.createElement('audio');
         audio.src = record.audio;
-
+        
         audio.id = 'audio';
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
 
-        console.log(test)
+        console.log(idx)
 
 
         var zc = document.createElement('div')
