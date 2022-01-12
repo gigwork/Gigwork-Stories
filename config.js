@@ -12,7 +12,7 @@ var driveTime = driveSlides * driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 12;
+var followZoomLevel = 14;
 var followBearing = 29;
 var followPitch = 0;
 
@@ -31,8 +31,8 @@ var config = {
     footer: 'Source: source citations, etc.',
     chapters: [{
             id: 'slide-0',
-            title: 'Jerome',
-            description: '<b>Location:</b> Manchester </br> <b>Time:</b> 23/03/2020 | 10:45AM </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio:</b> <b>Jerome</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate leo, eget auctor massa. In eget ex convallis, lacinia risus sed, suscipit tortor. Suspendisse efficitur, mi id dictum feugiat, quam turpis gravida nulla, at viverra sem turpis quis orci. Ut fringilla nibh quis volutpat tempus. Curabitur condimentum nec urna eu iaculis. Quisque nec nisi ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar lorem nisi, tincidunt hendrerit lectus bibendum ac. Aenean velit lectus, cursus non feugiat non, bibendum ac lacus. Proin placerat luctus nisl eu fermentum. </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
+            title: 'Jérôme',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio:</b> <b>Jerome</b> At 36, Jérôme is using an instantly recognisable e-bike with fat tyres to do deliveries for Uber Eats. Born in Congo, he lived for most of his life in Paris before moving to Manchester in 2019 as he was fed up with France and wanted to improve his English. Since his Parisian school cafeteria business was brought to a standstill during the pandemic, Jérôme is saving up money for another business idea, based on Uber’s model: an app for those who want their garden trimmed in an instant. His entrepreneurial dreams were recently punctured by a horrible episode at work, when a client accused him of rape. It took a whole month to prove his innocence, but the emotional scars are still there, as are the rent arrears resulting from Uber automatically suspending his account for this period. While he praises the platform for its innovative approach to work, Jérôme finds appalling the way it treats the workers: What they call partners its not actually partners, its fake employees. In this job, we are vulnerable in all aspects, at all levels. If I have an accident tomorrow, I am left without pay. </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -41,20 +41,19 @@ var config = {
         {
             id: 'slide-1',
             title: '1st Audio',
-            audio: './riders/audio/Jerome/1.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
+            image: './riders/artwork/Jerome/jerome.png',
             location: {},
-            earnings: '',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-0',
             title: '',
-            description: '<p style="text-align:center;"> privileged </p>',
-            image: './riders/artwork/Jerome/jerome.png',
+            audio: './riders/audio/Jerome/1.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
             location: {},
-            earnings: '0',
+            earnings: '2.45',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -64,7 +63,7 @@ var config = {
             audio: './riders/audio/Jerome/2.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
-            earnings: '6.41',
+            earnings: '5.73',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -74,7 +73,7 @@ var config = {
             image: './riders/artwork/Jerome/jerome2.png',
             description: '',
             location: {},
-            earnings: '6.41',
+            earnings: '11.85',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -84,39 +83,53 @@ var config = {
             audio: './riders/audio/Jerome/3.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
-            earnings: '6.41',
+            earnings: '15.32',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-4',
             title: '',
-            image: './riders/artwork/Jerome/jerome3.png',
-            description: '',
+            audio: './riders/audio/Jerome/4.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            location: {},
+            earnings: '15.32',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-5',
+            title: '',
+            audio: './riders/audio/Jerome/4.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
             earnings: '12.21',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
+
+
         // You can add a normal slide in the middle of the drive slides to take a break
         {
             id: 'slide-4',
-            title: '14:28PM',
+            title: '14:01PM',
             description: 'Jerome signs off Uber Eats',
+            audio: './riders/audio/Jerome/6.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'slide-5',
-            title: '16:58PM',
+            title: '17:40PM',
             description: 'Jerome signs on Uber Eats',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'drive-slide-5',
+            id: 'drive-slide-6',
             title: '',
             image: './riders/artwork/Jerome/jerome4.png',
             audio: './riders/audio/Jerome/4.m4a',
@@ -127,7 +140,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-6',
+            id: 'drive-slide-7',
             title: '',
             audio: './riders/audio/Jerome/5.m4a',
             image: './riders/artwork/Jerome/jerome5.png',

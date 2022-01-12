@@ -91,11 +91,15 @@ config.chapters.forEach((record, idx) => {
 
     if (record.audio) {
         var audio = document.createElement('audio');
-        audio.src = record.audio
-        audio.id = 'audio-player';
+        audio.src = record.audio;
+
+        audio.id = 'audio';
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
-        audio.style.visibility = 'none'
+
+        console.log(test)
+
+
         var zc = document.createElement('div')
         zc.id = 'zoomview-container'
 
@@ -106,10 +110,6 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(oc)
         chapter.appendChild(audio)
 
-        var transcript = document.createElement('button')
-        transcript.innerHTML = "Hello"
-        transcript.id = "transcript"
-        chapter.appendChild(transcript)
     }
 
     if (record.chart) {
@@ -135,27 +135,27 @@ config.chapters.forEach((record, idx) => {
 });
 
 
-(function (Peaks) {
-    const options = {
-        zoomview: {
-            container: document.getElementById('zoomview-container')
-        },
-        overview: {
-            container: document.getElementById('overview-container')
-        },
-        mediaElement: document.querySelector('audio'),
-        webAudio: {
-            audioContext: new AudioContext()
-        }
-    };
-
-    Peaks.init(options, function (err, peaks) {
-
-    });
-})(peaks);
-
 // Add features to story
 story.appendChild(features);
+
+(function(Peaks) {
+    const options = {
+      zoomview: {
+        container: document.getElementById('zoomview-container')
+      },
+      overview: {
+        container: document.getElementById('overview-container')
+      },
+      mediaElement: document.querySelector('audio'),
+      webAudio: {
+        audioContext: new AudioContext()
+      }
+    };
+  
+    Peaks.init(options, function(err, peaks) {
+      // Do something when the waveform is displayed and ready
+    });
+  })(peaks);
 
 var footer = document.createElement('div');
 
