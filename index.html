@@ -141,18 +141,25 @@ a {
 }
 
 .img-size-2 {
-  width: 50%;
+  width: 70%;
   transition: all .2s ease-in-out;
   height: 100vh;
 }
 
 .img-size-2:hover{
-    width: 1300px
+    width: 90%
 }
 
 footer {
   padding: 15em 5% 10em;
   opacity: 0.5;
+}
+
+#city{
+    float: left;margin-left: 5%;color: white;font-size: 9em;
+}
+#ppbanner{
+    background-color: white;height: 20vh;text-align: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -167,7 +174,7 @@ footer {
   }
 
   .heading h1 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .img-position-l {
@@ -191,6 +198,13 @@ footer {
   .img-size-2 {
     width: 75%;
     height: 100vh;
+  }
+
+  #city{
+      font-size: 4em;
+  }
+  #ppbanner{
+      height: 40vh;
   }
 }
 </style>
@@ -219,11 +233,22 @@ footer {
 
     </div>
     
-      <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="manny.png">
-      <img class="ukiyo img-size-2 img-position-r" data-u-speed="1.3" src="cluj.png">
-      <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="lyon.png">
-
-      <div style="background-color: white;height: 20vh;text-align: center;">
+    <h1 id="city"> Manchester</h1>
+    <a href="manchester.html">
+        <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="manny.png">
+    </a>
+      
+      <h1 id="city"> Cluj-Napoca</h1>
+      <a href="cluj-napoca.html">
+        <img class="ukiyo img-size-2 img-position-r" data-u-speed="1.3" src="cluj.png">
+      </a>
+      
+      <h1 id="city"> Lyon</h1>
+      <a href="lyon.html">
+        <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="lyon.png">
+      </a>
+      
+      <div id="ppbanner">
 
         <h3 style="text-align: center;color: black;padding: 5px;"> Project Partners </h3>
     
