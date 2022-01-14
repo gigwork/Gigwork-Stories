@@ -7,7 +7,7 @@
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <!-- Geospatia Librarys -->
-
+    <script src="code/js/locomotiveScroll.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.jsdelivr.net/npm/ukiyojs@2.0.1/dist/ukiyo.min.js"></script>
@@ -93,8 +93,7 @@ a {
   display: block;
   margin-top: 0.5em;
   border-radius: 2.5em;
-  background-color: #fff;
-  color: #1f1f1f;
+  color: white;
   transition: 0.25s transform;
 }
 
@@ -115,9 +114,9 @@ a {
   margin-top: 12.5em;
 }
 
-.img-size-1 {
+/* .img-size-1 {
   margin-left: 10%;
-}
+} */
 
 .img-position-r {
   margin-left: auto;
@@ -137,6 +136,10 @@ a {
 .img-size-2 {
   width: 50%;
   height: 100vh;
+}
+
+.img-size-2:hover{
+   width: 2000px;
 }
 
 footer {
@@ -186,7 +189,7 @@ footer {
 
 <div class="heading">
    <a href="#"> <h1> Gigwork.Bike</h1></a>
-    <a href="https://github.com/yitengjun/ukiyojs" target="_blank">see on GitHub</a>
+    <a href="https://github.com/gigwork/gigwork_stories" target="_blank"><img src="GitHub-Mark-Light-64px.png" style="height: 6em;width:6em;" alt=""> </a>
   </div>
   
   <div id="container">
@@ -244,12 +247,14 @@ footer {
       scrollFromAnywhere: true
     });
 
-    imagesLoaded(container, {
-      background: true
-    }, function () {
-      scroll.update();
-    });
+    // imagesLoaded(container, {
+    //   background: true
+    // }, function () {
+    //   scroll.update();
+    // });
   </script>
+ 
+  </body>
 
   
 </html>
