@@ -8,30 +8,20 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <!-- Geospatia Librarys -->
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script> <!-- Mapbox -->
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> <!-- Intersection Observer -->
-    <!-- UI Librarys -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
-    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://unpkg.com/peaks.js/dist/peaks.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/ukiyojs@2.0.1/dist/ukiyo.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
         rel="stylesheet">
     <!-- Internal css styling -->
     <link href="./code/css/main.css" rel="stylesheet">
 </head>
-
-<body>
     <!-- Load map and story -->
-    <div id="map"></div>
+    <!-- <div id="map"></div>
     <div id="story"></div>
-    <div id="earnings"></div>
+    <div id="earnings"></div> -->
     <!-- On document ready fetch riders geojson path -->
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $.ajax({
                 url: "./riders/data/Jerome/jerometes1t.geojson",
@@ -47,9 +37,219 @@
 
     </script>
     <!-- Local JS -->
-    <script src="./config.js"></script>
+    <!-- <script src="./config.js"></script>
     <script src="./code/js/drive.js"></script>
-    <script src="./code/js/map.js"></script>
-</body>
+    <script src="./code/js/map.js"></script> -->
 
+
+<style>
+    section {
+  position: relative;
+  width: 100%;
+}
+
+body {
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+#container {
+  position: relative;
+  z-index: 2;
+}
+
+.fv {
+  height: 100vh;
+  width: 100%;
+}
+
+.heading {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  bottom: 0;
+  padding: 1.5em 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.heading h1 {
+  font-size: 3rem;
+}
+
+.heading a {
+  font-size: 0.889rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.555em 1.5em;
+  display: block;
+  margin-top: 0.5em;
+  border-radius: 2.5em;
+  background-color: #fff;
+  color: #1f1f1f;
+  transition: 0.25s transform;
+}
+
+.heading a:hover {
+  transform: scale(1.075);
+}
+
+.fv_img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 0 !important;
+}
+
+.ukiyo {
+  margin-top: 12.5em;
+}
+
+.img-size-1 {
+  margin-left: 10%;
+}
+
+.img-position-r {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.img-size-full {
+  width: 100%;
+  height: 115vh;
+}
+
+.img-size-1 {
+  width: 33.3333%;
+  height: 75vh;
+}
+
+.img-size-2 {
+  width: 50%;
+  height: 100vh;
+}
+
+footer {
+  padding: 15em 5% 10em;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    width: 92.5%;
+  }
+
+  .heading a {
+    font-size: 2vw;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  .heading h1 {
+    font-size: 5vw;
+  }
+
+  .img-position-l {
+    margin-left: 0;
+  }
+
+  .img-position-r {
+    margin-right: 0;
+  }
+
+  .img-size-full {
+    height: 100vh;
+    height: 100vh;
+  }
+
+  .img-size-1 {
+    width: 75%;
+    height: 75vh;
+  }
+
+  .img-size-2 {
+    width: 75%;
+    height: 100vh;
+  }
+}
+</style>
+
+<div class="heading">
+   <a href="#"> <h1> Gigwork.Bike</h1></a>
+    <a href="https://github.com/yitengjun/ukiyojs" target="_blank">see on GitHub</a>
+  </div>
+  
+  <div id="container">
+  
+    <div style="background-color: white;">
+    <section class="fv">
+      <!-- option +scale +willchange -->
+      <img class="ukiyo fv_img1" src="hp.jpg" data-u-speed="1.7" data-u-willchange>
+    </section>
+    
+</div>
+  
+    <section class="content">
+      <!-- option +speed -->
+
+      <h2 style="text-align: center;"> Stories</h2>
+      <div style="margin:auto;width:60%;border:5px solid black;padding:10px">
+        <p style="text-align: justify;">In  less  than  a  decade,  with  the  emergence  of  food  delivery  platforms,  cycling  has  gained increased  visibility  on  city  roads  across  the  world.  For the  first  time  since  the  advent  of  the automobile age, the bicycle is re-emerging globally as a dependable tool to earn a living. Food delivery  start-ups  such  as  Deliveroo,  Uber  Eats  or  Glovo  enroll  an  increasingly  precarious population as self-employed contractors to whom they grant little social protection.Having access to a bicycle and knowing how to use it is a very low entrance requirement for these jobs.Cycle food couriersholda precarious entitlement to the road space, which makes them constantly vulnerable to bodily harm, and is compounded by a broader ontological precarity. The insecurity resulting from being engaged in an unregulated gig economy where job and income instability is amplified by issues of gender, ethnicity and migrationstatus, further addsto road unsafety. </p>
+
+    </div>
+    
+      <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="manny.png">
+      <img class="ukiyo img-size-2 img-position-r" data-u-speed="1.3" src="cluj.png">
+      <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="lyon.png">
+    
+      <img class="ukiyo img-size-full" src="MOSHED-2021-12-14-22-49-4 (1).gif" data-u-speed="1.5"  style="object-fit: contain !important;">
+    
+      <!-- <img class="ukiyo img-size-1 img-position-l" data-u-scale="1.35" src="https://source.unsplash.com/470eBDOc8bk">
+  
+      <img class="ukiyo img-position-r img-size-2" src="https://source.unsplash.com/Tn8DLxwuDMA"> -->
+    </section>
+  
+    <footer>
+      <div>
+        <p>Scroll : <a href="https://github.com/locomotivemtl/locomotive-scroll" target="_blank">locomotive scroll</a></p>
+        <p>Image : <a href="https://unsplash.com/" target="blank">Unsplash</a></p>
+      </div>
+    </footer>
+  
+  </div>
+
+  <script>
+      const els = document.querySelectorAll(".ukiyo");
+    els.forEach(el => {
+      // PARALLAX
+      // Use ukiyo.js
+      // https://github.com/yitengjun/ukiyo-js
+      const parallax = new Ukiyo(el);
+    })
+
+    const container = document.querySelector('#container');
+    const scroll = new LocomotiveScroll({
+      el: container,
+      smooth: true,
+      scrollFromAnywhere: true
+    });
+
+    imagesLoaded(container, {
+      background: true
+    }, function () {
+      scroll.update();
+    });
+  </script>
+
+  
 </html>
