@@ -12,11 +12,7 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> <!-- Intersection Observer -->
     <!-- UI Librarys -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
-    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
-    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://unpkg.com/peaks.js/dist/peaks.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
@@ -26,14 +22,22 @@
 </head>
 
 <body>
+    
     <!-- Load map and story -->
     <div id="map"></div>
     <div id="story"></div>
     <div id="earnings"></div>
-    <iframe src="mediaplayer.html"
-        allow="autoplay 'none'">
-</iframe>
     <!-- On document ready fetch riders geojson path -->
+
+    <!-- Local JS -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
+    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
+    <script src="./config.js"></script>
+    <script src="./code/js/drive.js"></script>
+    <script src="./code/js/map.js"></script>
+    <script src="https://unpkg.com/peaks.js/dist/peaks.js"></script>
     <script>
         $(document).ready(function () {
             $.ajax({
@@ -49,10 +53,6 @@
         });
 
     </script>
-    <!-- Local JS -->
-    <script src="./config.js"></script>
-    <script src="./code/js/drive.js"></script>
-    <script src="./code/js/map.js"></script>
 </body>
 
 </html>
