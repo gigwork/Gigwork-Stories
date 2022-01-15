@@ -119,7 +119,7 @@ config.chapters.forEach((record, idx) => {
     }
 
     if (record.earnings) {
-        container.innerHTML = '<p style="background-color: #f5f5f5c2;"> Total Earnings: £' + record.earnings + '</p>'
+        container.innerHTML = '<p style="background-color: black;"> Total Earnings: £' + record.earnings + '</p>'
     }
 
     container.setAttribute('id', record.id);
