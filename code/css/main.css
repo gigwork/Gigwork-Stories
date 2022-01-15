@@ -65,8 +65,13 @@ a {
     width: 100%;
     margin-top: 2% !important;
     object-fit: contain !important;
+    filter: grayscale(100%) !important;
+    transition: 0.2s;
 }
 
+.fv_img1:hover{
+    filter: grayscale(0%)
+}
 
 .ukiyo {
     margin-top: 12.5em;
@@ -198,7 +203,7 @@ footer {
 }
 @media screen and (max-height: 700px) {
     #orangeblob{
-        height: 85vh !important;
+        height: 27vh !important;
     }
 }
 @media screen and (max-width: 800px) {
