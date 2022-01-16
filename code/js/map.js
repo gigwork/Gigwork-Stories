@@ -252,6 +252,8 @@ map.on("load", function () {
         map.setPitch(followPitch);
     }
 
+
+
     map.addSource('lineSource', {
         "type": "geojson",
         "data": geojsonPoint
@@ -298,9 +300,12 @@ map.on("load", function () {
             var chapter = config.chapters.find(chap => chap.id === response.element.id);
             response.element.classList.add('active');
 
-            // map.flyTo(chapter.location);
             if (config.showMarkers) {
                 marker.setLngLat(chapter.location.center);
+            }
+
+            if(chapter.summaryzoom){
+                map.setZoom(chapter.summaryzoom);
             }
             if (chapter.onChapterEnter.length > 0) {
                 chapter.onChapterEnter.forEach(setLayerOpacity);

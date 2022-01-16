@@ -42,7 +42,7 @@ var config = {
         {
             id: 'drive-slide-0',
             title: '10:36AM Start of the day',
-            audio: './riders/audio/Jerome/1.m4a',
+            audio: '../../riders/audio/Jerome/1.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '0',
@@ -51,7 +51,7 @@ var config = {
         },
         {
             id: 'slide-1',
-            image: './riders/artwork/Jerome/jerome.png',
+            image: '../../riders/artwork/Jerome/jerome.png',
             location: {},
             earnings: '2.45',
             onChapterEnter: [],
@@ -60,7 +60,7 @@ var config = {
         {
             id: 'drive-slide-1',
             title: '11:33AM Four orders later',
-            audio: './riders/audio/Jerome/2.m4a',
+            audio: '../../riders/audio/Jerome/2.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '15.32',
@@ -70,7 +70,7 @@ var config = {
         {
             id: 'drive-slide-2',
             title: '',
-            image: './riders/artwork/Jerome/jerome2.png',
+            image: '../../riders/artwork/Jerome/jerome2.png',
             description: '',
             location: {},
             earnings: '19.75',
@@ -80,7 +80,7 @@ var config = {
         {
             id: 'drive-slide-3',
             title: '12:17PM Less than the minimum wage',
-            audio: './riders/audio/Jerome/3.m4a',
+            audio: '../../riders/audio/Jerome/3.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '22.86',
@@ -90,7 +90,7 @@ var config = {
         {
             id: 'drive-slide-4',
             title: '13:28AM A very quiet day',
-            audio: './riders/audio/Jerome/4.m4a',
+            audio: '../../riders/audio/Jerome/4.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '25.97',
@@ -100,7 +100,7 @@ var config = {
         {
             id: 'drive-slide-5',
             title: '13:30PM Its good to speak French',
-            audio: './riders/audio/Jerome/5.m4a',
+            audio: '../../riders/audio/Jerome/5.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '30.15',
             location: {},
@@ -112,7 +112,7 @@ var config = {
             id: 'slide-4',
             title: '14:01PM  A break to charge the batteries',
             description: 'Jerome signs off Uber Eats',
-            audio: './riders/audio/Jerome/6.m4a',
+            audio: '../../riders/audio/Jerome/6.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '30.15',
             location: {},
@@ -122,7 +122,7 @@ var config = {
         {
             id: 'slide-5',
             title: '18:04PM Back from the break',
-            audio: './riders/audio/Jerome/7.m4a',
+            audio: '../../riders/audio/Jerome/7.m4a',
             description: 'Jerome signs on Uber Eats',
             earnings: '30.15',
             location: {},
@@ -133,7 +133,7 @@ var config = {
         {
             id: 'drive-slide-6',
             title: '',
-            audio: './riders/audio/Jerome/8.m4a',
+            audio: '../../riders/audio/Jerome/8.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '12.21',
             location: {},
@@ -143,11 +143,13 @@ var config = {
         {
             id: 'drive-slide-7',
             title: '',
-            audio: './riders/audio/Jerome/5.m4a',
-            image: './riders/artwork/Jerome/jerome5.png',
+            audio: '../../riders/audio/Jerome/5.m4a',
+            image: '../../riders/artwork/Jerome/jerome5.png',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '19.21',
-            location: {},
+            location: {
+                zoom: 19.2,
+            },
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -159,8 +161,9 @@ var config = {
             earnings: '49.79',
             chart: {},
             description: '',
+            summaryzoom: 12,
             location: {
-                center: [-77.07567, 38.89583],
+                center: [-2.244644, 53.483959],
                 zoom: 15.23,
                 pitch: 60.00,
                 bearing: 43.61
