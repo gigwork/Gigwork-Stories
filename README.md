@@ -1,4 +1,4 @@
-## Stories on the storm
+## Gigwork.bike Stories
 
 ### Tech stack
 - Vanilla JS (For all things web)
