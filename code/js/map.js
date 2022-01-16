@@ -306,6 +306,8 @@ map.on("load", function () {
 
             if(chapter.summaryzoom){
                 map.setZoom(chapter.summaryzoom);
+            } else {
+                map.setZoom(followZoomLevel);
             }
             if (chapter.onChapterEnter.length > 0) {
                 chapter.onChapterEnter.forEach(setLayerOpacity);
