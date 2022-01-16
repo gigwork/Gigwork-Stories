@@ -343,7 +343,7 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("../../adeb.csv",
+d3.csv("../../riders/data/Jerome/adeb.csv",
     // When reading the csv, I must format variables:
     function (d) {
         return {
@@ -351,7 +351,7 @@ d3.csv("../../adeb.csv",
             value: d.ele
         }
     },
-
+    
     // Now I can use this dataset:
     function (data) {
         // Add X axis --> it is a date format
