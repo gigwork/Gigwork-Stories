@@ -1,4 +1,4 @@
-## Stories of riders of the storm
+## Stories on the storm
 
 ### Tech stack
 - Vanilla JS (For all things web)
