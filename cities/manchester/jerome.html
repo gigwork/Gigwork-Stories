@@ -10,7 +10,8 @@
 
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script> <!-- Mapbox -->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> <!-- Intersection Observer -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <!-- Intersection Observer -->
     <!-- UI Librarys -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-    
+
     <!-- Load map and story -->
     <div id="map"></div>
     <div id="story"></div>
@@ -35,6 +36,9 @@
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
     <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
     <script src="jerome-config.js"></script>
+    <script>
+        const user_path = "../../riders/data/Manchester/jerome.csv"
+    </script>
     <script src="../../code/js/drive.js"></script>
     <script src="../../code/js/map.js"></script>
     <script src="https://unpkg.com/peaks.js/dist/peaks.js"></script>
@@ -51,7 +55,6 @@
                 }
             });
         });
-
     </script>
 </body>
 
