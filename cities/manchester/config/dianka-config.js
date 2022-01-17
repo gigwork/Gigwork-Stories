@@ -54,27 +54,27 @@ var config = {
             id: 'slide-1',
             image: '../../riders/artwork/Dianka/Dianka.jpg',
             location: {},
-            earnings: '2.45',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-1',
-            title: '07:29:AM A glitch in the app',
+            title: '07:29: A glitch in the app',
             audio: '../../riders/audio/Dianka/2.m4a',
             description: '<a href="../../riders/transcript/dianka/dianka1.txt"> Read Transcript </a>',
             location: {},
-            earnings: '15.32',
+            earnings: '5.13',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-2',
-            title: '08:41:AM A fragile delivery and some merchanical problems',
+            title: '08:41: A fragile delivery and some merchanical problems',
             audio: '../../riders/audio/Dianka/3.m4a',
             description: '<a href="../../riders/transcript/dianka/dianka2.txt"> Read Transcript </a>',
             location: {},
-            earnings: '15.32',
+            earnings: '15.05 (£5 tip)',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -83,27 +83,27 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka2.jpg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '15.05',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-3',
-            title: '11:32AM A break, a hot shower and back at work',
+            title: '11:32: A break, a hot shower and back at work',
             audio: '../../riders/audio/Dianka/4.m4a',
             description: '<a href="../../riders/transcript/dianka/dianka3.txt"> Read Transcript </a>',
             location: {},
-            earnings: '22.86',
+            earnings: '18:64',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-4',
-            title: '13:00PM Busy Uber, quiet Deliveroo',
+            title: '13:00: Busy Uber, quiet Deliveroo',
             audio: '../../riders/audio/Dianka/5.m4a',
             description: '<a href="../../riders/transcript/dianka/dianka4.txt"> Read Transcript </a>',
             location: {},
-            earnings: '25.97',
+            earnings: '30.29',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -112,16 +112,16 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka3.jpg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '30.29',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-5',
-            title: '13:53PM Lunch break, games and bike fixing',
+            title: '13:53: Lunch break, games and bike fixing',
             audio: '../../riders/audio/Dianka/5.m4a',
             description: '<a href="../../riders/transcript/dianka/dianka5.txt"> Read Transcript </a>',
-            earnings: '30.15',
+            earnings: '36.51',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -130,61 +130,63 @@ var config = {
             id: 'slide-4',
             description: 'Dianka signs out of Deliveroo',
             location: {},
-            earnings: '19.75',
+            earnings: '36.51',
             onChapterEnter: [],
             onChapterExit: []
         },
         // BREAK
         {
+            id: 'slide-5',
+            description: 'Dianka signs in Deliveroo and Uber Eats',
+            location: {},
+            earnings: '36.51',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'drive-slide-6',
-            title: '19:01PM More hot showers, more clothes',
+            title: '19:01: More hot showers, more clothes',
             audio: '../../riders/audio/Dianka/6.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '30.15',
+            description: '<a href="../../riders/transcript/dianka/dianka6.txt"> Read Transcript </a>',
+            earnings: '36.51',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'drive-slide-7',
-            title: '18:04PM Back from the break',
-            audio: '../../riders/audio/Dianka/7.m4a',
-            description: 'Dianka signs on Uber Eats',
-            earnings: '30.15',
+            id: 'slide-6',
+            image: '../../riders/artwork/Dianka/Dianka4.jpg',
+            description: '',
             location: {},
+            earnings: '30.29',
             onChapterEnter: [],
             onChapterExit: []
         },
-        // END BREAK        
+        {
+            id: 'drive-slide-7',
+            title: '20:32: Six kilometres for an ice-cream',
+            audio: '../../riders/audio/Dianka/7.m4a',
+            description: '<a href="../../riders/transcript/dianka/dianka7.txt"> Read Transcript </a>',
+            earnings: '44',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },     
         {
             id: 'drive-slide-8',
-            title: '',
+            title: '21:15: A cold that wears you down',
             audio: '../../riders/audio/Dianka/8.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '12.21',
+            description: '<a href="../../riders/transcript/dianka/dianka8.txt"> Read Transcript </a>',
+            earnings: '47.48',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
-        },
-        {
-            id: 'drive-slide-7',
-            title: '',
-            audio: '../../riders/audio/Dianka/5.m4a',
-            image: '../../riders/artwork/Dianka/Dianka5.jpg',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '19.21',
-            location: {
-                zoom: 19.2,
-            },
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        
+        },        
         // CHARTS AND SUMMARY
         {
-            id: 'slide-2',
+            id: 'slide-6',
             title: '',
-            earnings: '49.79',
+            earnings: '47.48',
             chart: {},
             description: '',
             summaryzoom: 12,
