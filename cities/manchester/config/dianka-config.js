@@ -146,7 +146,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-5',
+            id: 'drive-slide-7',
             title: '18:04PM Back from the break',
             audio: '../../riders/audio/Dianka/7.m4a',
             description: 'Dianka signs on Uber Eats',
@@ -157,7 +157,7 @@ var config = {
         },
         // END BREAK        
         {
-            id: 'drive-slide-6',
+            id: 'drive-slide-8',
             title: '',
             audio: '../../riders/audio/Dianka/8.m4a',
             description: '<a href="#"> Read Transcript </a> ',
