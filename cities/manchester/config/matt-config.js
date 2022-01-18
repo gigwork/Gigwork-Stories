@@ -1,6 +1,6 @@
 // Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
-var driveSlides = 7;
+var driveSlides = 6;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -34,7 +34,7 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Matt',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio: </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo, Just Eat & Uber Eats </br> </br> <b>Bio:</b> In his spare time from being a stressed cabin manager for a flight company, Matt relaxes himself by doing deliveries for Deliveroo. At 41 and without family responsibilities, Matt has been driving his car to work for almost three years now, heading every weekend evening from a town nearby Manchester to the city centre. Once there, he gets on his fast racing bike for a few hours in the hope to earn enough money to cover his monthly utility bills. As someone who lived in the city centre for some years, he has been effortlessly navigating the empty streets during the pandemic. But his shifts as a food courier have not always been without incidents. On the cold January day in 2021 I followed him at work he’s had his patience challenged by an order for which he had to do two separate journeys to the same client without being paid accordingly. On other occasions, Matt recollects similar struggles he’s encountered as a gig worker, which range from finding a place to pee in a locked down city, to being sent by the not-so-smart app to restaurants which closed in the meantime or even almost getting attacked in a park by someone who wanted to steal his rather expensive bicycle.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="#">Rafeal</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -42,9 +42,9 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:36AM Start of the day',
+            title: '16:54: Chasing some bonuse',
             audio: '../../riders/audio/Matt/1.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt.txt"> Read Transcript </a>',
             location: {},
             earnings: '0',
             onChapterEnter: [],
@@ -54,112 +54,111 @@ var config = {
             id: 'slide-1',
             image: '../../riders/artwork/Matt/Matt.png',
             location: {},
-            earnings: '2.45',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-1',
-            title: '11:33AM Four orders later',
+            title: '17:31: Two journeys, paid only once',
             audio: '../../riders/audio/Matt/2.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt1.txt"> Read Transcript </a>',
             location: {},
-            earnings: '15.32',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-2',
-            title: '',
-            image: '../../riders/artwork/Matt/Matt2.png',
+            title: '17:40: Dealing 3 orders at a time',
+            audio: '../../riders/audio/Matt/3.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt2.txt"> Read Transcript </a>',
+            location: {},
+            earnings: '12.94',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-2',
+            image: '../../riders/artwork/Matt/Matt1.png',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '12.94',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-3',
-            title: '12:17PM Less than the minimum wage',
-            audio: '../../riders/audio/Matt/3.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
+            title: '17.53: Waiting for orders in the cold',
+            audio: '../../riders/audio/Matt/4.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt3.txt"> Read Transcript </a>',
             location: {},
-            earnings: '22.86',
+            earnings: '18.84',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-4',
-            title: '13:28AM A very quiet day',
-            audio: '../../riders/audio/Matt/4.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
+            title: '18:45: Being local, knowing the shortcuts',
+            audio: '../../riders/audio/Matt/5.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt4.txt"> Read Transcript </a>',
             location: {},
-            earnings: '25.97',
+            earnings: '33.41',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-3',
+            image: '../../riders/artwork/Matt/Matt2.png',
+            description: '',
+            location: {},
+            earnings: '33.41',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-5',
-            title: '13:30PM Its good to speak French',
+            title: '20:03: One minute? That’s bullshit!',
             audio: '../../riders/audio/Matt/5.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '30.15',
-            location: {},
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        // BREAK
-        {
-            id: 'slide-4',
-            title: '14:01PM  A break to charge the batteries',
-            description: 'Matt signs off Uber Eats',
-            audio: '../../riders/audio/Matt/6.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '30.15',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt5.txt"> Read Transcript </a>',
+            earnings: '33.41',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'slide-5',
-            title: '18:04PM Back from the break',
-            audio: '../../riders/audio/Matt/7.m4a',
-            description: 'Matt signs on Uber Eats',
-            earnings: '30.15',
+            id: 'slide-6',
+            image: '../../riders/artwork/Matt/Matt3.png',
+            description: '',
             location: {},
+            earnings: '65.28',
             onChapterEnter: [],
             onChapterExit: []
-        },
-        // END BREAK        
+        },     
         {
             id: 'drive-slide-6',
-            title: '',
-            audio: '../../riders/audio/Matt/8.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '12.21',
+            title: '20:39: Still coughing, I better stop',
+            audio: '../../riders/audio/Matt/6.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt6.txt"> Read Transcript </a>',
+            earnings: '61.37',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'drive-slide-7',
-            title: '',
-            audio: '../../riders/audio/Matt/5.m4a',
-            image: '../../riders/artwork/Matt/Matt5.png',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '19.21',
-            location: {
-                zoom: 19.2,
-            },
+            id: 'slide-7',
+            image: '../../riders/artwork/Matt/Matt4.png',
+            description: '',
+            location: {},
+            earnings: '65.28',
             onChapterEnter: [],
             onChapterExit: []
-        },
-        
+        },     
         // CHARTS AND SUMMARY
         {
-            id: 'slide-2',
+            id: 'slide-8',
             title: '',
-            earnings: '49.79',
+            earnings: '71.67',
             chart: {},
             description: '',
             summaryzoom: 12,

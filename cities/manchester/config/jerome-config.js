@@ -69,9 +69,9 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-2',
+            id: 'slide-2',
             title: '',
-            image: '../../riders/artwork/Jerome/jerome2.png',
+            image: '../../riders/artwork/Jerome/jerome1.png',
             description: '',
             location: {},
             earnings: '19.75',
