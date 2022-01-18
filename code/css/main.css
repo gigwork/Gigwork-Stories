@@ -201,11 +201,11 @@ footer {
     font-size: 9em;
     text-align: center;
 }
-@media screen and (max-height: 700px) {
+/* @media screen and (max-height: 700px) {
     #orangeblob{
         height: 27vh !important;
     }
-}
+} */
 @media screen and (max-width: 800px) {
     .heading {
         width: 92.5%;
