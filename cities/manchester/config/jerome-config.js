@@ -1,6 +1,6 @@
 // Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
-var driveSlides = 7;
+var driveSlides = 10;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -30,7 +30,7 @@ var config = {
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
     footer: 'Source: source citations, etc.',
-   // BEGIN CHAPTERS
+    // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
             title: 'Jérôme',
@@ -42,7 +42,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:36AM Start of the day',
+            title: '10:25: Start of the day',
             audio: '../../riders/audio/Jerome/1.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
@@ -60,11 +60,21 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '11:33AM Four orders later',
+            title: '11:33 Four orders later',
             audio: '../../riders/audio/Jerome/2.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '15.32',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-2',
+            title: '12:17: Less than the minimum wage',
+            audio: '../../riders/audio/Jerome/3.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            location: {},
+            earnings: '22.86',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -80,17 +90,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '12:17PM Less than the minimum wage',
-            audio: '../../riders/audio/Jerome/3.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            location: {},
-            earnings: '22.86',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'drive-slide-4',
-            title: '13:28AM A very quiet day',
+            title: '13:28: A very quiet day',
             audio: '../../riders/audio/Jerome/4.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
@@ -99,8 +99,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-5',
-            title: '13:30PM Its good to speak French',
+            id: 'drive-slide-4',
+            title: '13:30: Its good to speak French',
             audio: '../../riders/audio/Jerome/5.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '30.15',
@@ -108,23 +108,22 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        // BREAK
         {
-            id: 'slide-4',
-            title: '14:01PM  A break to charge the batteries',
-            description: 'Jerome signs off Uber Eats',
-            audio: '../../riders/audio/Jerome/6.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '30.15',
+            id: 'slide-3',
+            title: '',
+            image: '../../riders/artwork/Jerome/jerome2.png',
+            description: '',
             location: {},
+            earnings: '19.75',
             onChapterEnter: [],
             onChapterExit: []
         },
+        // BREAK
         {
-            id: 'slide-5',
-            title: '18:04PM Back from the break',
-            audio: '../../riders/audio/Jerome/7.m4a',
-            description: 'Jerome signs on Uber Eats',
+            id: 'drive-slide-5',
+            title: '14:01:  A break to charge the batteries',
+            audio: '../../riders/audio/Jerome/6.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
             earnings: '30.15',
             location: {},
             onChapterEnter: [],
@@ -133,31 +132,67 @@ var config = {
         // END BREAK        
         {
             id: 'drive-slide-6',
-            title: '',
-            audio: '../../riders/audio/Jerome/8.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '12.21',
+            title: '18:04: Back from the break',
+            audio: '../../riders/audio/Jerome/7.m4a',
+            earnings: '34.39',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'drive-slide-7',
+            id: 'slide-4',
             title: '',
-            audio: '../../riders/audio/Jerome/5.m4a',
-            image: '../../riders/artwork/Jerome/jerome5.png',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '19.21',
-            location: {
-                zoom: 19.2,
-            },
+            image: '../../riders/artwork/Jerome/jerome3.png',
+            description: '',
+            location: {},
+            earnings: '34.59',
             onChapterEnter: [],
             onChapterExit: []
         },
-        
+        {
+            id: 'drive-slide-7',
+            title: '18:42: Cancel order, move on',
+            audio: '../../riders/audio/Jerome/8.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '39.57',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-8',
+            title: '19:33: An order that takes me home ',
+            audio: '../../riders/audio/Jerome/9.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '46.82',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-5',
+            title: '',
+            image: '../../riders/artwork/Jerome/jerome4.png',
+            description: '',
+            location: {},
+            earnings: '46.82',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-9',
+            title: '20:20: End of the day',
+            audio: '../../riders/audio/Jerome/10.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '49.79',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+
         // CHARTS AND SUMMARY
         {
-            id: 'slide-2',
+            id: 'slide-6',
             title: '',
             earnings: '49.79',
             chart: {},
