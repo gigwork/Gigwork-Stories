@@ -29,30 +29,30 @@ var config = {
     title: 'Adeeb story',
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
-    footer: 'Source: source citations, etc.',
+    footer: '  <a href="../manchester.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
    // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
             title: 'Dianka',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Tuesday 11/02/2021 </br> <b>Platform:</b> Deliveroo & Uber Eats </br> </br> <b>Bio:</b> 31 years old Dianka is one of the few women doing food deliveries in Manchester. Originally from Czech Republic, which she left six years ago, Dianka has a bachelors’ degree in economics and management that wasn’t of much use once arrived in the UK. Instead, she’s been doing warehouse, cleaning and hospitality jobs for which she was often paid less than the minimum wage. While she initially started doing deliveries on an e-bike as a side job, it quickly became a full-time enterprise out of necessity. It was both the covid pandemic and a partner with medical problems who needed constant looking after which forced her into a more flexible job. As many other couriers, she’s ‘multiapping’, doing Deliveroo and Uber Eats at the same time in order to earn enough money. While the delivery money is good to cover for everyday expenses, being a woman comes at a hefty price as she receives unwarranted attention from men, who are often colleagues at work. As a result, she always carries a pepper spray, a ‘present’ she’s received from her partner’s sister. Outside work, she loves nature and spends as much time as she can in Drinkwater Park, north of Manchester.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="#">Rafeal</a> </h3>',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Tuesday 11/02/2021 </br> <b>Platform:</b> Deliveroo & Uber Eats </br> </br> <b>Bio:</b> In her early 30s, Dianka is one of the few women doing food deliveries in Manchester. Originally from an Eastern European country, which she left a few years ago, Dianka is well educated but couldn’t make use of her degree when she arrived in the UK. Instead, she’s been doing warehouse, cleaning and hospitality jobs for which she was often paid less than the minimum wage. While she initially started doing deliveries on an e-bike as a side job, it  quickly became a full-time enterprise out of necessity. It was both the Covid pandemic and family circumstances which forced her into a more flexible job. As many other couriers, she’s ‘multiapping’, doing Deliveroo and Uber Eats at the same time in order to earn enough money. While the delivery money is good to cover for everyday expenses, being a woman comes at a hefty price as she receives unwarranted attention from men, who are often colleagues  at work. As a result, she needs a pepper spray, a ‘present’ she’s received from a friend. Outside work, she loves nature and spends as much time as she can in one of the many parks in Manchester.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="#">Rafeal</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'drive-slide-0',
-            title: '06:59AM An early start',
-            audio: '../../riders/audio/Dianka/1.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/dianka/dianka.txt"> Read Transcript </a>',
+            id: 'slide-1',
+            image: '../../riders/artwork/Dianka/Dianka.jpg',
             location: {},
             earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'slide-1',
-            image: '../../riders/artwork/Dianka/Dianka.jpg',
+            id: 'drive-slide-0',
+            title: '06:59: An early start',
+            audio: '../../riders/audio/Dianka/1.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/dianka/dianka.txt"> Read Transcript </a>',
             location: {},
             earnings: '0',
             onChapterEnter: [],

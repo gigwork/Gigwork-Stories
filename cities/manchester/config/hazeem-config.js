@@ -29,7 +29,7 @@ var config = {
     title: 'Adeeb story',
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
-    footer: 'Source: source citations, etc.',
+    footer: '  <a href="../manchester.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
    // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
@@ -41,18 +41,18 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-0',
-            title: '16:26: At work with my dad',
-            audio: '../../riders/audio/Hazeem/1.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/Hazeem/Hazeem.txt"> Read Transcript </a>',
+            id: 'slide-1',
+            image: '../../riders/artwork/Hazeem/Hazeem.jpg',
             location: {},
             earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'slide-1',
-            image: '../../riders/artwork/Hazeem/Hazeem.jpg',
+            id: 'drive-slide-0',
+            title: '16:26: At work with my dad',
+            audio: '../../riders/audio/Hazeem/1.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Hazeem/Hazeem.txt"> Read Transcript </a>',
             location: {},
             earnings: '0',
             onChapterEnter: [],

@@ -29,7 +29,7 @@ var config = {
     title: 'Jérômes story',
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
-    footer: 'Source: source citations, etc.',
+    footer: '  <a href="../manchester.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
     // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
@@ -41,20 +41,20 @@ var config = {
             onChapterExit: []
         },
         {
+            id: 'slide-1',
+            image: '../../riders/artwork/Jerome/jerome.png',
+            location: {},
+            earnings: '2.45',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'drive-slide-0',
             title: '10:25: Start of the day',
             audio: '../../riders/audio/Jerome/1.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '0',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-1',
-            image: '../../riders/artwork/Jerome/jerome.png',
-            location: {},
-            earnings: '2.45',
             onChapterEnter: [],
             onChapterExit: []
         },

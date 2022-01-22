@@ -18,12 +18,29 @@ a {
     position: relative;
     z-index: 2;
 }
-
-.fv {
-    height: 100vh;
-    width: 100%;
+.up{
+    margin-top: -5%;
 }
 
+.fv {
+    height:90vh;
+    width: 100%;
+}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 5px;
+    transition: 0.2s;
+  }
+   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  } 
 .heading {
     position: fixed;
     left: 50%;
@@ -57,6 +74,12 @@ a {
     transform: scale(1.075);
 }
 
+.column:hover{
+    transform: scale(1.075);
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
 .fv_img1 {
     position: absolute;
     top: 0;
@@ -80,6 +103,10 @@ a {
 /* .img-size-1 {
     margin-left: 10%;
   } */
+
+  .rider name {
+    color: #ff5722 !important;
+  }
 
 .img-position-r {
     margin-left: auto;
@@ -357,7 +384,7 @@ a:visited {
 
 .dark {
     color: #fafafa;
-    background-color: #444;
+    background-color: black;
 }
 
 .step {
@@ -367,7 +394,7 @@ a:visited {
 }
 
 .step.active {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .step div {

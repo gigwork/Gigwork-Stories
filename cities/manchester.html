@@ -18,10 +18,8 @@
 
     <div class="heading">
         <a href="../index.html">
-            <h1> Gigwork.Bike</h1>
+            <h1> Doing Gig Work</h1>
         </a>
-        <a href="https://github.com/gigwork/gigwork_stories" target="_blank"><img
-                src="../img/GitHub-Mark-Light-64px.png" style="height: 6em;width:6em;" alt=""> </a>
     </div>
 
     <h1 id="citytitle"> MANCHESTER </h1>
@@ -30,23 +28,27 @@
 
         <div class="wrap wrap--1">
             <a href="manchester/jerome.html">
-                <div class="container container--1" style="background-color: #ff5722;">
-                    <p>Jérôme</p>
+                <div class="container container--1" style="background-image: url('../riders/artwork/Jerome/jerome1.png'); background-position: center;
+                background-size: contain ">
+                <p> Jérôme</p>
                 </div>
             </a>
         </div>
 
         <div class="wrap wrap--2">
             <a href="manchester/adeeb.html">
-                <div class="container container--2" style="background-color: #ff5722;">
-                    <p>Adeeb</p>
+                
+                <div class="container container--2"  style="background-image: url('../riders/artwork/Adeeb/8.jpg'); background-position: center;
+                background-size: contain" >
+                    <p >Adeeb</p>
                 </div>
             </a>
         </div>
 
         <div class="wrap wrap--3">
             <a href="manchester/dianka.html">
-                <div class="container container--3" style="background-color: #ff5722;">
+                <div class="container container--3"  style="background-image: url('../riders/artwork/Dianka/Dianka4.jpg');background-position: center;
+    background-size: contain; " >
                     <p>Dianka</p>
                 </div>
             </a>
@@ -54,7 +56,8 @@
 
         <div class="wrap wrap--4">
             <a href="manchester/hazeem.html">
-                <div class="container container--4" style="background-color: #ff5722;">
+                <div class="container container--4"  style="background-image: url('../riders/artwork/Hazeem/Hazeem.jpg'); background-position: center;
+                background-size: contain;" >
                     <p>Hazeem</p>
                 </div>
             </a>
@@ -62,7 +65,8 @@
 
         <div class="wrap wrap--5">
             <a href="manchester/matt.html">
-                <div class="container container--5" style="background-color: #ff5722;">
+                <div class="container container--5"  style="background-image: url('../riders/artwork/Matt/Matt2.png'); background-position: center;
+                background-size: contain;">
                     <p>Matt</p>
                 </div>
             </a>
@@ -77,9 +81,9 @@
                 <a href="cluj-napoca.html"> Cluj Napoca </a></p>
             <p>Artists : <a href="https://oanalohan.ultra-book.com/" target="blank">Oana Lohan</a> & <a
                     href="https://www.instagram.com/ionut_dulamita/" target="blank">Ionuț Dulămiță</a> & <a
-                    href="https://josesherwood.com/" target="blank">José Sherwood</a> & <a
+                    href="https://josesherwood.com/" target="blank">José Sherwood González</a> & <a
                     href="http://www.hyestudio.com/" target="blank">Alin Tămășan</a> </p>
-            <p>Researchers : <a href="riders/manchester.html"> Cosmin Popan </a> & <a href="riders/manchester.html">
+            <p>Researchers : <a href="https://cosminpopan.medium.com/"> Cosmin Popan </a> & <a href="https://cosminpopan.medium.com/">
                     Nathanael Sheehan </a></p>
         </div>
     </footer>
@@ -93,11 +97,8 @@
             box-sizing: border-box;
         }
 
-        html {
-            font-size: 62.5%;
-        }
-
-        h1 {
+ 
+        /* h1 {
             font-size: 3.2rem;
             padding-top: 2rem;
         }
@@ -105,7 +106,7 @@
         h1+p {
             font-size: 1.8rem;
             padding: 2rem 0 3rem;
-        }
+        } */
 
         .main {
             display: flex;
@@ -182,18 +183,10 @@
         .container--active {
             transition: none;
         }
-
-        .container--2 {
-            filter: hue-rotate(80deg) saturate(140%);
-        }
-
-        .container--3 {
-            filter: hue-rotate(160deg) saturate(140%);
-        }
-
         .container p {
-            color: hsla(0, 0%, 100%, .6);
-            font-size: 2.2rem;
+            color: #ff5722;
+            font-size: 2.8rem;
+            font-weight: 900;
         }
 
         .wrap:hover .container::before,

@@ -29,7 +29,7 @@ var config = {
     title: 'Matts story',
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
-    footer: 'Source: source citations, etc.',
+    footer: '  <a href="../manchester.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
    // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
@@ -41,18 +41,18 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-0',
-            title: '16:54: Chasing some bonuse',
-            audio: '../../riders/audio/Matt/1.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt.txt"> Read Transcript </a>',
+            id: 'slide-1',
+            image: '../../riders/artwork/Matt/Matt.png',
             location: {},
             earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'slide-1',
-            image: '../../riders/artwork/Matt/Matt.png',
+            id: 'drive-slide-0',
+            title: '16:54: Chasing some bonuse',
+            audio: '../../riders/audio/Matt/1.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Matt/Matt.txt"> Read Transcript </a>',
             location: {},
             earnings: '0',
             onChapterEnter: [],

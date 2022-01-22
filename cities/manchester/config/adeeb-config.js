@@ -29,7 +29,7 @@ var config = {
     title: 'Adeeb story',
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
-    footer: 'Source: source citations, etc.',
+    footer: '  <a href="../manchester.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
    // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
@@ -37,16 +37,6 @@ var config = {
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio: </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
             location: {},
             earnings: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'drive-slide-0',
-            title: '10:36AM Start of the day',
-            audio: '../../riders/audio/Jerome/1.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            location: {},
-            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -59,8 +49,18 @@ var config = {
             onChapterExit: []
         },
         {
+            id: 'drive-slide-0',
+            title: '10:36: Start of the day',
+            audio: '../../riders/audio/Jerome/1.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            location: {},
+            earnings: '0',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'drive-slide-1',
-            title: '11:33AM Four orders later',
+            title: '11:33: Four orders later',
             audio: '../../riders/audio/Jerome/2.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
@@ -80,7 +80,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '12:17PM Less than the minimum wage',
+            title: '12:17: Less than the minimum wage',
             audio: '../../riders/audio/Jerome/3.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
@@ -90,7 +90,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            title: '13:28AM A very quiet day',
+            title: '13:28: A very quiet day',
             audio: '../../riders/audio/Jerome/4.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
@@ -100,7 +100,7 @@ var config = {
         },
         {
             id: 'drive-slide-5',
-            title: '13:30PM Its good to speak French',
+            title: '13:30: Its good to speak French',
             audio: '../../riders/audio/Jerome/5.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '30.15',
@@ -111,7 +111,7 @@ var config = {
         // BREAK
         {
             id: 'slide-4',
-            title: '14:01PM  A break to charge the batteries',
+            title: '14:01:  A break to charge the batteries',
             description: 'Jerome signs off Uber Eats',
             audio: '../../riders/audio/Jerome/6.m4a',
             description: '<a href="#"> Read Transcript </a> ',
@@ -122,7 +122,7 @@ var config = {
         },
         {
             id: 'slide-5',
-            title: '18:04PM Back from the break',
+            title: '18:04: Back from the break',
             audio: '../../riders/audio/Jerome/7.m4a',
             description: 'Jerome signs on Uber Eats',
             earnings: '30.15',

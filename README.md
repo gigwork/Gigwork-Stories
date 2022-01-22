@@ -1,4 +1,4 @@
-## Gigwork.bike Stories
+## Doing Gig Work Stories
 Prototype: https://gigwork-d64b8.web.app/
 ### Tech stack
 - Vanilla JS (For all things web)
