@@ -1,6 +1,6 @@
 // Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
-var driveSlides = 7;
+var driveSlides =11;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -34,7 +34,7 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Adeeb',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b>Bio: </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Thursday 21/01/2021 </br> <b>Platform:</b> Deliveroo & Uber Eats </br> </br> <b>Bio: 28 years old Adeeb is riding an e-bike and ‘multiapping’ for both Deliveroo and Uber Eats: sometimes one is busier than the other, other times he can even deliver two orders at the same time for both platforms. The Pakistani migrant initially moved to London in 2012 to do an undergraduate degree in business studies. He dropped university when his father unexpectedly died, then moved to Manchester, got married and now has a 3-month-old son who often keeps him awake at night. After other few other jobs in supermarkets and hotels, he started doing deliveries in October 2019, a job that gives him more flexibility than the previous ones. He enrolled just before the pandemic, when there were fewer couriers, the pay was still good and using one single app was enough to earn a living. Despite putting in more hours for less money than a year ago and being the only breadwinner at home, Adeeb is hopeful that in one year he will have enough money to open a burger place, together with other Pakistani friends. In January 2021, I followed him at work in the cold rain in what he described as the worst day at work so far. </br> </br> <h3 style="text-align:center"> Art by <a href="#">Rafeal</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -42,7 +42,23 @@ var config = {
         },
         {
             id: 'slide-1',
-            image: '../../riders/artwork/Jerome/jerome.png',
+            image: '../../riders/artwork/Adeeb/1.jpg',
+            location: {},
+            earnings: '2.45',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-2',
+            image: '../../riders/artwork/Adeeb/2.jpg',
+            location: {},
+            earnings: '2.45',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-3',
+            image: '../../riders/artwork/Adeeb/3.jpg',
             location: {},
             earnings: '2.45',
             onChapterEnter: [],
@@ -50,8 +66,8 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:36: Start of the day',
-            audio: '../../riders/audio/Jerome/1.m4a',
+            title: '13:13: A slow start ',
+            audio: '../../riders/audio/Adeeb/1.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '0',
@@ -60,8 +76,8 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '11:33: Four orders later',
-            audio: '../../riders/audio/Jerome/2.m4a',
+            title: '13:42: Multiple orders, multiple apps',
+            audio: '../../riders/audio/Adeeb/2.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '15.32',
@@ -69,9 +85,27 @@ var config = {
             onChapterExit: []
         },
         {
+            id: 'slide-4',
+            image: '../../riders/artwork/Adeeb/4.jpg',
+            location: {},
+            earnings: '2.45',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'drive-slide-2',
+            title: '13:45: £20/hour, it’s very nice!',
+            audio: '../../riders/audio/Adeeb/3.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            location: {},
+            earnings: '22.86',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-5',
             title: '',
-            image: '../../riders/artwork/Jerome/jerome2.png',
+            image: '../../riders/artwork/Adeeb/5.jpg',
             description: '',
             location: {},
             earnings: '19.75',
@@ -80,18 +114,8 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '12:17: Less than the minimum wage',
-            audio: '../../riders/audio/Jerome/3.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            location: {},
-            earnings: '22.86',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'drive-slide-4',
-            title: '13:28: A very quiet day',
-            audio: '../../riders/audio/Jerome/4.m4a',
+            title: '16:26: Lunch break and video games',
+            audio: '../../riders/audio/Adeeb/4.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             location: {},
             earnings: '25.97',
@@ -99,32 +123,41 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-5',
-            title: '13:30: Its good to speak French',
-            audio: '../../riders/audio/Jerome/5.m4a',
+            id: 'drive-slide-4',
+            title: '16:57: It’s quiet, I feel like: Just go home',
+            audio: '../../riders/audio/Adeeb/5.m4a',
             description: '<a href="#"> Read Transcript </a> ',
             earnings: '30.15',
             location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-6',
+            title: '',
+            image: '../../riders/artwork/Adeeb/6.jpg',
+            description: '',
+            location: {},
+            earnings: '19.75',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-7',
+            title: '',
+            image: '../../riders/artwork/Adeeb/7.jpg',
+            description: '',
+            location: {},
+            earnings: '19.75',
             onChapterEnter: [],
             onChapterExit: []
         },
         // BREAK
         {
-            id: 'slide-4',
-            title: '14:01:  A break to charge the batteries',
-            description: 'Jerome signs off Uber Eats',
-            audio: '../../riders/audio/Jerome/6.m4a',
+            id: 'drive-slide-5',
+            title: '17:47: Meeting friends again. Or maybe not',
+            audio: '../../riders/audio/Adeeb/6.m4a',
             description: '<a href="#"> Read Transcript </a> ',
-            earnings: '30.15',
-            location: {},
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-5',
-            title: '18:04: Back from the break',
-            audio: '../../riders/audio/Jerome/7.m4a',
-            description: 'Jerome signs on Uber Eats',
             earnings: '30.15',
             location: {},
             onChapterEnter: [],
@@ -133,31 +166,87 @@ var config = {
         // END BREAK        
         {
             id: 'drive-slide-6',
-            title: '',
-            audio: '../../riders/audio/Jerome/8.m4a',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '12.21',
+            title: '18:06: My wife gets bored at home',
+            audio: '../../riders/audio/Adeeb/7.m4a',
+            earnings: '34.39',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'drive-slide-7',
+            id: 'slide-8',
             title: '',
-            audio: '../../riders/audio/Jerome/5.m4a',
-            image: '../../riders/artwork/Jerome/jerome5.png',
-            description: '<a href="#"> Read Transcript </a> ',
-            earnings: '19.21',
-            location: {
-                zoom: 19.2,
-            },
+            image: '../../riders/artwork/Adeeb/8.jpg',
+            description: '',
+            location: {},
+            earnings: '34.59',
             onChapterEnter: [],
             onChapterExit: []
         },
-        
+        {
+            id: 'drive-slide-7',
+            title: '18:14: More than 50 jobs rejected',
+            audio: '../../riders/audio/Adeeb/8.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '39.57',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-8',
+            title: '18:45: Waiting 10 minutes for the order',
+            audio: '../../riders/audio/Adeeb/9.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '46.82',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-9',
+            title: '',
+            image: '../../riders/artwork/Adeeb/9.jpg',
+            description: '',
+            location: {},
+            earnings: '46.82',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-9',
+            title: '19:09: Cold hands, wet feet',
+            audio: '../../riders/audio/Adeeb/10.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '49.79',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-10',
+            title: '20:16: The worst day ever',
+            audio: '../../riders/audio/Adeeb/11.m4a',
+            description: '<a href="#"> Read Transcript </a> ',
+            earnings: '49.79',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-10',
+            title: '',
+            image: '../../riders/artwork/Adeeb/10.jpg',
+            description: '',
+            location: {},
+            earnings: '46.82',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+
         // CHARTS AND SUMMARY
         {
-            id: 'slide-2',
+            id: 'slide-11',
             title: '',
             earnings: '49.79',
             chart: {},
