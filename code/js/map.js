@@ -28,24 +28,24 @@ function setLayerOpacity(layer) {
         map.setPaintProperty(layer.layer, prop, layer.opacity);
     });
 }
-(function (Peaks) {
-    const options = {
-        zoomview: {
-            container: document.getElementById('zoomview-container')
-        },
-        overview: {
-            container: document.getElementById('overview-container')
-        },
-        mediaElement: document.querySelector('audio'),
-        webAudio: {
-            audioContext: new AudioContext()
-        }
-    };
+// (function (Peaks) {
+//     const options = {
+//         zoomview: {
+//             container: document.getElementById('zoomview-container')
+//         },
+//         overview: {
+//             container: document.getElementById('overview-container')
+//         },
+//         mediaElement: document.querySelector('audio'),
+//         webAudio: {
+//             audioContext: new AudioContext()
+//         }
+//     };
 
-    Peaks.init(options, function (err, peaks) {
+//     Peaks.init(options, function (err, peaks) {
 
-    });
-})(peaks);
+//     });
+// })(peaks);
 
 
 // Create story elements
