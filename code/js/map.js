@@ -28,6 +28,24 @@ function setLayerOpacity(layer) {
         map.setPaintProperty(layer.layer, prop, layer.opacity);
     });
 }
+(function (Peaks) {
+    const options = {
+        zoomview: {
+            container: document.getElementById('zoomview-container')
+        },
+        overview: {
+            container: document.getElementById('overview-container')
+        },
+        mediaElement: document.querySelector('audio'),
+        webAudio: {
+            audioContext: new AudioContext()
+        }
+    };
+
+    Peaks.init(options, function (err, peaks) {
+
+    });
+})(peaks);
 
 
 // Create story elements
@@ -91,26 +109,24 @@ config.chapters.forEach((record, idx) => {
 
     if (record.audio) {
         var audio = document.createElement('audio');
-        audio.src = record.audio;
-        
-        audio.id = 'audio';
+        audio.src = record.audio
+        audio.id = 'audio-player';
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
 
-        // console.log(idx)
+        var zc = document.createElement('div')
+        zc.id = 'zoomview-container'
 
+        var oc = document.createElement('div')
+        oc.id = 'overview-container'
 
-        // var zc = document.createElement('div')
-        // zc.id = 'zoomview-container'
-
-        // var oc = document.createElement('div')
-        // oc.id = 'overview-container'
-
-        // chapter.appendChild(zc)
-        // chapter.appendChild(oc)
+        chapter.appendChild(zc)
+        chapter.appendChild(oc)
         chapter.appendChild(audio)
 
     }
+
+
 
     if (record.chart) {
         var chart = document.createElement('div')
@@ -129,33 +145,17 @@ config.chapters.forEach((record, idx) => {
         container.classList.add('active');
     }
 
+
     chapter.classList.add(config.theme);
     container.appendChild(chapter);
     features.appendChild(container);
+
+
 });
 
 
 // Add features to story
 story.appendChild(features);
-
-// (function(Peaks) {
-//     const options = {
-//       zoomview: {
-//         container: document.getElementById('zoomview-container')
-//       },
-//       overview: {
-//         container: document.getElementById('overview-container')
-//       },
-//       mediaElement: document.querySelector('audio'),
-//       webAudio: {
-//         audioContext: new AudioContext()
-//       }
-//     };
-  
-//     Peaks.init(options, function(err, peaks) {
-//       // Do something when the waveform is displayed and ready
-//     });
-//   })(peaks);
 
 var footer = document.createElement('div');
 
@@ -297,6 +297,7 @@ map.on("load", function () {
             progress: true
         })
         .onStepEnter(response => {
+ 
             var chapter = config.chapters.find(chap => chap.id === response.element.id);
             response.element.classList.add('active');
 
