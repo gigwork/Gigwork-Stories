@@ -44,7 +44,7 @@ var config = {
             id: 'slide-1',
             image: '../../riders/artwork/Adeeb/1.jpg',
             location: {},
-            earnings: '2.45',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -52,7 +52,7 @@ var config = {
             id: 'slide-2',
             image: '../../riders/artwork/Adeeb/2.jpg',
             location: {},
-            earnings: '2.45',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -60,7 +60,7 @@ var config = {
             id: 'slide-3',
             image: '../../riders/artwork/Adeeb/3.jpg',
             location: {},
-            earnings: '2.45',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -70,7 +70,7 @@ var config = {
             audio: '../../riders/audio/Adeeb/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
             location: {},
-            earnings: '0',
+            earnings: '3.06',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -80,7 +80,7 @@ var config = {
             audio: '../../riders/audio/Adeeb/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
             location: {},
-            earnings: '15.32',
+            earnings: '6.69',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -88,7 +88,7 @@ var config = {
             id: 'slide-4',
             image: '../../riders/artwork/Adeeb/4.jpg',
             location: {},
-            earnings: '2.45',
+            earnings: '6.69',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -98,7 +98,7 @@ var config = {
             audio: '../../riders/audio/Adeeb/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
             location: {},
-            earnings: '22.86',
+            earnings: '21.47',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -108,7 +108,7 @@ var config = {
             image: '../../riders/artwork/Adeeb/5.jpg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '21.47',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -118,7 +118,7 @@ var config = {
             audio: '../../riders/audio/Adeeb/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
             location: {},
-            earnings: '25.97',
+            earnings: '24.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -127,7 +127,7 @@ var config = {
             title: '16:57: It’s quiet, I feel like: Just go home',
             audio: '../../riders/audio/Adeeb/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
-            earnings: '30.15',
+            earnings: '24.94',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -138,7 +138,7 @@ var config = {
             image: '../../riders/artwork/Adeeb/6.jpg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '24.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -148,7 +148,7 @@ var config = {
             image: '../../riders/artwork/Adeeb/7.jpg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '24.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -158,7 +158,7 @@ var config = {
             title: '17:47: Meeting friends again. Or maybe not',
             audio: '../../riders/audio/Adeeb/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
-            earnings: '30.15',
+            earnings: '34.85',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -168,7 +168,7 @@ var config = {
             id: 'drive-slide-6',
             title: '18:06: My wife gets bored at home',
             audio: '../../riders/audio/Adeeb/7.m4a',
-            earnings: '34.39',
+            earnings: '38.03',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -179,7 +179,7 @@ var config = {
             image: '../../riders/artwork/Adeeb/8.jpg',
             description: '',
             location: {},
-            earnings: '34.59',
+            earnings: '38.03',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -188,7 +188,7 @@ var config = {
             title: '18:14: More than 50 jobs rejected',
             audio: '../../riders/audio/Adeeb/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
-            earnings: '39.57',
+            earnings: '38.03',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -218,7 +218,7 @@ var config = {
             title: '19:09: Cold hands, wet feet',
             audio: '../../riders/audio/Adeeb/10.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
-            earnings: '49.79',
+            earnings: '58.79',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -228,7 +228,7 @@ var config = {
             title: '20:16: The worst day ever',
             audio: '../../riders/audio/Adeeb/11.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
-            earnings: '49.79',
+            earnings: '61.07',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -239,7 +239,7 @@ var config = {
             image: '../../riders/artwork/Adeeb/10.jpg',
             description: '',
             location: {},
-            earnings: '46.82',
+            earnings: '61.07',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -248,7 +248,7 @@ var config = {
         {
             id: 'slide-11',
             title: '',
-            earnings: '49.79',
+            earnings: '61.07',
             chart: {},
             description: '',
             summaryzoom: 12,
