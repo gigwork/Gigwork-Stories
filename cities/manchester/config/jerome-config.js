@@ -44,7 +44,7 @@ var config = {
             id: 'slide-1',
             image: '../../riders/artwork/Jerome/jerome.png',
             location: {},
-            earnings: '2.45',
+            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -54,7 +54,7 @@ var config = {
             audio: '../../riders/audio/Jerome/1.m4a',
             description: '<a href="Jerome.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '0',
+            earnings: '2.45',
             onChapterEnter: [],
             onChapterExit: []
         },
