@@ -28,6 +28,7 @@ function setLayerOpacity(layer) {
         map.setPaintProperty(layer.layer, prop, layer.opacity);
     });
 }
+
 // (function (Peaks) {
 //     const options = {
 //         zoomview: {
@@ -48,9 +49,11 @@ function setLayerOpacity(layer) {
 // })(peaks);
 
 
+
 // Create story elements
 var story = document.getElementById('story');
 var features = document.createElement('div');
+
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
 
@@ -107,6 +110,8 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(story);
     }
 
+
+
     if (record.audio) {
         var audio = document.createElement('audio');
         audio.src = record.audio
@@ -114,19 +119,29 @@ config.chapters.forEach((record, idx) => {
         audio.controls = 'controls';
         audio.type = 'audio/mpeg';
 
-        var zc = document.createElement('div')
-        zc.id = 'zoomview-container'
+        // var zc = document.createElement('div')
+        // zc.id = 'zoomview-container'
 
-        var oc = document.createElement('div')
-        oc.id = 'overview-container'
+        // var oc = document.createElement('div')
+        // oc.id = 'overview-container'
 
-        chapter.appendChild(zc)
-        chapter.appendChild(oc)
+        // chapter.appendChild(zc)
+        // chapter.appendChild(oc)
         chapter.appendChild(audio)
 
+        // chapter.appendChild('<div id="wave1"></div>')
+        // var id=1;
+        
+
+        // var wavesurfer = WaveSurfer.create({
+        //     container: '#wave1',
+        //     waveColor: 'pink',
+        //     progressColor: 'green'
+        // });
+
+        // wavesurfer.load(record.audio)
+
     }
-
-
 
     if (record.chart) {
         var chart = document.createElement('div')
@@ -152,7 +167,6 @@ config.chapters.forEach((record, idx) => {
 
 
 });
-
 
 // Add features to story
 story.appendChild(features);
@@ -416,3 +430,44 @@ d3.csv(user_path,
             )
 
     })
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var els = document.querySelectorAll("audio");
+        for (var i = 0; i < els.length; i++) {
+            console.log(els[i].src);
+            let i_ = i;
+            let src_ = els[i].src;
+            let newNode = document.createElement("div")
+            newNode.innerHTML = '<div class="wave"></div>'
+            els[i_].parentNode.insertBefore(newNode, els[i_])
+            els[i].remove();
+            let wavesurfer = WaveSurfer.create({
+                container: document.getElementsByClassName("wave")[i_],
+                waveColor: '#909090',
+                progressColor: '#443e3c',
+                cursorColor: '#ffffff',
+                backend: 'MediaElement',
+                mediaControls: true,
+                hideScrollbar: true,
+                minPxPerSec: 120,
+                normalize: true,
+                height: 124,
+            });
+            wavesurfer.once('ready', function() {
+                console.log('Using wavesurfer.js ' + WaveSurfer.VERSION);
+            });
+            wavesurfer.on('error', function(e) {
+                console.warn(e);
+            });
+            wavesurfer.on('play', function(e) {
+                document.getElementsByClassName("playicon")[i_].style.display = "none";
+                document.getElementsByClassName("pauseicon")[i_].style.display = "block";
+            });
+            wavesurfer.on('pause', function(e) {
+                document.getElementsByClassName("playicon")[i_].style.display = "block";
+                document.getElementsByClassName("pauseicon")[i_].style.display = "none";
+            });
+        
+            wavesurfer.load(src_);
+        }
+    });
