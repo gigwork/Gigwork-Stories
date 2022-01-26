@@ -249,8 +249,7 @@ var config = {
             id: 'slide-11',
             title: '',
             earnings: '61.07',
-            chart: {},
-            description: '',
+            image: '../../riders/data/Manchester/Adeeb.jpg',
             summaryzoom: 12,
             location: {
                 center: [-2.244644, 53.483959],
