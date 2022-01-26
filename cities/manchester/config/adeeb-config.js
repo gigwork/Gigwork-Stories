@@ -243,7 +243,6 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-
         // CHARTS AND SUMMARY
         {
             id: 'slide-13',
