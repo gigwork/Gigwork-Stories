@@ -131,7 +131,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt3.png',
             description: '',
             location: {},
-            earnings: '65.28',
+            earnings: '45.28',
             onChapterEnter: [],
             onChapterExit: []
         },     
@@ -140,7 +140,7 @@ var config = {
             title: '20:39: Still coughing, I better stop',
             audio: '../../riders/audio/Matt/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/Matt6.txt"> Read Transcript </a>',
-            earnings: '61.37',
+            earnings: '45.28',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -150,7 +150,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt4.png',
             description: '',
             location: {},
-            earnings: '65.28',
+            earnings: '63.47',
             onChapterEnter: [],
             onChapterExit: []
         },     
@@ -158,8 +158,8 @@ var config = {
         {
             id: 'slide-8',
             title: '',
-            earnings: '71.67',
-            chart: {},
+            earnings: '63.47',
+            image: '../../riders/data/Manchester/Matt.jpg',
             description: '',
             summaryzoom: 12,
             location: {

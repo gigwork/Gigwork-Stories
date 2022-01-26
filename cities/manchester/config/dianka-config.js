@@ -179,7 +179,7 @@ var config = {
             id: 'slide-7',
             title: '',
             earnings: '47.48',
-            chart: {},
+            image: '../../riders/data/Manchester/Dianka.jpg',
             description: '',
             summaryzoom: 12,
             location: {

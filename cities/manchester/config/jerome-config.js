@@ -196,7 +196,7 @@ var config = {
             id: 'slide-6',
             title: '',
             earnings: '49.79',
-            chart: {},
+            image: '../../riders/data/Manchester/Jerome.jpg',
             description: '',
             summaryzoom: 12,
             location: {

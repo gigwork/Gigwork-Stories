@@ -179,7 +179,7 @@ var config = {
             id: 'slide-8',
             title: '',
             earnings: '71.67',
-            chart: {},
+            image: '../../riders/data/Manchester/Hazeem.jpg',
             description: '',
             summaryzoom: 12,
             location: {

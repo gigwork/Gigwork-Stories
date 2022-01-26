@@ -396,8 +396,10 @@ a:visited {
     opacity: 1;
 }
 
-.controlBar{
-    background-color: transparent !important;
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: #a0276e !important;
+  color: #a0276e;
 }
 
 .step div {
