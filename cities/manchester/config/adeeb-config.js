@@ -1,6 +1,6 @@
 // Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
-var driveSlides =11;
+var driveSlides =9;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -214,7 +214,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-9',
+            id: 'slide-10',
             title: '19:09: Cold hands, wet feet',
             audio: '../../riders/audio/Adeeb/10.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
@@ -224,7 +224,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-10',
+            id: 'slide-11',
             title: '20:16: The worst day ever',
             audio: '../../riders/audio/Adeeb/11.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb.txt""> Read Transcript </a> ',
@@ -234,7 +234,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-10',
+            id: 'slide-12',
             title: '',
             image: '../../riders/artwork/Adeeb/10.jpg',
             description: '',
@@ -246,7 +246,7 @@ var config = {
 
         // CHARTS AND SUMMARY
         {
-            id: 'slide-11',
+            id: 'slide-13',
             title: '',
             earnings: '61.07',
             image: '../../riders/data/Manchester/Adeeb.jpg',
