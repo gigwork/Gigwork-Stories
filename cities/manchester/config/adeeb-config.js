@@ -79,7 +79,7 @@ var config = {
         },
         {
             id: 'slide-3',
-            image: '../../riders/artwork/Adeeb/4.jpg',
+            image: '../../riders/artwork/Adeeb/4.JPG',
             location: {},
             earnings: '6.69',
             onChapterEnter: [],
@@ -128,7 +128,7 @@ var config = {
         {
             id: 'slide-5',
             title: '',
-            image: '../../riders/artwork/Adeeb/6.jpg',
+            image: '../../riders/artwork/Adeeb/6.JPG',
             description: '',
             location: {},
             earnings: '24.94',
@@ -170,7 +170,7 @@ var config = {
         {
             id: 'slide-7',
             title: '',
-            image: '../../riders/artwork/Adeeb/8.jpg',
+            image: '../../riders/artwork/Adeeb/8.JPG',
             description: '',
             location: {},
             earnings: '38.03',
