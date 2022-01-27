@@ -55,7 +55,7 @@ a {
 }
 
 .heading h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .heading a {
@@ -162,11 +162,6 @@ footer {
     transition: 0.2s;
 }
 
-#citybanner:hover {
-    padding-top: 10px;
-    padding-left: 10px;
-    transition: 0.2s;
-}
 
 #orangeblob {
     background-color: #ff5722;
