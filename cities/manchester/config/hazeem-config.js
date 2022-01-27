@@ -34,17 +34,10 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Hazeem',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo, Just Eat & Uber Eats </br> </br> <b></b> At 21, Hazeem’s first job in the UK, where he moved from Pakistan, is food courier for Just Eat and Uber Eats. He started on an e-bike, before upgrading to a motorbike to be faster but also because he was frustrated to see that motorised vehicles were prioritised for orders over cycles and e-bikes, without notice or explanation. Together with his dad, they run four accounts in total and sometimes, as is the case on this day, they work together with the car so they can be more efficient. Being motorised allows them to work more hours and ride more kilometres than cyclists, but it also means that they are most of the time pushed to travel far away from where they live in Manchester. The money they earn running four account helps them sustain their mother (who doesn’t speak English) and three other minor sisters, but Hazeem is concerned that another account suspension as the one described above is imminent: "Its happening with a lot of couriers these days, so you might be the next in the queue’.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            image: '../../riders/artwork/Hazeem/Hazeem.jpg',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo, Just Eat & Uber Eats </br> </br> <b></b> At 21, Hazeem’s first job in the UK, where he moved from Pakistan, is food courier for Just Eat and Uber Eats. He started on an e-bike, before upgrading to a motorbike to be faster but also because he was frustrated to see that motorised vehicles were prioritised for orders over cycles and e-bikes, without notice or explanation. Together with his dad, they run four accounts in total and sometimes, as is the case on this day, they work together with the car so they can be more efficient. Being motorised allows them to work more hours and ride more kilometres than cyclists, but it also means that they are most of the time pushed to travel far away from where they live in Manchester. The money they earn running four account helps them sustain their mother (who doesn’t speak English) and three other minor sisters, but Hazeem is concerned that another account suspension as the one described below is imminent: "It`s happening with a lot of couriers these days, so you might be the next in the queue’.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
             earnings: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-1',
-            image: '../../riders/artwork/Hazeem/Hazeem.jpg',
-            location: {},
-            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -79,7 +72,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-2',
+            id: 'slide-1',
             image: '../../riders/artwork/Hazeem/Hazeem1.jpg',
             description: '',
             location: {},
@@ -108,7 +101,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-3',
+            id: 'slide-2',
             image: '../../riders/artwork/Hazeem/Hazeem2.jpg',
             description: '',
             location: {},
@@ -118,8 +111,8 @@ var config = {
         },
         {
             id: 'drive-slide-5',
-            title: '18:48: A bit cold, but were in the car, it doesnt matter',
-            audio: '../../riders/audio/Hazeem/5.m4a',
+            title: '18:48: A bit cold, but we`re in the car, it doesn`t matter',
+            audio: '../../riders/audio/Hazeem/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem5.txt"> Read Transcript </a>',
             earnings: '33.41',
             location: {},
@@ -128,8 +121,8 @@ var config = {
         },
         {
             id: 'drive-slide-6',
-            title: '19:55: Out of Deliveroos reach',
-            audio: '../../riders/audio/Hazeem/6.m4a',
+            title: '19:55: Out of Deliveroo`s reach',
+            audio: '../../riders/audio/Hazeem/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem6.txt"> Read Transcript </a>',
             earnings: '61.37',
             location: {},
@@ -137,7 +130,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-6',
+            id: 'slide-3',
             image: '../../riders/artwork/Hazeem/Hazeem3.jpg',
             description: '',
             location: {},
@@ -148,7 +141,7 @@ var config = {
         {
             id: 'drive-slide-7',
             title: '20:52: It’s not that busy, so we’ll finish at 9',
-            audio: '../../riders/audio/Hazeem/7.m4a',
+            audio: '../../riders/audio/Hazeem/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem7.txt"> Read Transcript </a>',
             earnings: '65.28',
             location: {},
@@ -158,7 +151,7 @@ var config = {
         {
             id: 'drive-slide-8',
             title: '21:26: Five hours, £80',
-            audio: '../../riders/audio/Hazeem/8.m4a',
+            audio: '../../riders/audio/Hazeem/9.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem8.txt"> Read Transcript </a>',
             earnings: '71.67',
             location: {},
@@ -166,7 +159,7 @@ var config = {
             onChapterExit: []
         },        
         {
-            id: 'slide-7',
+            id: 'slide-4',
             image: '../../riders/artwork/Hazeem/hazeem4.jpg',
             description: '',
             location: {},
@@ -176,7 +169,7 @@ var config = {
         },
         // CHARTS AND SUMMARY
         {
-            id: 'slide-8',
+            id: 'slide-5',
             title: '',
             earnings: '71.67',
             image: '../../riders/data/Manchester/Hazeem.jpg',

@@ -34,17 +34,10 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Matt',
+            image: '../../riders/artwork/Matt/Matt.png',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo, Just Eat & Uber Eats </br> </br> <b></b> In his spare time from being a stressed cabin manager for a flight company, Matt relaxes himself by doing deliveries for Deliveroo. At 41 and without family responsibilities, Matt has been driving his car to work for almost three years now, heading every weekend evening from a town nearby Manchester to the city centre. Once there, he gets on his fast racing bike for a few hours in the hope to earn enough money to cover his monthly utility bills. As someone who lived in the city centre for some years, he has been effortlessly navigating the empty streets during the pandemic. But his shifts as a food courier have not always been without incidents. On the cold January day in 2021 I followed him at work he’s had his patience challenged by an order for which he had to do two separate journeys to the same client without being paid accordingly. On other occasions, Matt recollects similar struggles he’s encountered as a gig worker, which range from finding a place to pee in a locked down city, to being sent by the not-so-smart app to restaurants which closed in the meantime or even almost getting attacked in a park by someone who wanted to steal his rather expensive bicycle.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="http://www.hyestudio.com/">Alin Tămășan</a> </h3>',
             location: {},
             earnings: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-1',
-            image: '../../riders/artwork/Matt/Matt.png',
-            location: {},
-            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -79,7 +72,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-2',
+            id: 'slide-1',
             image: '../../riders/artwork/Matt/Matt1.png',
             description: '',
             location: {},
@@ -108,7 +101,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-3',
+            id: 'slide-2',
             image: '../../riders/artwork/Matt/Matt2.png',
             description: '',
             location: {},
@@ -127,7 +120,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-6',
+            id: 'slide-3',
             image: '../../riders/artwork/Matt/Matt3.png',
             description: '',
             location: {},
@@ -146,7 +139,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-7',
+            id: 'slide-4',
             image: '../../riders/artwork/Matt/Matt4.png',
             description: '',
             location: {},
@@ -156,7 +149,7 @@ var config = {
         },     
         // CHARTS AND SUMMARY
         {
-            id: 'slide-8',
+            id: 'slide-5',
             title: '',
             earnings: '63.47',
             image: '../../riders/data/Manchester/Matt.jpg',
