@@ -34,17 +34,10 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Jérôme',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 36, Jérôme is using an instantly recognisable e-bike with fat tyres to do deliveries for Uber Eats. Born in Congo, he lived for most of his life in Paris before moving to Manchester in 2019 as he was fed up with France and wanted to improve his English. Since his Parisian school cafeteria business was brought to a standstill during the pandemic, Jérôme is saving up money for another business idea, based on Uber’s model: an app for those who want their garden trimmed in an instant. His entrepreneurial dreams were recently punctured by a horrible episode at work, when a client accused him of rape. It took a whole month to prove his innocence, but the emotional scars are still there, as are the rent arrears resulting from Uber automatically suspending his account for this period. While he praises the platform for its innovative approach to work, Jérôme finds appalling the way it treats the workers: What they call partners its not actually partners, its fake employees. In this job, we are vulnerable in all aspects, at all levels. If I have an accident tomorrow, I am left without pay. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            image: '../../riders/artwork/Jerome/1.jpeg',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 36, Jérôme is using an instantly recognisable e-bike with fat tyres to do deliveries for Uber Eats. Born in Congo, he lived for most of his life in Paris before moving to Manchester in 2019 as he was fed up with France and wanted to improve his English. Since his Parisian school cafeteria business was brought to a standstill during the pandemic, Jérôme is saving up money for another business idea, based on Uber’s model: an app for those who want their garden trimmed in an instant. His entrepreneurial dreams were recently punctured by a horrible episode at work, when a client accused him of rape. It took a whole month to prove his innocence, but the emotional scars are still there, as are the rent arrears resulting from Uber automatically suspending his account for this period. While he praises the platform for it`s innovative approach to work, Jérôme finds appalling the way it treats the workers: What they call partners it`s not actually partners, it`s fake employees. In this job, we are vulnerable in all aspects, at all levels. If I have an accident tomorrow, "I am left without pay". </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
             earnings: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-1',
-            image: '../../riders/artwork/Jerome/jerome.png',
-            location: {},
-            earnings: '0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -69,22 +62,22 @@ var config = {
             onChapterExit: []
         },
         {
+            id: 'slide-2',
+            title: '',
+            image: '../../riders/artwork/Jerome/jerome1.png',
+            description: '',
+            location: {},
+            earnings: '15.32',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: 'drive-slide-2',
             title: '12:17: Less than the minimum wage',
             audio: '../../riders/audio/Jerome/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Jerome/Jerome2.txt"> Read Transcript </a> ',
             location: {},
             earnings: '22.86',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-2',
-            title: '',
-            image: '../../riders/artwork/Jerome/jerome1.png',
-            description: '',
-            location: {},
-            earnings: '19.75',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -99,22 +92,22 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-4',
-            title: '13:30: Its good to speak French',
-            audio: '../../riders/audio/Jerome/5.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/Jerome/Jerome4.txt"> Read Transcript </a> ',
-            earnings: '30.15',
-            location: {},
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
             id: 'slide-3',
             title: '',
             image: '../../riders/artwork/Jerome/jerome2.png',
             description: '',
             location: {},
             earnings: '19.75',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-4',
+            title: '13:30: Its good to speak French',
+            audio: '../../riders/audio/Jerome/5.m4a',
+            description: '<a target="_blank" href="../../riders/transcript/Jerome/Jerome4.txt"> Read Transcript </a> ',
+            earnings: '30.15',
+            location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -143,7 +136,7 @@ var config = {
         {
             id: 'slide-4',
             title: '',
-            image: '../../riders/artwork/Jerome/jerome3.png',
+            image: '../../riders/artwork/Jerome/jerome4.png',
             description: '',
             location: {},
             earnings: '34.59',
@@ -173,7 +166,7 @@ var config = {
         {
             id: 'slide-5',
             title: '',
-            image: '../../riders/artwork/Jerome/jerome4.png',
+            image: '../../riders/artwork/Jerome/jerome5.png',
             description: '',
             location: {},
             earnings: '46.82',
