@@ -34,6 +34,7 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Adeeb',
+            image: '../../riders/artwork/Adeeb/1.jpg',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Thursday 21/01/2021 </br> <b>Platform:</b> Deliveroo & Uber Eats </br> </br> <b> 28 years old Adeeb is riding an e-bike and ‘multiapping’ for both Deliveroo and Uber Eats: sometimes one is busier than the other, other times he can even deliver two orders at the same time for both platforms. The Pakistani migrant initially moved to London in 2012 to do an undergraduate degree in business studies. He dropped university when his father unexpectedly died, then moved to Manchester, got married and now has a 3-month-old son who often keeps him awake at night. After other few other jobs in supermarkets and hotels, he started doing deliveries in October 2019, a job that gives him more flexibility than the previous ones. He enrolled just before the pandemic, when there were fewer couriers, the pay was still good and using one single app was enough to earn a living. Despite putting in more hours for less money than a year ago and being the only breadwinner at home, Adeeb is hopeful that in one year he will have enough money to open a burger place, together with other Pakistani friends. In January 2021, I followed him at work in the cold rain in what he described as the worst day at work so far. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://www.instagram.com/ionut_dulamita/"">Ionuț Dulămiță</a> </h3>',
             location: {},
             earnings: '',
@@ -42,14 +43,6 @@ var config = {
         },
         {
             id: 'slide-1',
-            image: '../../riders/artwork/Adeeb/1.jpg',
-            location: {},
-            earnings: '0',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'slide-2',
             image: '../../riders/artwork/Adeeb/2.jpg',
             location: {},
             earnings: '0',
@@ -57,7 +50,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-3',
+            id: 'slide-2',
             image: '../../riders/artwork/Adeeb/3.jpg',
             location: {},
             earnings: '0',
@@ -85,7 +78,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-4',
+            id: 'slide-3',
             image: '../../riders/artwork/Adeeb/4.jpg',
             location: {},
             earnings: '6.69',
@@ -103,7 +96,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-5',
+            id: 'slide-4',
             title: '',
             image: '../../riders/artwork/Adeeb/5.jpg',
             description: '',
@@ -133,7 +126,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-6',
+            id: 'slide-5',
             title: '',
             image: '../../riders/artwork/Adeeb/6.jpg',
             description: '',
@@ -143,7 +136,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-7',
+            id: 'slide-6',
             title: '',
             image: '../../riders/artwork/Adeeb/7.jpg',
             description: '',
@@ -175,7 +168,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-8',
+            id: 'slide-7',
             title: '',
             image: '../../riders/artwork/Adeeb/8.jpg',
             description: '',
@@ -205,7 +198,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-9',
+            id: 'slide-8',
             title: '',
             image: '../../riders/artwork/Adeeb/9.jpg',
             description: '',
@@ -235,7 +228,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-12',
+            id: 'slide-9',
             title: '',
             image: '../../riders/artwork/Adeeb/10.jpg',
             description: '',
@@ -246,7 +239,7 @@ var config = {
         },
         // CHARTS AND SUMMARY
         {
-            id: 'slide-13',
+            id: 'slide-10',
             title: '',
             earnings: '61.07',
             image: '../../riders/data/Manchester/Adeeb.jpg',
