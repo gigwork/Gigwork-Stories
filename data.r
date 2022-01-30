@@ -26,7 +26,14 @@ if (any(installed_pkgs == FALSE)) {
 invisible(lapply(pkgs, library, character.only = TRUE))
 rm(installed_pkgs, pkgs)
 
-
+###########################################################################
+###########################################################################
+###                                                                     ###
+###                              FUNCTIONS                              ###
+###                                                                     ###
+###########################################################################
+###########################################################################
+# FUNCTION 1. GENERATE CUSTOM GGPLOT2 THEME ----------------------------------------
 dark_theme = function() {
   theme(
     # add border 1)
@@ -64,21 +71,14 @@ dark_theme = function() {
     legend.position = "bottom"
   )
 }
-###########################################################################
-###########################################################################
-###                                                                     ###
-###                              FUNCTIONS                              ###
-###                                                                     ###
-###########################################################################
-###########################################################################
-# FUNCTION 1. GENERATE RIDER GEOJSON ----------------------------------------
+# FUNCTION 2. GENERATE RIDER GEOJSON ----------------------------------------
 gen_rider_route = function(rider_gpx) {
   # READ DATA FOR ROUTE DATASET
   route = st_read(rider_gpx, layer = "tracks") %>% select(geometry)
   #CONVERT DATA INTO LINESTRING
   route = st_as_sf(route) %>% st_cast("LINESTRING")
 }
-# FUNCTION 2. GENERATE RIDER ROUTE DATA
+# FUNCTION 3. GENERATE RIDER ROUTE DATA
 gen_rider_data = function(rider_gpx,
                           work_day,
                           start_time,
