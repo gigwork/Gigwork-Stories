@@ -1,4 +1,4 @@
-var driveSlides = 12; // number of slides
+var driveSlides = 11; // number of slides
 var driveSmoothness = 200; // smoothness of scroll 
 var driveTime = driveSlides * driveSmoothness; // time it takes to drive
 var followPoint = true; // BOOL to follow point
