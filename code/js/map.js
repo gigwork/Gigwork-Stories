@@ -434,7 +434,6 @@ d3.csv(user_path,
     document.addEventListener('DOMContentLoaded', function() {
         var els = document.querySelectorAll("audio");
         for (var i = 0; i < els.length; i++) {
-            console.log(els[i].src);
             let i_ = i;
             let src_ = els[i].src;
             let newNode = document.createElement("div")
@@ -452,9 +451,6 @@ d3.csv(user_path,
                 minPxPerSec: 120,
                 normalize: true,
                 height: 124,
-            });
-            wavesurfer.once('ready', function() {
-                console.log('Using wavesurfer.js ' + WaveSurfer.VERSION);
             });
             wavesurfer.on('error', function(e) {
                 console.warn(e);
