@@ -60,7 +60,6 @@ function createLine() {
             map.getSource('lineSource').setData(geojsonPoint);
         }
     }
-
 }
 // FUNCTION: Arguments: index; controls spatial centring on map based on route index
 function changeCenter(index) {
