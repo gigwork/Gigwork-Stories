@@ -66,7 +66,6 @@ function changeCenter(index) {
 
     // Set center to a subsample of the line, say every 10th or 25th
     let subsampleIndex = 100;
-
     let currentJson = geojsonPoint.features[0].geometry.coordinates.slice(0,index);
     let center = geojsonPoint.features[0].geometry.coordinates[index];
     let centerX = center[0];
