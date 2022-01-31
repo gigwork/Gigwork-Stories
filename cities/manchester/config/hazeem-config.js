@@ -174,13 +174,7 @@ var config = {
             earnings: '71.67',
             image: '../../riders/data/Manchester/Hazeem.jpg',
             description: '',
-            summaryzoom: 12,
-            location: {
-                center: [-2.244644, 53.483959],
-                zoom: 15.23,
-                pitch: 60.00,
-                bearing: 43.61
-            },
+            summaryzoom: 10,
             onChapterEnter: [],
             onChapterExit: []
         }

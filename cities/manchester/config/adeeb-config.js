@@ -1,6 +1,6 @@
 // Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
-var driveSlides =9;
+var driveSlides =11;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
