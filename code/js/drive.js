@@ -93,8 +93,6 @@ function changeCenter(index) {
         map.jumpTo({
   	        center: [centerX, centerY]
   	    });
-
-
       }
     }
 }
