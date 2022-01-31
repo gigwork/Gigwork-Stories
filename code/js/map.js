@@ -131,7 +131,7 @@ config.chapters.forEach((record, idx) => {
 
         // chapter.appendChild('<div id="wave1"></div>')
         // var id=1;
-        
+
 
         // var wavesurfer = WaveSurfer.create({
         //     container: '#wave1',
@@ -311,7 +311,7 @@ map.on("load", function () {
             progress: true
         })
         .onStepEnter(response => {
- 
+
             var chapter = config.chapters.find(chap => chap.id === response.element.id);
             response.element.classList.add('active');
 
@@ -319,7 +319,7 @@ map.on("load", function () {
                 marker.setLngLat(chapter.location.center);
             }
 
-            if(chapter.summaryzoom){
+            if (chapter.summaryzoom) {
                 map.setZoom(chapter.summaryzoom);
             } else {
                 map.setZoom(followZoomLevel);
@@ -343,127 +343,40 @@ map.on("load", function () {
 // setup resize event
 window.addEventListener('resize', scroller.resize);
 
+// Waveform
+document.addEventListener('DOMContentLoaded', function () {
+    var els = document.querySelectorAll("audio");
+    for (var i = 0; i < els.length; i++) {
+        let i_ = i;
+        let src_ = els[i].src;
+        let newNode = document.createElement("div")
+        newNode.innerHTML = '<div class="wave"></div>'
+        els[i_].parentNode.insertBefore(newNode, els[i_])
+        els[i].remove();
+        let wavesurfer = WaveSurfer.create({
+            container: document.getElementsByClassName("wave")[i_],
+            waveColor: '#909090',
+            progressColor: '#443e3c',
+            cursorColor: '#ffffff',
+            backend: 'MediaElement',
+            mediaControls: true,
+            hideScrollbar: true,
+            minPxPerSec: 120,
+            normalize: true,
+            height: 124,
+        });
+        wavesurfer.on('error', function (e) {
+            console.warn(e);
+        });
+        wavesurfer.on('play', function (e) {
+            document.getElementsByClassName("playicon")[i_].style.display = "none";
+            document.getElementsByClassName("pauseicon")[i_].style.display = "block";
+        });
+        wavesurfer.on('pause', function (e) {
+            document.getElementsByClassName("playicon")[i_].style.display = "block";
+            document.getElementsByClassName("pauseicon")[i_].style.display = "none";
+        });
 
-// D3 GRAPH 
-
-/// set the dimensions and margins of the graph
-var margin = {
-        top: 10,
-        right: 30,
-        bottom: 30,
-        left: 60
-    },
-    width = 460 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
-    .append("svg")
-    .attr("viewBox", '0 0 300 600')
-    .append("g")
-    .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
-
-//Read the data
-d3.csv(user_path,
-    // When reading the csv, I must format variables:
-    function (d) {
-        return {
-            date: d.dist_total,
-            value: d.ele
-        }
-    },
-    
-    // Now I can use this dataset:
-    function (data) {
-        // Add X axis --> it is a date format
-        var x = d3.scaleLinear()
-            .domain([0, d3.max(data, function (d) {
-                return +d.date;
-            })])
-            .range([0, width]);
-        svg.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(x));
-
-        // Add Y axis
-        var y = d3.scaleLinear()
-            .domain([0, d3.max(data, function (d) {
-                return +d.value;
-            })])
-            .range([height, 0]);
-        svg.append("g")
-            .call(d3.axisLeft(y));
-
-        svg.append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 0 - margin.left)
-            .attr("x", 0 - (height / 2))
-            .attr("dy", "1em")
-            .attr("font-family", " Rajdhani', sans-serif")
-            .style("text-anchor", "middle")
-            .style("font-size", "24px")
-            .text("Elevation");
-
-        svg.append("text")
-            .attr("transform",
-                "translate(" + (width / 2) + " ," +
-                (height + margin.top + 20) + ")")
-            .style("text-anchor", "middle")
-            .attr("font-family", " Rajdhani', sans-serif")
-            .style("font-size", "24px")
-            .text("Total KM");
-
-        // Add the line
-        svg.append("path")
-            .datum(data)
-            .attr("fill", "none")
-            .attr("stroke", "steelblue")
-            .attr("stroke-width", 1.5)
-            .attr("d", d3.line()
-                .x(function (d) {
-                    return x(d.date)
-                })
-                .y(function (d) {
-                    return y(d.value)
-                })
-            )
-
-    })
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var els = document.querySelectorAll("audio");
-        for (var i = 0; i < els.length; i++) {
-            let i_ = i;
-            let src_ = els[i].src;
-            let newNode = document.createElement("div")
-            newNode.innerHTML = '<div class="wave"></div>'
-            els[i_].parentNode.insertBefore(newNode, els[i_])
-            els[i].remove();
-            let wavesurfer = WaveSurfer.create({
-                container: document.getElementsByClassName("wave")[i_],
-                waveColor: '#909090',
-                progressColor: '#443e3c',
-                cursorColor: '#ffffff',
-                backend: 'MediaElement',
-                mediaControls: true,
-                hideScrollbar: true,
-                minPxPerSec: 120,
-                normalize: true,
-                height: 124,
-            });
-            wavesurfer.on('error', function(e) {
-                console.warn(e);
-            });
-            wavesurfer.on('play', function(e) {
-                document.getElementsByClassName("playicon")[i_].style.display = "none";
-                document.getElementsByClassName("pauseicon")[i_].style.display = "block";
-            });
-            wavesurfer.on('pause', function(e) {
-                document.getElementsByClassName("playicon")[i_].style.display = "block";
-                document.getElementsByClassName("pauseicon")[i_].style.display = "none";
-            });
-        
-            wavesurfer.load(src_);
-        }
-    });
+        wavesurfer.load(src_);
+    }
+});
