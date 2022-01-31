@@ -1,4 +1,4 @@
-var driveSlides = 11; // number of slides
+var driveSlides = 10; // number of slides
 var driveSmoothness = 200; // smoothness of scroll 
 var driveTime = driveSlides * driveSmoothness; // time it takes to drive
 var followPoint = true; // BOOL to follow point
@@ -206,7 +206,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-10',
+            id: 'slide-9',
             title: '20:16: The worst day ever',
             audio: '../../riders/audio/Adeeb/11.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adeeb/Adeeb10.txt""> Read Transcript </a> ',
@@ -216,7 +216,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-9',
+            id: 'slide-10',
             title: '',
             image: '../../riders/artwork/Adeeb/10.jpg',
             description: '',
@@ -231,7 +231,7 @@ var config = {
             title: '',
             earnings: '61.07',
             image: '../../riders/data/Manchester/Adeeb.jpg',
-            summaryzoom: 12,
+            summaryzoom: 10,
             location: {
                 center: [-2.244644, 53.483959],
                 zoom: 15.23,
