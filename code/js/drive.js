@@ -80,6 +80,7 @@ function changeCenter(index) {
             }
         }]
     };
+    
     let movingPoint = turf.point([centerX, centerY]);
     map.getSource('lineSource').setData(movingLine);
     map.getSource('pointSource').setData(movingPoint);
