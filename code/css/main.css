@@ -391,11 +391,7 @@ a:visited {
     opacity: 1;
 }
 
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-panel {
-  background-color: #a0276e !important;
-  color: #a0276e;
-}
+
 
 .step div {
     padding: 25px 25px;

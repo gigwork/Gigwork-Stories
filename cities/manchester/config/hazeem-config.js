@@ -160,7 +160,7 @@ var config = {
         },        
         {
             id: 'slide-4',
-            image: '../../riders/artwork/Hazeem/hazeem4.jpg',
+            image: '../../riders/artwork/Hazeem/Hazeem4.jpg',
             description: '',
             location: {},
             earnings: '65.28',
