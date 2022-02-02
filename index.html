@@ -14,6 +14,111 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
         rel="stylesheet">
     <!-- Internal css styling -->
+    <style>
+          *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap {
+            margin: 2rem;
+
+            transform-style: preserve-3d;
+            transform: perspective(100rem);
+
+            cursor: pointer;
+        }
+
+        .container {
+            --rX: 0;
+            --rY: 0;
+            --bX: 50%;
+            --bY: 80%;
+
+            width: 30rem;
+            height: 36rem;
+            border: 1px solid var(--background-color);
+            border-radius: 1.6rem;
+            padding: 4rem;
+
+            display: flex;
+            align-items: flex-end;
+
+            position: relative;
+            transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+            background-position: var(--bX) var(--bY);
+            background-size: 40rem auto;
+            box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+            transition: transform .6s 1s;
+        }
+
+        .container::before,
+        .container::after {
+            content: "";
+
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid #fff;
+
+            position: absolute;
+            z-index: 2;
+
+            opacity: .3;
+            transition: .3s;
+        }
+
+        .container::before {
+            top: 2rem;
+            right: 2rem;
+
+            border-bottom-width: 0;
+            border-left-width: 0;
+        }
+
+        .container::after {
+            bottom: 2rem;
+            left: 2rem;
+
+            border-top-width: 0;
+            border-right-width: 0;
+        }
+
+        .container--active {
+            transition: none;
+        }
+
+        .container p {
+            color: #ff5722;
+            font-size: 2.8rem;
+            font-weight: 900;
+        }
+
+        .wrap:hover .container::before,
+        .wrap:hover .container::after {
+            width: calc(100% - 4rem);
+            height: calc(100% - 4rem);
+        }
+
+        .abs-site-link {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            color: hsla(0, 0%, 0%, .6);
+            font-size: 1.6rem;
+        }
+    </style>
     <link href="./code/css/main.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
@@ -22,8 +127,6 @@
     <a href="index.html">
         <h1> Gig Work</h1>
     </a>
-    <!-- <a href="https://github.com/gigwork/gigwork_stories" target="_blank"><img src="img/GitHub-Mark-Light-64px.png"
-            style="height: 6em;width:6em;" alt=""> </a> -->
 </div>
 
 <div id="container" class="up">
@@ -33,21 +136,22 @@
     </section>
 </div>
 
-<!-- <img class="ukiyo img-size-full" src="MOSHED-2021-12-14-22-49-4 (1).gif" data-u-speed="1.5"  style="object-fit: contain !important;">
-     -->
 <section class="content">
-    <!-- option +speed -->
-
-    <!-- <h2 style="text-align: center;font-size: 6em;"> Riders on the storm</h2> -->
 <container>
-    <h1 class="ml11" style="text-align: center;">
+    <h1 class="ml11" style="text-align: center;margin-top: 0.5em;">
         <span class="text-wrapper">
           <span class="line line1"></span>
           <span class="letters">Platform Work Stories</span>
         </span>
       </h1>
 
-    <div style="margin:auto;width:60%;border:5px solid black;padding:10px">
+    <div style="margin: auto;
+    width: 60%;
+    border: 5px dashed white;
+    padding: 10px;
+    margin-top: 2em;
+    height: 100%;
+    margin-bottom: 4em;">
         <h3 style="text-align: left;">The work in the gig economy is characterised by opacity and alienation,
             digital platforms effectively hiding from view the intensive human labour that
             enables our daily instant gratifications. For platform food couriers, this
@@ -60,39 +164,31 @@
             flexibility, independence and entrepreneurship surrounding gig work. This
             platform is part of the research project <a href="https://mmuperu.co.uk/blog/projects/doing-gig-work-social-implications-of-platform-based-food-deliveries/">Doing Gig Work</a>, which studies
             the management, solidarity and resistance of platform food couriers in
-            Manchester (UK), Cluj-Napoca (Romania) and Lyon (France). </h3> </br> </br>
+            Manchester (UK), Cluj-Napoca (Romania) and Lyon (France). </h3> 
     </div>
 
     <div id="ppbanner">
 
         <h1 style="text-align: center;color: white;;"> Project Partners </h1>
 
-        <div class="row">
-            <div class="column">
-              <a href="https://www.leverhulme.ac.uk/"><img src="img/Leverhulme_Trust.png" alt="Leverhulme Trust" style="height: 12vh;width: 22vw;"></a>
-            </div>
-            <div class="column">
-                <a href="https://www.mmu.ac.uk/"><img src="img/mmu.svg" alt="Manchester Metrapolitan University" style="height: 22vh;width: 22vw;margin-top: -5%;"></a>
-            </div>
-          </div> 
+<div style="margin-top: 2em;">
+    <div class="row">
+        <div class="column">
+          <a href="https://www.leverhulme.ac.uk/"><img src="img/Leverhulme_Trust.png" alt="Leverhulme Trust" style="height: 10vh;width: 20vw;"></a>
+        </div>
+        <div class="column">
+            <a href="https://www.mmu.ac.uk/"><img src="img/mmu.svg" alt="Manchester Metrapolitan University" style="height: 20vh;width: 20vw;margin-top: -5%;"></a>
+        </div>
+      </div> 
+</div>
     
     </div>
 
 </container>
  
-</section>
-<!-- <section>
-    <container>
-
-        <div id="orangeblob">
-          
-        </div>
-    </container>   
-    </section> -->
-
-  
+</section>  
 <section id="cities">
-    <h1 style="font-size: 4em;" id="citybanner">The stories </br>in our cities</h1>
+    <h1 style="font-size: 4em;margin-top: 1em;" id="citybanner">The stories </br>in our cities</br>↓</h1>
     <a href="cities/manchester.html"> <h1 id="city"> Manchester <br> <b style="font-size: 0.6em;color: white;">53°28'51.42" N -2°14'14.75" W</b> </h1></a>
     <a href="cities/manchester.html">
         <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="img/manny.png">
@@ -108,7 +204,74 @@
         <img class="ukiyo img-size-2 img-position-l" data-u-speed="1.3" src="img/lyon.png">
     </a>
 </section>
- 
+
+<h1 style="font-size: 4em;text-align: center;margin-top: 2em;">Meet The Artists</h1>
+
+     <section class="main">
+
+        <div class="wrap wrap--1">
+            <a href="https://www.instagram.com/ionut_dulamita/">
+                <div class="container container--1" style="background-image: url('img/Oana\ Lohan.jpeg'); background-position: center;
+                background-size: contain ">
+                    <p>Oana</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="wrap wrap--2">
+            <a href="https://www.instagram.com/ionut_dulamita/">
+                <div class="container container--2" style="background-image: url('img/Ionut\ Dulamita.jpeg'); background-position: center;
+                background-size: contain">
+                    <p>Ionuț</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="wrap wrap--3">
+            <a href="https://josesherwood.com/">
+                <div class="container container--3" style="background-image: url('riders/artwork/Farhod/4.JPG');background-position: center;
+    background-size: contain; ">
+                    <p>José</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="wrap wrap--4">
+            <a href="http://www.hyestudio.com/">
+                <div class="container container--5" style="background-image: url('riders/artwork/Liliana/4.jpeg'); background-position: center;
+                background-size: contain;">
+                    <p>Alin</p>
+                </div>
+            </a>
+        </div>
+
+
+    </section>
+
+    <h1 style="font-size: 4em;text-align: center;margin-top: 2em;">Researchers</h1>
+    <section class="main">
+
+        <div class="wrap wrap--5">
+            <a href="https://www.instagram.com/ionut_dulamita/">
+                <div class="container container--1" style="background-image: url('img/1_jdIWZ9ipeTI4KFH0oAw6bw.jpeg'); background-position: center;
+                background-size: contain ">
+                    <p>Cosmin</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="wrap wrap--6">
+            <a href="https://www.instagram.com/ionut_dulamita/">
+                <div class="container container--2" style="background-image: url('img/8M7pR1Lo_400x400.jpg'); background-position: center;
+                background-size: contain">
+                    <p>Nathanael</p>
+                </div>
+            </a>
+        </div>
+
+
+    </section>
+
 
 <footer style="background-color: #ff5722;">
     <div>
@@ -128,9 +291,6 @@
 <script>
     const els = document.querySelectorAll(".ukiyo");
     els.forEach(el => {
-        // PARALLAX
-        // Use ukiyo.js
-        // https://github.com/yitengjun/ukiyo-js
         const parallax = new Ukiyo(el);
     })
 
@@ -150,7 +310,7 @@ anime.timeline({loop: false})
     scaleY: [0,1],
     opacity: [0.5,1],
     easing: "easeOutExpo",
-    duration: 1400
+    duration: 1000
   })
   .add({
     targets: '.ml11 .line',

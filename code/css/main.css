@@ -75,7 +75,7 @@ a {
 }
 
 .column:hover{
-    transform: scale(1.075);
+    transform: scale(0.8);
     opacity: 0.75;
     transition: 0.2s;
 }
@@ -140,8 +140,9 @@ a {
 }
 
 footer {
-    padding: 15em 5% 10em;
+    padding: 6em 3% 7em;
 }
+
 
 #city {
     float: left;
@@ -159,6 +160,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 6em;
+    margin-bottom: -2.5%;
     transition: 0.2s;
 }
 
@@ -174,7 +176,7 @@ footer {
 }
 
 #ppbanner {
-    height: 30vh;
+    height: 25vh;
     text-align: center;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
