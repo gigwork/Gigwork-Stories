@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Data -->
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- Geospatia Librarys -->
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script> <!-- Mapbox -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <!-- Intersection Observer -->
+    <!-- UI Librarys -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- Internal css styling -->
+    <link href="../../code/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Load map and story -->
+    <div id="map"></div>
+    <div id="story"></div>
+    <div id="earnings"></div>
+    <!-- On document ready fetch riders geojson path -->
+
+    <!-- Local JS -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
+    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
+    <script src="config/elena2-config.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+      <script>
+        const user_path = "../../riders/data/Cluj/Elena-2.csv"
+    </script>
+    <script src="../../code/js/drive.js"></script>
+    <script src="../../code/js/map.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            $.ajax({
+                url: "../../riders/data/Cluj/Elena-2.geojson",
+                dataType: "json",
+                success: function (data) {
+                    routeData = data;
+                },
+                error: function () {
+                    console.log('error loading data');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
