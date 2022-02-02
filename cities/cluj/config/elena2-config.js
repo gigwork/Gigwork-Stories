@@ -19,7 +19,7 @@ var followPitch = 0;
 // to add 'driving' slides just make sure to add 'drive to beginning of slide id'
 // you also need to add a running total to the end of each 'drive-slide', (ex. drive-slide-0, drive-slide-1, drive-slide-2, etc.)
 var config = {
-    style: 'mapbox://styles/nathanaelisamapper/cky28yemc34w215pc71g6p6oz',
+    style: 'mapbox://styles/nathanaelisamapper/ckz65ko8i001t15qol26t2azj',
     //mapbox://styles/nathanaelisamapper/ckyglczpt23y714pfw1wh7rox
     //style: 'mapbox://styles/nathanaelisamapper/ckxxwjfz05iz514mujwqq827q',
     accessToken: 'pk.eyJ1IjoibmF0aGFuYWVsaXNhbWFwcGVyIiwiYSI6ImNrODNiZzdoZTA4Y2gzZ281YmJiMHNwOWIifQ.d2ntY86sJ7DR7011dUJ2cw',
