@@ -35,7 +35,7 @@ var config = {
             id: 'slide-0',
             title: 'Elena',
             image: '../../riders/artwork/Elena/1.jpeg',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 36, Elena is using an instantly recognisable e-bike with fat tyres to do deliveries for Uber Eats. Born in Congo, he lived for most of his life in Paris before moving to Manchester in 2019 as he was fed up with France and wanted to improve his English. Since his Parisian school cafeteria business was brought to a standstill during the pandemic, Elena is saving up money for another business idea, based on Uber’s model: an app for those who want their garden trimmed in an instant. His entrepreneurial dreams were recently punctured by a horrible episode at work, when a client accused him of rape. It took a whole month to prove his innocence, but the emotional scars are still there, as are the rent arrears resulting from Uber automatically suspending his account for this period. While he praises the platform for it`s innovative approach to work, Elena finds appalling the way it treats the workers: "What they call partners it`s not actually partners, it`s fake employees. In this job, we are vulnerable in all aspects, at all levels. If I have an accident tomorrow, I am left without pay". </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 22 years old, Elena’s sense of financial independence is magnified by the earnings she makes at the first serios job she’s ever had. As a Glovo courier, driving a car in Cluj-Napoca, the recent university graduated can earn up to 1,000 euros per month, an income stream than none of her friends have access to. She’s working hard for this money, often 12 hours per day, for five or six days a week, she has hardly any social life, but she’s very proud to be able to support her mother with some of the household expenses. Her parents, both running their own small businesses, instilled her an entrepreneurial spirit that she believes will drive her to open one day, with the Glovo earnings, her own hairstyle studio. Until then, she keeps reminding herself that she needs to eat more often and avoid frozen meals, that make sure she doesn’t break her back carrying heavy boxes of water up the many stairs she needs to climb and, most importantly, that she doesn’t fall asleep at work. This already happened to her a few months ago, when she worked for two weeks without stop and hit a fence in the city centre. Thankfully, the only thing she damaged was the car. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -43,7 +43,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:25: Start of the day',
+            title: '08.12: A twelve-hour shift? It’s not worth it, it’s slavery',
             audio: '../../riders/audio/Elena/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena/Elena.txt"> Read Transcript </a> ',
             location: {},
@@ -53,7 +53,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '11:33 Four orders later',
+            title: '09.34 Coffee, better cold than spilled',
             audio: '../../riders/audio/Elena/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena/Elena1.txt"> Read Transcript </a> ',
             location: {},
@@ -73,9 +73,9 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            title: '12:17: Less than the minimum wage',
+            title: '11.27: I paid 50 lei out of my own pocket!',
             audio: '../../riders/audio/Elena/3.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/Elena/Elena.txt"> Read Transcript </a> ',
+            description: '<a target="_blank" href="../../riders/transcript/Elena/Elena2.txt"> Read Transcript </a> ',
             location: {},
             earnings: '22.86',
             onChapterEnter: [],
@@ -83,7 +83,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '13:28: A very quiet day',
+            title: '13.09: I feel like sinking into the abyss',
             audio: '../../riders/audio/Elena/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena/Elena3.txt"> Read Transcript </a> ',
             location: {},

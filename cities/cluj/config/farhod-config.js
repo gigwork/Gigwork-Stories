@@ -35,7 +35,7 @@ var config = {
             id: 'slide-0',
             title: 'Farhod',
             image: '../../riders/artwork/Farhod/1.JPG',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 36, Farhod is using an instantly recognisable e-bike with fat tyres to do deliveries for Uber Eats. Born in Congo, he lived for most of his life in Paris before moving to Manchester in 2019 as he was fed up with France and wanted to improve his English. Since his Parisian school cafeteria business was brought to a standstill during the pandemic, Farhod is saving up money for another business idea, based on Uber’s model: an app for those who want their garden trimmed in an instant. His entrepreneurial dreams were recently punctured by a horrible episode at work, when a client accused him of rape. It took a whole month to prove his innocence, but the emotional scars are still there, as are the rent arrears resulting from Uber automatically suspending his account for this period. While he praises the platform for it`s innovative approach to work, Farhod finds appalling the way it treats the workers: "What they call partners it`s not actually partners, it`s fake employees. In this job, we are vulnerable in all aspects, at all levels. If I have an accident tomorrow, I am left without pay". </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> Six years ago, when he was only 18, Farhod left Uzbekistan to do a business degree in Cluj-Napoca. The Romanian ambassador in Tashkent advised him to apply for a Romanian government scholarship that brought him to Transylvania, even as he didn’t know anything about the country nor speak the language. Now he’s very fluent in Romanian but has a ‘Moldovan accent’ that he picked from Moldovan colleagues living together with him in the student residences. He only started doing deliveries in the autumn of 2020, after he had to repeat his final year, which made him lose his scholarship and the subsidised rent in campus. Fairly new to everyday city cycling, he bought himself nevertheless a not very solid second-hand bicycle that he needs to constantly fix and push uphill when he needs to deliver food in areas such as Zorilor or Gruia. Despite being constantly and visibly tired from the sustained effort he engages himself in five days a week, Farhod agreed nevertheless to meet and cycle for about five hours in a mild October in 2020. For now it’s still fine, he tells me, but he’s considering buying a car to make his work and life easier during the cold months ahead. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -43,7 +43,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:25: Start of the day',
+            title: '12.00: I hope to avoid the hills',
             audio: '../../riders/audio/Farhod/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod.txt"> Read Transcript </a> ',
             location: {},
@@ -63,7 +63,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '11:33 Four orders later',
+            title: '13.04: A wobbly pedal',
             audio: '../../riders/audio/Farhod/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod1.txt"> Read Transcript </a> ',
             location: {},
@@ -83,7 +83,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            title: '12:17: Less than the minimum wage',
+            title: '13.58: Ordering food on the client’s behalf',
             audio: '../../riders/audio/Farhod/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod2.txt"> Read Transcript </a> ',
             location: {},
@@ -93,7 +93,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '13:28: A very quiet day',
+            title: '15.27: Walked the bike for 20 minutes',
             audio: '../../riders/audio/Farhod/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod3.txt"> Read Transcript </a> ',
             location: {},
@@ -113,7 +113,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            title: '13:30: Its good to speak French',
+            title: '16.16: Back from the break',
             audio: '../../riders/audio/Farhod/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod4.txt"> Read Transcript </a> ',
             earnings: '30.15',
@@ -134,7 +134,7 @@ var config = {
 
         {
             id: 'drive-slide-5',
-            title: '14:01:  A break to charge the batteries',
+            title: '18.05: I earned what I had in plan',
             audio: '../../riders/audio/Farhod/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod5.txt"> Read Transcript </a> ',
             earnings: '30.15',

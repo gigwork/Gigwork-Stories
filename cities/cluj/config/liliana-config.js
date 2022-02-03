@@ -35,7 +35,7 @@ var config = {
             id: 'slide-0',
             title: 'Liliana',
             image: '../../riders/artwork/Liliana/1.jpeg',
-            description: '<b>Location:</b> Cluj </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 36, Liliana is using an instantly recognisable e-bike with fat tyres to do deliveries for Uber Eats. Born in Congo, he lived for most of his life in Paris before moving to Manchester in 2019 as he was fed up with France and wanted to improve his English. Since his Parisian school cafeteria business was brought to a standstill during the pandemic, Liliana is saving up money for another business idea, based on Uber’s model: an app for those who want their garden trimmed in an instant. His entrepreneurial dreams were recently punctured by a horrible episode at work, when a client accused him of rape. It took a whole month to prove his innocence, but the emotional scars are still there, as are the rent arrears resulting from Uber automatically suspending his account for this period. While he praises the platform for it`s innovative approach to work, Liliana finds appalling the way it treats the workers: "What they call partners it`s not actually partners, it`s fake employees. In this job, we are vulnerable in all aspects, at all levels. If I have an accident tomorrow, I am left without pay". </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            description: '<b>Location:</b> Cluj </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> 32 years old Liliana drives everyday back and forth 60 kilometres from a village north-west of Cluj-Napoca. Early in the morning she brings her two children, 3 and 5 years old, to the nursery before she starts her 10 hours shift of deliveries for Glovo or Bolt. She has an undergraduate degree in foreign languages and her dream is to set up her own interior design studio. In the meantime, she needs to support her family, but the long working hours spent away from home don’t allow her to see them for as long as she would like. ‘I sometimes feel the boys don’t grow as they should because I’m not spending enough time with them’, she confesses to me as I follow her at work, in the same car with the kids that she just picked up from the nursery. Aside from the regular waiting around for hours at McDonald’s to collect an order or the constant frictions with the police and taxi drivers whenever she tries to park in the city centre, Liliana encounters casual misogyny episodes. She says she’s used to this harassment and the whole multi-tasking. What she’s not managed to overcome yet are the fears she might fall asleep at any time. This often happens to her when she drives back home, late in the evening. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
             earnings: '',
             onChapterEnter: [],
@@ -43,7 +43,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:25: Start of the day',
+            title: '09:15: Delivering food and three humans too',
             audio: '../../riders/audio/Liliana/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana.txt"> Read Transcript </a> ',
             location: {},
@@ -53,7 +53,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '11:33 Four orders later',
+            title: '11:02: I didn’t have the time to put any make-up',
             audio: '../../riders/audio/Liliana/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana1.txt"> Read Transcript </a> ',
             location: {},
@@ -73,7 +73,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            title: '12:17: Less than the minimum wage',
+            title: '13.49: A day in the life of a mum',
             audio: '../../riders/audio/Liliana/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana2.txt"> Read Transcript </a> ',
             location: {},
@@ -83,7 +83,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '13:28: A very quiet day',
+            title: '14.48: I am hungry',
             audio: '../../riders/audio/Liliana/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana3.txt"> Read Transcript </a> ',
             location: {},
@@ -103,7 +103,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            title: '13:30: Its good to speak French',
+            title: '18.45: The break was not long enough',
             audio: '../../riders/audio/Liliana/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana4.txt"> Read Transcript </a> ',
             earnings: '30.15',
@@ -114,7 +114,7 @@ var config = {
         // BREAK
         {
             id: 'drive-slide-5',
-            title: '14:01:  A break to charge the batteries',
+            title: '19.47: ‘What if?’',
             audio: '../../riders/audio/Liliana/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana5.txt"> Read Transcript </a> ',
             earnings: '30.15',
@@ -132,19 +132,9 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
-            id: 'slide-5',
-            title: '',
-            image: '../../riders/artwork/Liliana/5.jpeg',
-            description: '',
-            location: {},
-            earnings: '19.75',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
         // END BREAK        
         {
-            id: 'drive-slide-6',
+            id: '21.19: I didn’t feel like working today',
             title: '18:04: Back from the break',
             audio: '../../riders/audio/Liliana/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana6.txt"> Read Transcript </a> ',
@@ -155,11 +145,21 @@ var config = {
         },
         {
             id: 'drive-slide-7',
-            title: '18:42: Cancel order, move on',
+            title: '23.04: The new job',
             audio: '../../riders/audio/Liliana/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana7.txt"> Read Transcript </a> ',
             earnings: '39.57',
             location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'slide-5',
+            title: '',
+            image: '../../riders/artwork/Liliana/5.jpeg',
+            description: '',
+            location: {},
+            earnings: '19.75',
             onChapterEnter: [],
             onChapterExit: []
         },

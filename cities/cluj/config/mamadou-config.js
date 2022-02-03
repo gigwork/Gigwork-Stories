@@ -43,7 +43,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '06:59: An early start',
+            title: '10.53: Low battery, low expectations',
             audio: '../../riders/audio/Mamadou/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou.txt"> Read Transcript </a>',
             location: {},
@@ -53,7 +53,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '07:29: A glitch in the app',
+            title: '12.24: Long distances on flat roads, please!',
             audio: '../../riders/audio/Mamadou/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou1.txt"> Read Transcript </a>',
             location: {},
@@ -63,7 +63,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            title: '08:41: A fragile delivery and some merchanical problems',
+            title: '13.01 I don’t touch the alcohol, the clients don’t touch me',
             audio: '../../riders/audio/Mamadou/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou2.txt"> Read Transcript </a>',
             location: {},
@@ -73,7 +73,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '11:32: A break, a hot shower and back at work',
+            title: '15.03: Break, clean, cook, pray',
             audio: '../../riders/audio/Mamadou/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou3.txt"> Read Transcript </a>',
             location: {},
@@ -83,7 +83,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            title: '13:00: Busy Uber, quiet Deliveroo',
+            title: '18.01: Nice weather, fewer orders',
             audio: '../../riders/audio/Mamadou/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou4.txt"> Read Transcript </a>',
             location: {},
@@ -93,7 +93,7 @@ var config = {
         },
         {
             id: 'drive-slide-5',
-            title: '13:53: Lunch break, games and bike fixing',
+            title: '19.05: Three rejections and I am out',
             audio: '../../riders/audio/Mamadou/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou5.txt"> Read Transcript </a>',
             earnings: '36.51',
@@ -103,7 +103,7 @@ var config = {
         },
         {
             id: 'drive-slide-6',
-            title: '19:01: More hot showers, more clothes',
+            title: '19.28: No orders, watching the football match',
             audio: '../../riders/audio/Mamadou/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou6.txt"> Read Transcript </a>',
             earnings: '36.51',
@@ -113,7 +113,7 @@ var config = {
         },
         {
             id: 'drive-slide-7',
-            title: '20:32: Six kilometres for an ice-cream',
+            title: '20.12: Using cash from clients for my own food',
             audio: '../../riders/audio/Mamadou/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou7.txt"> Read Transcript </a>',
             earnings: '44',
@@ -121,16 +121,16 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },     
-        {
-            id: 'drive-slide-8',
-            title: '21:15: A cold that wears you down',
-            audio: '../../riders/audio/Mamadou/8.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou8.txt"> Read Transcript </a>',
-            earnings: '47.48',
-            location: {},
-            onChapterEnter: [],
-            onChapterExit: []
-        },    
+        // {
+        //     id: 'drive-slide-8',
+        //     title: '21:15: A cold that wears you down',
+        //     audio: '../../riders/audio/Mamadou/8.m4a',
+        //     description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou7.txt"> Read Transcript </a>',
+        //     earnings: '47.48',
+        //     location: {},
+        //     onChapterEnter: [],
+        //     onChapterExit: []
+        // },    
         // CHARTS AND SUMMARY
         {
             id: 'slide-5',
