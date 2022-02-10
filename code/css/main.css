@@ -18,29 +18,33 @@ a {
     position: relative;
     z-index: 2;
 }
-.up{
+
+.up {
     margin-top: -5%;
 }
 
 .fv {
-    height:90vh;
+    height: 90vh;
     width: 100%;
 }
+
 .row {
     display: flex;
-  }
-  
-  .column {
+}
+
+.column {
     flex: 50%;
     padding: 5px;
     transition: 0.2s;
-  }
-   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
-  } 
+}
+
 .heading {
     position: fixed;
     left: 50%;
@@ -73,13 +77,14 @@ a {
 .heading a:hover {
     transform: scale(1.075);
 }
-audio::-webkit-media-controls-play-button,
-     audio::-webkit-media-controls-panel {
-     background-color: #ff5722;
-     color: #ff5722;
-     }
 
-.column:hover{
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #ff5722;
+    color: #ff5722;
+}
+
+.column:hover {
     transform: scale(0.8);
     opacity: 0.75;
     transition: 0.2s;
@@ -97,7 +102,7 @@ audio::-webkit-media-controls-play-button,
     transition: 0.2s;
 }
 
-.fv_img1:hover{
+.fv_img1:hover {
     filter: grayscale(0%)
 }
 
@@ -109,9 +114,9 @@ audio::-webkit-media-controls-play-button,
     margin-left: 10%;
   } */
 
-  .rider name {
+.rider name {
     color: #ff5722 !important;
-  }
+}
 
 .img-position-r {
     margin-left: auto;
@@ -133,6 +138,7 @@ audio::-webkit-media-controls-play-button,
     width: 33.3333%;
     height: 75vh;
 }
+
 audio {
     /*border-radius: 90px;*/
     width: 250px;
@@ -140,16 +146,18 @@ audio {
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: black !important;
-    }
-
-    audio::-webkit-media-controls-play-button{
-        color: white;
-    }
-    
-
-    audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
-        background-color: #ff5722;
 }
+
+audio::-webkit-media-controls-play-button {
+    color: white;
+}
+
+
+audio::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel {
+    background-color: #ff5722;
+}
+
 .img-size-2 {
     width: 70%;
     transition: all .2s ease-in-out;
@@ -245,6 +253,7 @@ footer {
     font-size: 9em;
     text-align: center;
 }
+
 /* @media screen and (max-height: 700px) {
     #orangeblob{
         height: 27vh !important;
