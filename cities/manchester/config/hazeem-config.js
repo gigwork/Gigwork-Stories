@@ -37,7 +37,7 @@ var config = {
             image: '../../riders/artwork/Hazeem/Hazeem.jpg',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo, Just Eat & Uber Eats </br> </br> <b></b> At 21, Hazeem’s first job in the UK, where he moved from Pakistan, is food courier for Just Eat and Uber Eats. He started on an e-bike, before upgrading to a motorbike to be faster but also because he was frustrated to see that motorised vehicles were prioritised for orders over cycles and e-bikes, without notice or explanation. Together with his dad, they run four accounts in total and sometimes, as is the case on this day, they work together with the car so they can be more efficient. Being motorised allows them to work more hours and ride more kilometres than cyclists, but it also means that they are most of the time pushed to travel far away from where they live in Manchester. The money they earn running four account helps them sustain their mother (who doesn’t speak English) and three other minor sisters, but Hazeem is concerned that another account suspension as the one described below is imminent: "It`s happening with a lot of couriers these days, so you might be the next in the queue’.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
-            earnings: '',
+            earnings: '£',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +47,7 @@ var config = {
             audio: '../../riders/audio/Hazeem/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/Hazeem.txt"> Read Transcript </a>',
             location: {},
-            earnings: '0',
+            earnings: '£0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -57,7 +57,7 @@ var config = {
             audio: '../../riders/audio/Hazeem/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem1.txt"> Read Transcript </a>',
             location: {},
-            earnings: '0',
+            earnings: '£0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -67,7 +67,7 @@ var config = {
             audio: '../../riders/audio/Hazeem/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem2.txt"> Read Transcript </a>',
             location: {},
-            earnings: '12.94',
+            earnings: '£12.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -76,7 +76,7 @@ var config = {
             image: '../../riders/artwork/Hazeem/Hazeem1.jpg',
             description: '',
             location: {},
-            earnings: '12.94',
+            earnings: '£12.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -86,7 +86,7 @@ var config = {
             audio: '../../riders/audio/Hazeem/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem3.txt"> Read Transcript </a>',
             location: {},
-            earnings: '18.84',
+            earnings: '£18.84',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -96,7 +96,7 @@ var config = {
             audio: '../../riders/audio/Hazeem/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem4.txt"> Read Transcript </a>',
             location: {},
-            earnings: '33.41',
+            earnings: '£33.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -105,7 +105,7 @@ var config = {
             image: '../../riders/artwork/Hazeem/Hazeem2.jpg',
             description: '',
             location: {},
-            earnings: '33.41',
+            earnings: '£33.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -114,7 +114,7 @@ var config = {
             title: '18:48: A bit cold, but we`re in the car, it doesn`t matter',
             audio: '../../riders/audio/Hazeem/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem5.txt"> Read Transcript </a>',
-            earnings: '33.41',
+            earnings: '£33.41',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -124,7 +124,7 @@ var config = {
             title: '19:55: Out of Deliveroo`s reach',
             audio: '../../riders/audio/Hazeem/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem6.txt"> Read Transcript </a>',
-            earnings: '61.37',
+            earnings: '£61.37',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -134,7 +134,7 @@ var config = {
             image: '../../riders/artwork/Hazeem/Hazeem3.jpg',
             description: '',
             location: {},
-            earnings: '65.28',
+            earnings: '£65.28',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -143,7 +143,7 @@ var config = {
             title: '20:52: It’s not that busy, so we’ll finish at 9',
             audio: '../../riders/audio/Hazeem/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem7.txt"> Read Transcript </a>',
-            earnings: '65.28',
+            earnings: '£65.28',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -153,7 +153,7 @@ var config = {
             title: '21:26: Five hours, £80',
             audio: '../../riders/audio/Hazeem/9.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Hazeem/hazeem8.txt"> Read Transcript </a>',
-            earnings: '71.67',
+            earnings: '£71.67',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -163,7 +163,7 @@ var config = {
             image: '../../riders/artwork/Hazeem/Hazeem4.jpg',
             description: '',
             location: {},
-            earnings: '65.28',
+            earnings: '£65.28',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -171,7 +171,7 @@ var config = {
         {
             id: 'slide-5',
             title: '',
-            earnings: '71.67',
+            earnings: '£71.67',
             image: '../../riders/data/Manchester/Hazeem.jpg',
             description: '',
             summaryzoom: 10,

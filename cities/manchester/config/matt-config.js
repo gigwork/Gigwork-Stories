@@ -37,7 +37,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt.png',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo </br> </br> <b></b> In his spare time from being a stressed cabin manager for a flight company, Matt relaxes himself by doing deliveries for Deliveroo. At 41 and without family responsibilities, Matt has been driving his car to work for almost three years now, heading every weekend evening from a town nearby Manchester to the city centre. Once there, he gets on his fast racing bike for a few hours in the hope to earn enough money to cover his monthly utility bills. As someone who lived in the city centre for some years, he has been effortlessly navigating the empty streets during the pandemic. But his shifts as a food courier have not always been without incidents. On the cold January day in 2021 I followed him at work he’s had his patience challenged by an order for which he had to do two separate journeys to the same client without being paid accordingly. On other occasions, Matt recollects similar struggles he’s encountered as a gig worker, which range from finding a place to pee in a locked down city, to being sent by the not-so-smart app to restaurants which closed in the meantime or even almost getting attacked in a park by someone who wanted to steal his rather expensive bicycle.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="http://www.hyestudio.com/">Alin Tămășan</a> </h3>',
             location: {},
-            earnings: '',
+            earnings: '£',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +47,7 @@ var config = {
             audio: '../../riders/audio/Matt/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt.txt"> Read Transcript </a>',
             location: {},
-            earnings: '0',
+            earnings: '£0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -57,7 +57,7 @@ var config = {
             audio: '../../riders/audio/Matt/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt1.txt"> Read Transcript </a>',
             location: {},
-            earnings: '0',
+            earnings: '£0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -67,7 +67,7 @@ var config = {
             audio: '../../riders/audio/Matt/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt2.txt"> Read Transcript </a>',
             location: {},
-            earnings: '12.94',
+            earnings: '£12.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -76,7 +76,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt1.png',
             description: '',
             location: {},
-            earnings: '12.94',
+            earnings: '£12.94',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -86,7 +86,7 @@ var config = {
             audio: '../../riders/audio/Matt/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt3.txt"> Read Transcript </a>',
             location: {},
-            earnings: '18.84',
+            earnings: '£18.84',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -96,7 +96,7 @@ var config = {
             audio: '../../riders/audio/Matt/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt4.txt"> Read Transcript </a>',
             location: {},
-            earnings: '33.41',
+            earnings: '£33.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -105,7 +105,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt2.png',
             description: '',
             location: {},
-            earnings: '33.41',
+            earnings: '£33.41',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -114,7 +114,7 @@ var config = {
             title: '20:03: One minute? That’s bullshit!',
             audio: '../../riders/audio/Matt/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt5.txt"> Read Transcript </a>',
-            earnings: '33.41',
+            earnings: '£33.41',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -124,7 +124,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt3.png',
             description: '',
             location: {},
-            earnings: '45.28',
+            earnings: '£45.28',
             onChapterEnter: [],
             onChapterExit: []
         },     
@@ -133,7 +133,7 @@ var config = {
             title: '20:39: Still coughing, I better stop',
             audio: '../../riders/audio/Matt/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt6.txt"> Read Transcript </a>',
-            earnings: '45.28',
+            earnings: '£45.28',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -143,7 +143,7 @@ var config = {
             image: '../../riders/artwork/Matt/Matt4.png',
             description: '',
             location: {},
-            earnings: '63.47',
+            earnings: '£63.47',
             onChapterEnter: [],
             onChapterExit: []
         },     
@@ -151,7 +151,7 @@ var config = {
         {
             id: 'slide-5',
             title: '',
-            earnings: '63.47',
+            earnings: '£63.47',
             image: '../../riders/data/Manchester/Matt.jpg',
             description: '',
             summaryzoom: 12,

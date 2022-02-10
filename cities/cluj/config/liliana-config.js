@@ -37,7 +37,7 @@ var config = {
             image: '../../riders/artwork/Liliana/1.jpeg',
             description: '<b>Location:</b> Cluj </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> 32 years old Liliana drives everyday back and forth 60 kilometres from a village north-west of Cluj-Napoca. Early in the morning she brings her two children, 3 and 5 years old, to the nursery before she starts her 10 hours shift of deliveries for Glovo or Bolt. She has an undergraduate degree in foreign languages and her dream is to set up her own interior design studio. In the meantime, she needs to support her family, but the long working hours spent away from home don’t allow her to see them for as long as she would like. ‘I sometimes feel the boys don’t grow as they should because I’m not spending enough time with them’, she confesses to me as I follow her at work, in the same car with the kids that she just picked up from the nursery. Aside from the regular waiting around for hours at McDonald’s to collect an order or the constant frictions with the police and taxi drivers whenever she tries to park in the city centre, Liliana encounters casual misogyny episodes. She says she’s used to this harassment and the whole multi-tasking. What she’s not managed to overcome yet are the fears she might fall asleep at any time. This often happens to her when she drives back home, late in the evening. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
-            earnings: '',
+            earnings: '£',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +47,7 @@ var config = {
             audio: '../../riders/audio/Liliana/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '2.45',
+            earnings: '£2.45',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -57,7 +57,7 @@ var config = {
             audio: '../../riders/audio/Liliana/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana1.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '15.32',
+            earnings: '£15.32',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -67,7 +67,7 @@ var config = {
             image: '../../riders/artwork/Liliana/2.jpeg',
             description: '',
             location: {},
-            earnings: '15.32',
+            earnings: '£15.32',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -77,7 +77,7 @@ var config = {
             audio: '../../riders/audio/Liliana/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana2.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '22.86',
+            earnings: '£22.86',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -87,7 +87,7 @@ var config = {
             audio: '../../riders/audio/Liliana/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana3.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '25.97',
+            earnings: '£25.97',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -97,7 +97,7 @@ var config = {
             image: '../../riders/artwork/Liliana/3.jpeg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '£19.75',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -106,7 +106,7 @@ var config = {
             title: '18.45: The break was not long enough',
             audio: '../../riders/audio/Liliana/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana4.txt"> Read Transcript </a> ',
-            earnings: '30.15',
+            earnings: '£30.15',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -117,7 +117,7 @@ var config = {
             title: '19.47: ‘What if?’',
             audio: '../../riders/audio/Liliana/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana5.txt"> Read Transcript </a> ',
-            earnings: '30.15',
+            earnings: '£30.15',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -128,7 +128,7 @@ var config = {
             image: '../../riders/artwork/Liliana/4.jpeg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '£19.75',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -138,7 +138,7 @@ var config = {
             title: '18:04: Back from the break',
             audio: '../../riders/audio/Liliana/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana6.txt"> Read Transcript </a> ',
-            earnings: '34.39',
+            earnings: '£34.39',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -148,7 +148,7 @@ var config = {
             title: '23.04: The new job',
             audio: '../../riders/audio/Liliana/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana7.txt"> Read Transcript </a> ',
-            earnings: '39.57',
+            earnings: '£39.57',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -159,7 +159,7 @@ var config = {
             image: '../../riders/artwork/Liliana/5.jpeg',
             description: '',
             location: {},
-            earnings: '19.75',
+            earnings: '£19.75',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -168,7 +168,7 @@ var config = {
         {
             id: 'slide-6',
             title: '',
-            earnings: '49.79',
+            earnings: '£49.79',
             image: '../../riders/data/Cluj/Liliana.jpg',
             description: '',
             summaryzoom: 12,

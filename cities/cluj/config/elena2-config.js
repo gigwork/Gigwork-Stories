@@ -37,7 +37,7 @@ var config = {
             image: '../../riders/artwork/Elena/4.jpeg',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b> At 22 years old, Elena’s sense of financial independence is magnified by the earnings she makes at the first serios job she’s ever had. As a Glovo courier, driving a car in Cluj-Napoca, the recent university graduated can earn up to 1,000 euros per month, an income stream than none of her friends have access to. She’s working hard for this money, often 12 hours per day, for five or six days a week, she has hardly any social life, but she’s very proud to be able to support her mother with some of the household expenses. Her parents, both running their own small businesses, instilled her an entrepreneurial spirit that she believes will drive her to open one day, with the Glovo earnings, her own hairstyle studio. Until then, she keeps reminding herself that she needs to eat more often and avoid frozen meals, that make sure she doesn’t break her back carrying heavy boxes of water up the many stairs she needs to climb and, most importantly, that she doesn’t fall asleep at work. This already happened to her a few months ago, when she worked for two weeks without stop and hit a fence in the city centre. Thankfully, the only thing she damaged was the car. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
-            earnings: '',
+            earnings: '£',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +47,7 @@ var config = {
             audio: '../../riders/audio/Elena2/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena2/Elena.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '2.45',
+            earnings: '£2.45',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -57,7 +57,7 @@ var config = {
             audio: '../../riders/audio/Elena2/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena2/Elena1.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '15.32',
+            earnings: '£15.32',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -67,7 +67,7 @@ var config = {
             audio: '../../riders/audio/Elena2/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena2/Elena2.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '22.86',
+            earnings: '£22.86',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -77,7 +77,7 @@ var config = {
             image: '../../riders/artwork/Elena/5.jpeg',
             description: '',
             location: {},
-            earnings: '15.32',
+            earnings: '£15.32',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -87,7 +87,7 @@ var config = {
             audio: '../../riders/audio/Elena2/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Elena2/Elena3.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '25.97',
+            earnings: '£25.97',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -96,7 +96,7 @@ var config = {
         {
             id: 'slide-4',
             title: '',
-            earnings: '49.79',
+            earnings: '£49.79',
             image: '../../riders/data/Cluj/Elena.jpg',
             description: '',
             summaryzoom: 12,

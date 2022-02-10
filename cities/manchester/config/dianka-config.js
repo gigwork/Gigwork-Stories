@@ -37,7 +37,7 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka.jpg',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Tuesday 11/02/2021 </br> <b>Platform:</b> Deliveroo & Uber Eats </br> </br> <b></b> In her early 30s, Dianka is one of the few women doing food deliveries in Manchester. Originally from an Eastern European country, which she left a few years ago, Dianka is well educated but couldn’t make use of her degree when she arrived in the UK. Instead, she’s been doing warehouse, cleaning and hospitality jobs for which she was often paid less than the minimum wage. While she initially started doing deliveries on an e-bike as a side job, it  quickly became a full-time enterprise out of necessity. It was both the Covid pandemic and family circumstances which forced her into a more flexible job. As many other couriers, she’s ‘multiapping’, doing Deliveroo and Uber Eats at the same time in order to earn enough money. While the delivery money is good to cover for everyday expenses, being a woman comes at a hefty price as she receives unwarranted attention from men, who are often colleagues  at work. As a result, she needs a pepper spray, a ‘present’ she’s received from a friend. Outside work, she loves nature and spends as much time as she can in one of the many parks in Manchester.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://oanalohan.ultra-book.com/">Oana Lohan</a> </h3>',
             location: {},
-            earnings: '',
+            earnings: '£',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +47,7 @@ var config = {
             audio: '../../riders/audio/Dianka/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka.txt"> Read Transcript </a>',
             location: {},
-            earnings: '0',
+            earnings: '£0',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -57,7 +57,7 @@ var config = {
             audio: '../../riders/audio/Dianka/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka1.txt"> Read Transcript </a>',
             location: {},
-            earnings: '5.13',
+            earnings: '£5.13',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -67,7 +67,7 @@ var config = {
             audio: '../../riders/audio/Dianka/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka2.txt"> Read Transcript </a>',
             location: {},
-            earnings: '15.05 (£5 tip)',
+            earnings: '£15.05 (£5 tip)',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -76,7 +76,7 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka1.jpg',
             description: '',
             location: {},
-            earnings: '15.05',
+            earnings: '£15.05',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -86,7 +86,7 @@ var config = {
             audio: '../../riders/audio/Dianka/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka3.txt"> Read Transcript </a>',
             location: {},
-            earnings: '18:64',
+            earnings: '£18:64',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -96,7 +96,7 @@ var config = {
             audio: '../../riders/audio/Dianka/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka4.txt"> Read Transcript </a>',
             location: {},
-            earnings: '30.29',
+            earnings: '£30.29',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -105,7 +105,7 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka2.jpg',
             description: '',
             location: {},
-            earnings: '30.29',
+            earnings: '£30.29',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -114,7 +114,7 @@ var config = {
             title: '13:53: Lunch break, games and bike fixing',
             audio: '../../riders/audio/Dianka/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka5.txt"> Read Transcript </a>',
-            earnings: '36.51',
+            earnings: '£36.51',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -124,7 +124,7 @@ var config = {
             title: '19:01: More hot showers, more clothes',
             audio: '../../riders/audio/Dianka/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka6.txt"> Read Transcript </a>',
-            earnings: '36.51',
+            earnings: '£36.51',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -134,7 +134,7 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka3.jpg',
             description: '',
             location: {},
-            earnings: '30.29',
+            earnings: '£30.29',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -143,7 +143,7 @@ var config = {
             title: '20:32: Six kilometres for an ice-cream',
             audio: '../../riders/audio/Dianka/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka7.txt"> Read Transcript </a>',
-            earnings: '44',
+            earnings: '£44',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -153,7 +153,7 @@ var config = {
             title: '21:15: A cold that wears you down',
             audio: '../../riders/audio/Dianka/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/dianka/dianka8.txt"> Read Transcript </a>',
-            earnings: '47.48',
+            earnings: '£47.48',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -163,7 +163,7 @@ var config = {
             image: '../../riders/artwork/Dianka/Dianka4.jpg',
             description: '',
             location: {},
-            earnings: '30.29',
+            earnings: '£30.29',
             onChapterEnter: [],
             onChapterExit: []
         },      
@@ -171,7 +171,7 @@ var config = {
         {
             id: 'slide-5',
             title: '',
-            earnings: '47.48',
+            earnings: '£47.48',
             image: '../../riders/data/Manchester/Dianka.jpg',
             description: '',
             summaryzoom: 12,
