@@ -22,75 +22,29 @@
         </a>
     </div>
 
-    <h1 style="    color: #ff5722;
-    font-size: 9em;text-align: center;"> CLUJ NAPOCA </h1>
+    </div>
+
+
+
 
     <section class="main">
+
+        <a href="https://josesherwood.com/">        <h1 style="text-align: center;">José Sherwood González</h1></a>
+
         <div class="wrap wrap--1">
-            <a href="cluj/mamadou.html">
-                <div class="container container--1" style="background-image: url('../riders/artwork/Mamadou/00.png'); background-position: center;
-            background-size: contain ">
-                    <p>Mamadou</p>
-                </div>
-            </a>
-        </div>
 
-        <div class="wrap wrap--2">
-            <a href="cluj/farhod.html">
-                <div class="container container--2" style="background-image: url('../riders/artwork/Farhod/1.JPG'); background-position: center;
-            background-size: contain">
-                    <p>Farhod</p>
-                </div>
-            </a>
-        </div>
+            <div class="container container--1" style="background-image: url('../img/Jose\ Sherwood.png'); background-position: center;
+                background-size: contain ">
 
-        <div class="wrap wrap--3">
-            <a href="cluj/adrian.html">
-                <div class="container container--3" style="background-image: url('../riders/artwork/Adrian/01.jpeg');background-position: center;
-background-size: contain; ">
-                    <p>Adrian</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="wrap wrap--4">
-            <a href="cluj/elena.html">
-                <div class="container container--5" style="background-image: url('../riders/artwork/Elena/1.jpeg'); background-position: center;
-            background-size: contain;">
-                    <p>Elena</p>
-                </div>
-            </a>
-        </div>
-
-        <!-- <div class="wrap wrap--5">
-            <a href="cluj/elena-day2.html">
-                <div class="container container--4" style="background-image: url('../riders/artwork/Elena/4.jpeg'); background-position: center;
-            background-size: contain;">
-                    <p>Elena (Day 2)</p>
-                </div>
-            </a>
-        </div> -->
-
-        <div class="wrap wrap--6">
-            <a href="cluj/liliana.html">
-                <div class="container container--4" style="background-image: url('../riders/artwork/Liliana/1.jpeg'); background-position: center;
-            background-size: contain;">
-                    <p>Liliana</p>
-                </div>
-            </a>
+            </div>
         </div>
 
 
-        <!-- <div class="wrap wrap--7">
-            <a href="cluj/victor.html">
-                <div class="container container--4" style="background-image: url('../riders/artwork/Victor'); background-position: center;
-            background-size: contain;">
-                    <p>Victor</p>
-                </div>
-            </a>
-        </div> -->
+        <p style="width: auto;margin-left: 5%;margin-right: 5%;">José Sherwood González is a British Mexican comics artist and visual anthropologist with research interests in memory, storytelling and multi-perspectival myth-making through visual, sensory and digital methods. He is Visual and Sound Editor for Otherwise Magazine and makes comics and ethno-graphics inspired by the plurality of experience. A recent graduate from the MA in Visual Anthropology at the Granada Centre for Visual Anthropology, José is currently pursuing a practice-based PhD in the School of Digital Arts, Manchester Metropolitan University on XR-based speculative fictions and immersive comics.</p>
+
+
+
     </section>
-
     <footer>
         <div>
             <p>Stories : <a href="manchester.html"> Manchester </a> & <a href="lyon.html"> Lyon </a> &
@@ -106,9 +60,7 @@ background-size: contain; ">
     </footer>
 
     <style>
-   
-
-   *,
+        *,
         *::after,
         *::before {
             margin: 0;
@@ -116,8 +68,11 @@ background-size: contain; ">
             box-sizing: border-box;
         }
 
+        html {
+            font-size: 62.5%;
+        }
 
-        /* h1 {
+        h1 {
             font-size: 3.2rem;
             padding-top: 2rem;
         }
@@ -125,7 +80,7 @@ background-size: contain; ">
         h1+p {
             font-size: 1.8rem;
             padding: 2rem 0 3rem;
-        } */
+        }
 
         .main {
             display: flex;
@@ -161,6 +116,7 @@ background-size: contain; ">
             position: relative;
             transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
 
+            background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("hp.jpg");
             background-position: var(--bX) var(--bY);
             background-size: 40rem auto;
             box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
@@ -203,10 +159,17 @@ background-size: contain; ">
             transition: none;
         }
 
+        .container--2 {
+            filter: hue-rotate(80deg) saturate(140%);
+        }
+
+        .container--3 {
+            filter: hue-rotate(160deg) saturate(140%);
+        }
+
         .container p {
-            color: #ff5722;
-            font-size: 2.8rem;
-            font-weight: 900;
+            color: hsla(0, 0%, 100%, .6);
+            font-size: 2.2rem;
         }
 
         .wrap:hover .container::before,

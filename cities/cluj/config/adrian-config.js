@@ -37,7 +37,7 @@ var config = {
             image: '../../riders/artwork/Adrian/01.jpeg',
             description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b>Like most of the food couriers using their personal cars to do deliveries in Cluj-Napoca, Adrian, who’s 39 years old, does more than a full-time job with Glovo. He often works twelve hours per day, six days a week, for a salary that’s worth 800-1,000 euros, depending on how much time he spends stuck in traffic or waiting for orders to be prepared at McDonald’s or the supermarkets. Qualified as a video producer in Italy, where he’s lived for many years, he returned recently to Romania and chose Cluj-Napoca as a city where he eventually wants to succeed as a freelance real estate agent. While he’s still trying to make a breakthrough in this more lucrative business, Adrian ends up waiting without pay, sometimes hours in a row, to pick up a Deluxe Crispy Chicken Sandwich Combo Meal at McDonald’s that needs to be delivered 500 metres away for a total of 2.5 euros. Frustrations and many smoked cigarettes aside, it’s a good opportunity for Andrei to be on the phone with prospective customers he might convince to pay 200,000 euros for a fancy flat in the most fashionable residential quarters of the city. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
-            earnings: '£',
+            earnings: 'lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +47,7 @@ var config = {
             audio: '../../riders/audio/Adrian/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '£2.45',
+            earnings: '2.45 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -57,7 +57,7 @@ var config = {
             audio: '../../riders/audio/Adrian/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian1.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '£15.32',
+            earnings: '15.32',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -67,7 +67,7 @@ var config = {
             image: '../../riders/artwork/Adrian/02.jpeg',
             description: '',
             location: {},
-            earnings: '£15.32',
+            earnings: '15.32 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -77,7 +77,7 @@ var config = {
             audio: '../../riders/audio/Adrian/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian2.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '£22.86',
+            earnings: '22.86 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -87,7 +87,7 @@ var config = {
             audio: '../../riders/audio/Adrian/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian3.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '£25.97',
+            earnings: '25.97 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -97,7 +97,7 @@ var config = {
             image: '../../riders/artwork/Adrian/03.jpeg',
             description: '',
             location: {},
-            earnings: '£19.75',
+            earnings: '19.75 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -106,7 +106,7 @@ var config = {
             title: '13:30: Its good to speak French',
             audio: '../../riders/audio/Adrian/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian4.txt"> Read Transcript </a> ',
-            earnings: '£30.15',
+            earnings: '30.15 lei',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -118,7 +118,7 @@ var config = {
             title: '14:01:  A break to charge the batteries',
             audio: '../../riders/audio/Adrian/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian5.txt"> Read Transcript </a> ',
-            earnings: '£30.15',
+            earnings: '30.15 lei',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -129,7 +129,7 @@ var config = {
             image: '../../riders/artwork/Adrian/04.jpeg',
             description: '',
             location: {},
-            earnings: '£19.75',
+            earnings: '19.75 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -138,7 +138,7 @@ var config = {
             title: '18:04: Back from the break',
             audio: '../../riders/audio/Adrian/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian6.txt"> Read Transcript </a> ',
-            earnings: '£34.39',
+            earnings: '34.39 lei',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -148,7 +148,7 @@ var config = {
             title: '18:42: Cancel order, move on',
             audio: '../../riders/audio/Adrian/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian7.txt"> Read Transcript </a> ',
-            earnings: '£39.57',
+            earnings: '39.57 lei',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -159,7 +159,7 @@ var config = {
             image: '../../riders/artwork/Adrian/05.jpeg',
             description: '',
             location: {},
-            earnings: '£19.75',
+            earnings: '19.75 lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -168,7 +168,7 @@ var config = {
             title: '19:33: An order that takes me home ',
             audio: '../../riders/audio/Adrian/9.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian8.txt"> Read Transcript </a> ',
-            earnings: '£46.82',
+            earnings: '46.82 lei',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -178,7 +178,7 @@ var config = {
             title: '20:20: End of the day',
             audio: '../../riders/audio/Adrian/10.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian9.txt"> Read Transcript </a> ',
-            earnings: '£49.79',
+            earnings: '49.79 lei',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -187,7 +187,7 @@ var config = {
         {
             id: 'slide-6',
             title: '',
-            earnings: '£49.79',
+            earnings: '49.79 lei',
             image: '../../riders/data/Cluj/Adrian.jpg',
             description: '',
             summaryzoom: 12,

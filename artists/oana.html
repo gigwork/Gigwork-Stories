@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Data -->
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- Internal css styling -->
+    <link href="../code/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="heading">
+        <a href="../index.html">
+            <h1> Gig Work</h1>
+        </a>
+    </div>
+
+    <section class="main">
+<a href="https://www.instagram.com/ionut_dulamita/"><h1 style="text-align: center;">Oana Lohan</h1></a>
+
+        <div class="wrap wrap--1">
+
+            <div class="container container--1" style="background-image: url('../img/Oana\ Lohan.jpeg'); background-position: center;
+                background-size: contain ">
+
+            </div>
+        </div>
+
+
+        <p style="width: auto;margin-left: 5%;margin-right: 5%;">Oana Lohan is drawing and lives her life on the road.</br>
+
+            When she's not drawing, she's taking photos and she writes.</br>
+            
+            Or she does all of them at the same time.</br>
+            
+            Illustration: @mrlm</p>
+
+
+
+    </section>
+
+<footer>
+    <div>
+        <p>Stories : <a href="manchester.html"> Manchester </a> & <a href="lyon.html"> Lyon </a> &
+            <a href="cluj-napoca.html"> Cluj Napoca </a></p>
+        <p>Artists : <a href="https://oanalohan.ultra-book.com/" target="blank">Oana Lohan</a> & <a
+                href="https://www.instagram.com/ionut_dulamita/" target="blank">Ionuț Dulămiță</a> & <a
+                href="https://josesherwood.com/" target="blank">José Sherwood González</a> & <a href="http://www.hyestudio.com/"
+                target="blank">Alin Tămășan</a> </p>
+        <p>Researchers : <a href="https://cosminpopan.medium.com/"> Cosmin Popan </a> & <a href="https://cosminpopan.medium.com/">
+                Nathanael Sheehan </a></p>
+    </div>
+</footer>
+
+<style>
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+        padding-top: 2rem;
+    }
+
+    h1+p {
+        font-size: 1.8rem;
+        padding: 2rem 0 3rem;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrap {
+        margin: 2rem;
+
+        transform-style: preserve-3d;
+        transform: perspective(100rem);
+
+        cursor: pointer;
+    }
+
+    .container {
+        --rX: 0;
+        --rY: 0;
+        --bX: 50%;
+        --bY: 80%;
+
+        width: 30rem;
+        height: 36rem;
+        border: 1px solid var(--background-color);
+        border-radius: 1.6rem;
+        padding: 4rem;
+
+        display: flex;
+        align-items: flex-end;
+
+        position: relative;
+        transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+        background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("hp.jpg");
+        background-position: var(--bX) var(--bY);
+        background-size: 40rem auto;
+        box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+        transition: transform .6s 1s;
+    }
+
+    .container::before,
+    .container::after {
+        content: "";
+
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid #fff;
+
+        position: absolute;
+        z-index: 2;
+
+        opacity: .3;
+        transition: .3s;
+    }
+
+    .container::before {
+        top: 2rem;
+        right: 2rem;
+
+        border-bottom-width: 0;
+        border-left-width: 0;
+    }
+
+    .container::after {
+        bottom: 2rem;
+        left: 2rem;
+
+        border-top-width: 0;
+        border-right-width: 0;
+    }
+
+    .container--active {
+        transition: none;
+    }
+
+    .container--2 {
+        filter: hue-rotate(80deg) saturate(140%);
+    }
+
+    .container--3 {
+        filter: hue-rotate(160deg) saturate(140%);
+    }
+
+    .container p {
+        color: hsla(0, 0%, 100%, .6);
+        font-size: 2.2rem;
+    }
+
+    .wrap:hover .container::before,
+    .wrap:hover .container::after {
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem);
+    }
+
+    .abs-site-link {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        color: hsla(0, 0%, 0%, .6);
+        font-size: 1.6rem;
+    }
+</style>
+<script src="../code/js/parralax.js"></script>
+</body>
+
+</html>

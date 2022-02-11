@@ -152,7 +152,9 @@ audio::-webkit-media-controls-play-button {
     color: white;
 }
 
-
+.art-hov:hover{
+    background-color: aqua;
+}
 audio::-webkit-media-controls-panel,
 video::-webkit-media-controls-panel {
     background-color: #ff5722;
