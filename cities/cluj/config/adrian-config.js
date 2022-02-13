@@ -35,9 +35,8 @@ var config = {
             id: 'slide-0',
             title: 'Adrian',
             image: '../../riders/artwork/Adrian/01.jpeg',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Saturday 27/03/2020 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b>Like most of the food couriers using their personal cars to do deliveries in Cluj-Napoca, Adrian, who’s 39 years old, does more than a full-time job with Glovo. He often works twelve hours per day, six days a week, for a salary that’s worth 800-1,000 euros, depending on how much time he spends stuck in traffic or waiting for orders to be prepared at McDonald’s or the supermarkets. Qualified as a video producer in Italy, where he’s lived for many years, he returned recently to Romania and chose Cluj-Napoca as a city where he eventually wants to succeed as a freelance real estate agent. While he’s still trying to make a breakthrough in this more lucrative business, Adrian ends up waiting without pay, sometimes hours in a row, to pick up a Deluxe Crispy Chicken Sandwich Combo Meal at McDonald’s that needs to be delivered 500 metres away for a total of 2.5 euros. Frustrations and many smoked cigarettes aside, it’s a good opportunity for Andrei to be on the phone with prospective customers he might convince to pay 200,000 euros for a fancy flat in the most fashionable residential quarters of the city. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            description: '<b>Location:</b> Cluj-Napoca </br> <b>Date:</b> Friday 08/10/2021 </br> <b>Platform:</b> Uber Eats </br> </br> <b></b>Like most of the food couriers using their personal cars to do deliveries in Cluj-Napoca, Adrian, who’s 39 years old, does more than a full-time job with Glovo. He often works twelve hours per day, six days a week, for a salary that’s worth 800-1,000 euros, depending on how much time he spends stuck in traffic or waiting for orders to be prepared at McDonald’s or the supermarkets. Qualified as a video producer in Italy, where he’s lived for many years, he returned recently to Romania and chose Cluj-Napoca as a city where he eventually wants to succeed as a freelance real estate agent. While he’s still trying to make a breakthrough in this more lucrative business, Adrian ends up waiting without pay, sometimes hours in a row, to pick up a Deluxe Crispy Chicken Sandwich Combo Meal at McDonald’s that needs to be delivered 500 metres away for a total of 2.5 euros. Frustrations and many smoked cigarettes aside, it’s a good opportunity for Andrei to be on the phone with prospective customers he might convince to pay 200,000 euros for a fancy flat in the most fashionable residential quarters of the city. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
             location: {},
-            earnings: 'lei',
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -47,7 +46,7 @@ var config = {
             audio: '../../riders/audio/Adrian/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '2.45 lei',
+            earnings: ' lei',
             onChapterEnter: [],
             onChapterExit: []
         },
