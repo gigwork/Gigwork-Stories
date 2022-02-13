@@ -299,6 +299,10 @@ footer {
         height: 100vh;
     }
 
+    .ppimg{
+     height: 30px !important;
+     width: 60px !important;
+    }
 
     #citytitle {
         font-size: 4em;
