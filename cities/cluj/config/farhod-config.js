@@ -29,7 +29,7 @@ var config = {
     title: 'Farhods story',
     subtitle: 'Manchester',
     byline: 'Nathanael Sheehan',
-    footer: '  <a target="_blank" href="../manchester.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
+    footer: '  <a target="_blank" href="../cluj-napoca.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
     // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
