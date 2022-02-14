@@ -44,7 +44,7 @@ var config = {
         {
             id: 'drive-slide-0',
             title: '16:54: Chasing some bonus',
-            audio: '../../riders/audio/Matt/1.m4a',
+            audio: '../../riders/audio/Matt/1.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt.txt"> Read Transcript </a>',
             location: {},
             earnings: '£0',
@@ -64,7 +64,7 @@ var config = {
         {
             id: 'drive-slide-2',
             title: '17:40: Dealing 3 orders at a time',
-            audio: '../../riders/audio/Matt/3.m4a',
+            audio: '../../riders/audio/Matt/3.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt2.txt"> Read Transcript </a>',
             location: {},
             earnings: '£12.94',

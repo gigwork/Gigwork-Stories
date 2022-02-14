@@ -43,7 +43,7 @@ var config = {
         {
             id: 'drive-slide-0',
             title: '12.00: I hope to avoid the hills',
-            audio: '../../riders/audio/Farhod/1.m4a',
+            audio: '../../riders/audio/Farhod/1.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod.txt"> Read Transcript </a> ',
             location: {},
             earnings: '0 lei',
@@ -63,7 +63,7 @@ var config = {
         {
             id: 'drive-slide-1',
             title: '13.04: A wobbly pedal',
-            audio: '../../riders/audio/Farhod/2.m4a',
+            audio: '../../riders/audio/Farhod/2.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod1.txt"> Read Transcript </a> ',
             location: {},
             earnings: '27.32 lei',
@@ -83,7 +83,7 @@ var config = {
         {
             id: 'drive-slide-2',
             title: '13.58: Ordering food on the client’s behalf',
-            audio: '../../riders/audio/Farhod/3.m4a',
+            audio: '../../riders/audio/Farhod/3.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod2.txt"> Read Transcript </a> ',
             location: {},
             earnings: '42.86 lei',
@@ -93,7 +93,7 @@ var config = {
         {
             id: 'drive-slide-3',
             title: '15.27: Walked the bike for 20 minutes',
-            audio: '../../riders/audio/Farhod/4.m4a',
+            audio: '../../riders/audio/Farhod/4.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod3.txt"> Read Transcript </a> ',
             location: {},
             earnings: '52.86 lei',
@@ -113,7 +113,7 @@ var config = {
         {
             id: 'drive-slide-4',
             title: '16.16: Back from the break',
-            audio: '../../riders/audio/Farhod/5.m4a',
+            audio: '../../riders/audio/Farhod/5.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Farhod/Farhod4.txt"> Read Transcript </a> ',
             earnings: '71.22 lei',
             location: {},

@@ -43,7 +43,7 @@ var config = {
         {
             id: 'drive-slide-0',
             title: '10.53: Low battery, low expectations',
-            audio: '../../riders/audio/Mamadou/1.m4a',
+            audio: '../../riders/audio/Mamadou/1.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou.txt"> Read Transcript </a>',
             location: {},
             earnings: '12.86 lei',
@@ -53,7 +53,7 @@ var config = {
         {
             id: 'drive-slide-1',
             title: '12.24: Long distances on flat roads, please!',
-            audio: '../../riders/audio/Mamadou/2.m4a',
+            audio: '../../riders/audio/Mamadou/2.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou1.txt"> Read Transcript </a>',
             location: {},
             earnings: '19.13 lei',
@@ -70,7 +70,7 @@ var config = {
         {
             id: 'drive-slide-2',
             title: '13.01 I don’t touch the alcohol, the clients don’t touch me',
-            audio: '../../riders/audio/Mamadou/3.m4a',
+            audio: '../../riders/audio/Mamadou/3.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou2.txt"> Read Transcript </a>',
             location: {},
             earnings: '25.77 lei',
@@ -97,7 +97,7 @@ var config = {
         {
             id: 'drive-slide-4',
             title: '18.01: Nice weather, fewer orders',
-            audio: '../../riders/audio/Mamadou/5.m4a',
+            audio: '../../riders/audio/Mamadou/5.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou4.txt"> Read Transcript </a>',
             location: {},
             earnings: '46.44 lei',
@@ -107,7 +107,7 @@ var config = {
         {
             id: 'drive-slide-5',
             title: '19.05: Three rejections and I am out',
-            audio: '../../riders/audio/Mamadou/5.m4a',
+            audio: '../../riders/audio/Mamadou/5.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou5.txt"> Read Transcript </a>',
             earnings: '58.51 lei',
             location: {},
@@ -124,7 +124,7 @@ var config = {
         {
             id: 'drive-slide-6',
             title: '19.28: No orders, watching the football match',
-            audio: '../../riders/audio/Mamadou/6.m4a',
+            audio: '../../riders/audio/Mamadou/6.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou6.txt"> Read Transcript </a>',
             earnings: '71.39 lei',
             location: {},
@@ -134,7 +134,7 @@ var config = {
         {
             id: 'drive-slide-7',
             title: '20.12: Using cash from clients for my own food',
-            audio: '../../riders/audio/Mamadou/7.m4a',
+            audio: '../../riders/audio/Mamadou/7.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Mamadou/Mamadou7.txt"> Read Transcript </a>',
             earnings: '83.03 lei',
             location: {},
