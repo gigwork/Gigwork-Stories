@@ -35,7 +35,7 @@ var config = {
             id: 'slide-0',
             title: 'Matt',
             image: '../../riders/artwork/Matt/Matt.png',
-            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo </br> </br> <b></b> In his spare time from being a stressed cabin manager for a flight company, Matt relaxes himself by doing deliveries for Deliveroo. At 41 and without family responsibilities, Matt has been driving his car to work for almost three years now, heading every weekend evening from a town nearby Manchester to the city centre. Once there, he gets on his fast racing bike for a few hours in the hope to earn enough money to cover his monthly utility bills. As someone who lived in the city centre for some years, he has been effortlessly navigating the empty streets during the pandemic. But his shifts as a food courier have not always been without incidents. On the cold January day in 2021 I followed him at work he’s had his patience challenged by an order for which he had to do two separate journeys to the same client without being paid accordingly. On other occasions, Matt recollects similar struggles he’s encountered as a gig worker, which range from finding a place to pee in a locked down city, to being sent by the not-so-smart app to restaurants which closed in the meantime or even almost getting attacked in a park by someone who wanted to steal his rather expensive bicycle.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="http://www.hyestudio.com/">Alin Tămășan</a> </h3>',
+            description: '<b>Location:</b> Manchester </br> <b>Date:</b> Wednesday 03/03/2021 </br> <b>Platform:</b> Deliveroo </br> </br> <b></b> Cosmin says:Matt does deliveries in his spare time; he said that it is his way to relax. Matt is a cabin manager for a flight company, a job that causes him a good amount of stress. At 41 and with no family responsibilities, Matt has been driving his car to do delivery work for almost three years now. Every weekend he heads  from a town nearby Manchester to the city centre. Once there, he gets on his fast racing bike for a few hours in the hope to earn enough money to cover his monthly utility bills. As someone who lived in the city centre for some years, he has been effortlessly navigating the empty streets during the pandemic. However, his shifts as a food courier have not always been without incidents: on a cold January day in 2021 I followed him at work and I could see how his patience was dramatically challenged. That day, he had to do two separate journeys  to deliver an order to the same client but he was not paid accordingly. On other occasions, Matt recollected other struggles  which are common amognst those doing gig work:  finding a place to pee in a locked down city, being sent by the not-so-smart app to restaurants which had been closed in the meantime or almost getting attacked in a park by someone who wanted to steal his rather expensive bicycle.</br> <h3 style="text-align:center"> Art by <a target="_blank" href="http://www.hyestudio.com/">Alin Tămășan</a> </h3>',
             location: {},
             earnings: '£',
             onChapterEnter: [],
@@ -63,7 +63,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            title: '17:40: Dealing 3 orders at a time',
+            title: '17.53: Waiting for orders in the cold',
             audio: '../../riders/audio/Matt/3.mp3',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt2.txt"> Read Transcript </a>',
             location: {},
@@ -82,7 +82,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '17.53: Waiting for orders in the cold',
+            title: '18:45: Being local, knowing the shortcuts',
             audio: '../../riders/audio/Matt/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt3.txt"> Read Transcript </a>',
             location: {},
@@ -92,7 +92,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            title: '18:45: Being local, knowing the shortcuts',
+            title: '20:03: One minute? That’s bullshit!',
             audio: '../../riders/audio/Matt/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt4.txt"> Read Transcript </a>',
             location: {},
@@ -111,7 +111,7 @@ var config = {
         },
         {
             id: 'drive-slide-5',
-            title: '20:03: One minute? That’s bullshit!',
+            title: '20:39: Still coughing, I better stop',
             audio: '../../riders/audio/Matt/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Matt/matt5.txt"> Read Transcript </a>',
             earnings: '£33.41',
@@ -128,16 +128,6 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },     
-        {
-            id: 'drive-slide-6',
-            title: '20:39: Still coughing, I better stop',
-            audio: '../../riders/audio/Matt/6.m4a',
-            description: '<a target="_blank" href="../../riders/transcript/Matt/matt6.txt"> Read Transcript </a>',
-            earnings: '£45.28',
-            location: {},
-            onChapterEnter: [],
-            onChapterExit: []
-        },
         {
             id: 'slide-4',
             image: '../../riders/artwork/Matt/Matt4.png',
