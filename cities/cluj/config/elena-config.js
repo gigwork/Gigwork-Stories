@@ -35,7 +35,7 @@ var config = {
             id: 'slide-0',
             title: 'Elena',
             image: '../../riders/artwork/Elena/1.jpeg',
-            description: '<b>Location:</b> Cluj </br> <b>Date:</b> Friday 05/11/2021 </br> <b>Platform:</b> Glovo </br> </br> <b></b> At 22 years old, Elena’s sense of financial independence is magnified by the earnings she makes at the first serios job she’s ever had. As a Glovo courier, driving a car in Cluj, the recent university graduated can earn up to 1,000 euros per month, an income stream than none of her friends have access to. She’s working hard for this money, often 12 hours per day, for five or six days a week, she has hardly any social life, but she’s very proud to be able to support her mother with some of the household expenses. Her parents, both running their own small businesses, instilled her an entrepreneurial spirit that she believes will drive her to open one day, with the Glovo earnings, her own hairstyle studio. Until then, she keeps reminding herself that she needs to eat more often and avoid frozen meals, that make sure she doesn’t break her back carrying heavy boxes of water up the many stairs she needs to climb and, most importantly, that she doesn’t fall asleep at work. This already happened to her a few months ago, when she worked for two weeks without stop and hit a fence in the city centre. Thankfully, the only thing she damaged was the car. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://josesherwood.com/">José Sherwood González</a> </h3>',
+            description: '<b>Location:</b> Cluj </br> <b>Date:</b> Friday 05/11/2021 </br> <b>Platform:</b> Glovo </br> </br> <b></b> At 22 years old, Elena’s sense of financial independence is magnified by the earnings she makes at the first serios job she’s ever had. As a Glovo courier, driving a car in Cluj, the recent university graduated can earn up to 1,000 euros per month, an income stream that none of her friends has access to. She’s working hard for this money, often 12 hours per day, for five or six days a week; she has hardly any social life, but she’s very proud to be able to help her mother with some of the household expenses. Her parents, both running their own small businesses, instilled her an entrepreneurial spirit:  Elena is confident that, thanks to her Glovo earnings, she will soon be able to open her own hairstyle studio. Until then, she keeps reminding herself that she needs to eat more often and avoid frozen meals, to make sure she doesn’t break her back carrying heavy boxes of water up the many stairs she needs to climb and, most importantly, that she doesn’t fall asleep at work. This already happened to her a few months ago, when she worked for two weeks without stop and hit a fence in the city centre. Thankfully, the only thing she damaged was the car.  </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://oanalohan.ultra-book.com/"> Oana Lohan</a> </h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -130,7 +130,7 @@ var config = {
         {
             id: 'drive-slide-4',
             title: '19.12: I work so many hours, I need a day off',
-            audio: '../../riders/audio/Elena2/1.m4a',
+            audio: '../../riders/audio/Elena2/1.wav',
             description: '<a target="_blank" href="../../riders/transcript/Elena2/Elena.txt"> Read Transcript </a> ',
             location: {},
             earnings: '24.11 lei',
