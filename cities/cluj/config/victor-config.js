@@ -29,7 +29,7 @@ var config = {
     title: 'Victors story',
     subtitle: 'Cluj',
     byline: 'Nathanael Sheehan',
-    footer: '  <a href="../cluj-napoca.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
+    footer: '  <a href="../Cluj.html"  style="text-align: center;font-size: 4em;display: block;"> Return </a>',
     // BEGIN CHAPTERS
     chapters: [{
             id: 'slide-0',
