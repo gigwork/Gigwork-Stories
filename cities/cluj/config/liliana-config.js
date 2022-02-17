@@ -133,7 +133,8 @@ var config = {
         },
         // END BREAK        
         {
-            id: '21.19: I didn’t feel like working today',
+            id: 'drive-slide-6',
+            title: '21.19: I didn’t feel like working today',
             audio: '../../riders/audio/Liliana/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Liliana/Liliana6.txt"> Read Transcript </a> ',
             earnings: '192.39 lei',
