@@ -42,7 +42,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            title: '10:25: Start of the day',
+            title: '11.07: We will break the law for sure',
             audio: '../../riders/audio/Adrian/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian.txt"> Read Transcript </a> ',
             location: {},
@@ -52,7 +52,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            title: '11:33 Four orders later',
+            title: '11.59: ‘The couriers have to disappear from the city centre’',
             audio: '../../riders/audio/Adrian/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian1.txt"> Read Transcript </a> ',
             location: {},
@@ -72,7 +72,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            title: '12:17: Less than the minimum wage',
+            title: '13.01: McDonald’s, the magnet',
             audio: '../../riders/audio/Adrian/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian2.txt"> Read Transcript </a> ',
             location: {},
@@ -82,7 +82,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '13:28: A very quiet day',
+            title: '14.02: Away from McDonald’s, away from the city',
             audio: '../../riders/audio/Adrian/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian3.txt"> Read Transcript </a> ',
             location: {},
@@ -102,7 +102,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            title: '13:30: Its good to speak French',
+            title: '14.21: Waiting one hour? No way!',
             audio: '../../riders/audio/Adrian/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian4.txt"> Read Transcript </a> ',
             earnings: '30.15 lei',
@@ -114,7 +114,7 @@ var config = {
         // BREAK
         {
             id: 'drive-slide-5',
-            title: '14:01:  A break to charge the batteries',
+            title: '16.29: One hour and a half for a 500 metres order',
             audio: '../../riders/audio/Adrian/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian5.txt"> Read Transcript </a> ',
             earnings: '30.15 lei',
@@ -134,7 +134,7 @@ var config = {
         },
         {
             id: 'drive-slide-6',
-            title: '18:04: Back from the break',
+            title: '19.16: McDonald`s again, and again',
             audio: '../../riders/audio/Adrian/7.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian6.txt"> Read Transcript </a> ',
             earnings: '34.39 lei',
@@ -144,7 +144,7 @@ var config = {
         },
         {
             id: 'drive-slide-7',
-            title: '18:42: Cancel order, move on',
+            title: '19.41: I would totally go on a strike!',
             audio: '../../riders/audio/Adrian/8.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian7.txt"> Read Transcript </a> ',
             earnings: '39.57 lei',
@@ -164,7 +164,7 @@ var config = {
         },
         {
             id: 'drive-slide-8',
-            title: '19:33: An order that takes me home ',
+            title: '22.43: I am now left with two pizzas',
             audio: '../../riders/audio/Adrian/9.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian8.txt"> Read Transcript </a> ',
             earnings: '46.82 lei',
@@ -174,7 +174,7 @@ var config = {
         },
         {
             id: 'drive-slide-9',
-            title: '20:20: End of the day',
+            title: '23.10 Over three hours of waiting in vain,
             audio: '../../riders/audio/Adrian/10.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian9.txt"> Read Transcript </a> ',
             earnings: '49.79 lei',
