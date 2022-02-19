@@ -174,7 +174,7 @@ var config = {
         },
         {
             id: 'drive-slide-9',
-            title: '23.10 Over three hours of waiting in vain,
+            title: '23.10 Over three hours of waiting in vain',
             audio: '../../riders/audio/Adrian/10.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Adrian/Adrian9.txt"> Read Transcript </a> ',
             earnings: '49.79 lei',
