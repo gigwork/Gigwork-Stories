@@ -266,6 +266,10 @@ footer {
         width: 92.5%;
     }
 
+    audio{
+        width: 130% !important;
+    }
+
     .heading a {
         font-size: 2vw;
         padding-left: 1.25em;
