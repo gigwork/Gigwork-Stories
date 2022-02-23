@@ -299,9 +299,18 @@ footer {
         height: 100vh;
     }
 
+    h1{
+        font-size: 18px;
+    }
+
     .ppimg{
-     height: 30px !important;
-     width: 60px !important;
+        height: 70px !important;
+        width: 170px !important;
+    }
+    .ppimg2{
+        height: 40vh !important;
+    width: 48vw !important;
+    margin-top: -5% !important;
     }
 
     #citytitle {
