@@ -121,7 +121,7 @@ var config = {
 
         {
             id: 'slide-5',
-            title: 'Elena (day 2)',
+            title: 'Elena day 2',
             image: '../../riders/artwork/Elena/4.jpeg',
             location: {},
             onChapterEnter: [],
