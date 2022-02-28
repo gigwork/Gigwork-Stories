@@ -187,7 +187,7 @@ var config = {
             id: 'slide-6',
             title: '',
             earnings: '49.79 lei',
-            image: '../../riders/data/Cluj/new-Adrian.jpg',
+            image: '../../riders/data/Cluj/Adrian.jpg',
             description: '',
             summaryzoom: 12,
             location: {
