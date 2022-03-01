@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Data -->
+    <meta charset='utf-8' />
+    <title>Gigwork: Hazeem </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="icon" type="image/jpg" href="../../../img/logo.png">
+    <!-- Geospatia Librarys -->
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script> <!-- Mapbox -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <!-- Intersection Observer -->
+    <!-- UI Librarys -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- Internal css styling -->
+    <link href="../../code/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Load map and story -->
+    <div id="map"></div>
+    <div id="story"></div>
+    <div id="earnings"></div>
+    <!-- On document ready fetch riders geojson path -->
+
+    <!-- Local JS -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
+    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
+    <script src="config/hazeem-config.js"></script>
+    <script>
+        const user_path = "../../riders/data/Manchester/Hazeem.csv"
+    </script>
+    <script src="../../code/js/drive.js"></script>
+    <script src="../../code/js/map.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <style>
+        img {
+     display: none !important;
+ }
+
+ #slide-1{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-2{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-3{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-4{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-5{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-6{
+     position: absolute;
+left: -999px;
+ }
+ #slide-7{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-8{
+     position: absolute;
+left: -999px;
+ }
+
+ #slide-9{
+     position: absolute;
+left: -999px;
+ }
+ #slide-10{
+     position: absolute;
+left: -999px;
+ }
+</style>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "../../riders/data/Manchester/Hazeem.geojson",
+                dataType: "json",
+                success: function (data) {
+                    routeData = data;
+                },
+                error: function () {
+                    console.log('error loading data');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

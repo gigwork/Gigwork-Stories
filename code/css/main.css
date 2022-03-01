@@ -270,6 +270,11 @@ footer {
         width: 130% !important;
     }
 
+    p {
+        font-size: 14px;
+        text-align: left;
+    }
+
     .heading a {
         font-size: 2vw;
         padding-left: 1.25em;
