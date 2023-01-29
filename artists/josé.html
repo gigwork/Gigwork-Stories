@@ -1,192 +1,116 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <!-- Meta Data -->
-    <meta charset='utf-8' />
-    <title></title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
-        rel="stylesheet">
-    <!-- Internal css styling -->
-    <link href="../code/css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
+  <style>
+    body {
+  background-color: black;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #FFF;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: black;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff;
+}
 
-    <div class="heading">
-        <a href="../index.html">
-            <h1> Gig Work</h1>
-        </a>
-    </div>
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: .2s; 
+}
+#Polygon-3 {
+  animation-delay: .4s; 
+}
+#Polygon-4 {
+  animation-delay: .6s; 
+}
+#Polygon-5 {
+  animation-delay: .8s; 
+}
 
-    </div>
-
-
-
-
-    <section class="main">
-
-        <a href="https://josesherwood.com/">        <h1 style="text-align: center;">José Sherwood González</h1></a>
-
-        <div class="wrap wrap--1">
-
-            <div class="container container--1" style="background-image: url('../img/Jose\ Sherwood.png'); background-position: center;
-                background-size: contain ">
-
-            </div>
-        </div>
-
-
-        <p style="width: auto;margin-left: 5%;margin-right: 5%;">José Sherwood González is a British Mexican comics artist and visual anthropologist with research interests in memory, storytelling and multi-perspectival myth-making through visual, sensory and digital methods. He is Visual and Sound Editor for Otherwise Magazine and makes comics and ethno-graphics inspired by the plurality of experience. A recent graduate from the MA in Visual Anthropology at the Granada Centre for Visual Anthropology, José is currently pursuing a practice-based PhD in the School of Digital Arts, Manchester Metropolitan University on XR-based speculative fictions and immersive comics.</p>
-
-
-
-    </section>
-    <footer>
-        <div>
-            <p>Stories : <a href="manchester.html"> Manchester </a> & <a href="lyon.html"> Lyon </a> &
-                <a href="cluj.html"> Cluj </a></p>
-            <p>Artists : <a href="https://oanalohan.ultra-book.com/" target="blank">Oana Lohan</a> & <a
-                    href="https://www.instagram.com/ionut_dulamita/" target="blank">Ionuț Dulămiță</a> & <a
-                    href="https://josesherwood.com/" target="blank">José Sherwood González</a> & <a
-                    href="http://www.hyestudio.com/" target="blank">Alin Tămășan</a> </p>
-            <p>Researchers : <a href="https://www.mmu.ac.uk/sociology/staff/profile/index.php?id=3863"> Cosmin Popan </a> & <a
-                    href="https://www.mmu.ac.uk/sociology/staff/profile/index.php?id=3863">
-                    Nathanael Sheehan </a></p>
-        </div>
-    </footer>
-
-    <style>
-        *,
-        *::after,
-        *::before {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 62.5%;
-        }
-
-        h1 {
-            font-size: 3.2rem;
-            padding-top: 2rem;
-        }
-
-        h1+p {
-            font-size: 1.8rem;
-            padding: 2rem 0 3rem;
-        }
-
-        .main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wrap {
-            margin: 2rem;
-
-            transform-style: preserve-3d;
-            transform: perspective(100rem);
-
-            cursor: pointer;
-        }
-
-        .container {
-            --rX: 0;
-            --rY: 0;
-            --bX: 50%;
-            --bY: 80%;
-
-            width: 30rem;
-            height: 36rem;
-            border: 1px solid var(--background-color);
-            border-radius: 1.6rem;
-            padding: 4rem;
-
-            display: flex;
-            align-items: flex-end;
-
-            position: relative;
-            transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-
-            background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("hp.jpg");
-            background-position: var(--bX) var(--bY);
-            background-size: 40rem auto;
-            box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
-
-            transition: transform .6s 1s;
-        }
-
-        .container::before,
-        .container::after {
-            content: "";
-
-            width: 2rem;
-            height: 2rem;
-            border: 1px solid #fff;
-
-            position: absolute;
-            z-index: 2;
-
-            opacity: .3;
-            transition: .3s;
-        }
-
-        .container::before {
-            top: 2rem;
-            right: 2rem;
-
-            border-bottom-width: 0;
-            border-left-width: 0;
-        }
-
-        .container::after {
-            bottom: 2rem;
-            left: 2rem;
-
-            border-top-width: 0;
-            border-right-width: 0;
-        }
-
-        .container--active {
-            transition: none;
-        }
-
-        .container--2 {
-            filter: hue-rotate(80deg) saturate(140%);
-        }
-
-        .container--3 {
-            filter: hue-rotate(160deg) saturate(140%);
-        }
-
-        .container p {
-            color: hsla(0, 0%, 100%, .6);
-            font-size: 2.2rem;
-        }
-
-        .wrap:hover .container::before,
-        .wrap:hover .container::after {
-            width: calc(100% - 4rem);
-            height: calc(100% - 4rem);
-        }
-
-        .abs-site-link {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            color: hsla(0, 0%, 0%, .6);
-            font-size: 1.6rem;
-        }
-    </style>
-    <script src="../code/js/parralax.js"></script>
+@keyframes float {
+	100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
+  </style>
+<svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+      <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch:type="MSShapeGroup"></path>
+      <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch:type="MSShapeGroup"></path>
+      <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch:type="MSShapeGroup"></path>
+      <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch:type="MSShapeGroup"></path>
+      <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch:type="MSShapeGroup"></path>
+  </g>
+</svg>
+<div class="message-box">
+<h1>404</h1>
+<p>Page not found</p>
+<div class="buttons-con">
+  <div class="action-link-wrap">
+    <a onclick="history.back(-1)" class="link-button link-back-button">Go Back</a>
+    <a href="index.html" class="link-button">Go to Home Page</a>
+  </div>
+</div>
+</div>
 </body>
-
 </html>
