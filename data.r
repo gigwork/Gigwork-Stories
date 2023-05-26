@@ -18,7 +18,9 @@ pkgs = c("sf",
          "lubridate",
          "stringr",
          "ggplot2",
-         "ggpubr")
+         "ggpubr",
+         "foreach",
+         "doParallel")
 installed_pkgs = pkgs %in% rownames(installed.packages())
 if (any(installed_pkgs == FALSE)) {
   install.packages[!installed_pkgs]
@@ -77,6 +79,7 @@ gen_rider_route = function(rider_gpx) {
   #CONVERT DATA INTO LINESTRING
   route = st_as_sf(route) %>% st_cast("LINESTRING")
 }
+
 # FUNCTION 3. GENERATE RIDER ROUTE DATA
 gen_rider_data = function(rider_gpx,
                           work_day,
@@ -84,42 +87,44 @@ gen_rider_data = function(rider_gpx,
                           meta,
                           mode,
                           rider_name) {
+
+# Read GPX File -----------------------------------------------------------
+
   # READ DATA FOR MAIN DATASET
   track = st_read(rider_gpx, layer = "track_points") %>%
     select(time, ele, geometry) %>%
     mutate(work_date = ymd_hms(paste(work_day, start_time, sep = " ")),
            time = ymd_hms(time))
 
-  # RECONFIG TIME #
-  for (i in 1:nrow(track)) {
-    t1 = track$time[i]
-    t2 = track$time[i + 1]
-    if (i == 1) {
-      track$time[i] = ymd_hms(track$work_date[1] + seconds(as.numeric(difftime(t2, t1, units = "secs"))))
-    } else {
-      track$time[i] = ymd_hms(track$time[i - 1] + seconds(as.numeric(difftime(t2, t1, units = "secs"))))
-    }
-  }
+  message("Working on time...")
+
+
+# Reconfigure Time --------------------------------------------------------
+  t1 <- track$time[1]
+  t2 <- c(track$time[-1], NA)
+
+  track$time <- ymd_hms(t1 + seconds(as.numeric(difftime(t2, t1, units = "secs"))))
+
+
+# Calculate Distance ------------------------------------------------------
+  message("Working On Distance")
+  # Set the number of cores to utilize
+  num_cores <- detectCores()
+  registerDoParallel(num_cores)
 
   # CALCULATE DISTANCE
-  for (i in 1:nrow(track)) {
-    track$dist[i] =  st_distance(track$geometry[i], track$geometry[i + 1])
+  distances <- foreach(i = 1:(nrow(track) - 1), .combine = c) %dopar% {
+    sf::st_distance(track$geometry[i], track$geometry[i + 1])
   }
-  track$dist_km = track$dist / 1000 # convert to km
+  distances =as.numeric(append(distances,'0',after=0))
+  track$dist = distances
+  track$dist_km <- track$dist / 1000  # Convert to km
 
   # CALCULATE TOTAL DISTANCE
-  track$dist_total[1] = 0
-  for (i in 1:nrow(track)) {
-    if (i == 1) {
-      print("Not the first")
-    } else {
-      track$dist_total[i] = track$dist_km[i] + track$dist_total[i - 1]
-    }
-  }
+  track$dist_total <- cumsum(track$dist_km)
 
-  track$dist[1] = 0 # reset bb 1 more time
-
-  # CALCULATE TIME AND SPEED
+  message("Calculating speed")
+  #  CALCULATE TIME AND SPEED
   for (i in 1:nrow(track)) {
     track$time_2[i] = paste(track$time[i + 1])
   }
@@ -128,14 +133,16 @@ gen_rider_data = function(rider_gpx,
   track$diff_time = as.numeric(difftime(track$time_2, track$time, units = "hours"))
   track$speed = (track$dist / track$diff_time)
   track = track %>% filter_if( ~ is.numeric(.), all_vars(!is.infinite(.)))
+
   if(mode == "car"){
     track =  track %>% filter(speed < 110)
   }
   if (mode == "bike"){
-    track = track %>% filter(speed < 45)
+    track = track %>% mutate(speed = track$speed/1000)
+    track$speed= ifelse(track$speed > 50, 50, track$speed)
   }
 
-
+  message("lets get plotting")
 
   meta = readxl::read_xlsx(meta)
   if (rider_name == "Matt") {
@@ -162,7 +169,7 @@ gen_rider_data = function(rider_gpx,
       dark_theme() +
       ggtitle(rider_name,
               subtitle = paste0(
-                "Total Deliveries: £",
+                "Total Deliveries: ",
                 nrow(meta),
                 "\nTotal Earnings(£): ",
                 sum(meta$Earnings),
@@ -171,28 +178,44 @@ gen_rider_data = function(rider_gpx,
               ))
   }
 
-if(city_build == "cluj"){
-  d = ggplot(meta, aes(x = "", y = Earnings, fill = Platform)) +
-    ylab("Earnings [lei]") + xlab("") +
-    geom_bar(stat = "identity", width = 14,height=12) +
-    dark_theme() +
-    ggtitle(rider_name,
-            subtitle = paste0(
-              "Total Deliveries: lei ",
-              nrow(meta),
-              "\nTotal Earnings(lei): ",
-              sum(meta$Earnings),
-              "\nAverage Earnings(lei): ",
-              round(mean(meta$Earnings),2)
-            ))
-}
+  if(city_build == "cluj"){
+    d = ggplot(meta, aes(x = "", y = Earnings, fill = Platform)) +
+      ylab("Earnings [lei]") + xlab("") +
+      geom_bar(stat = "identity", width = 14,height=12) +
+      dark_theme() +
+      ggtitle(rider_name,
+              subtitle = paste0(
+                "Total Deliveries:  ",
+                nrow(meta),
+                "\nTotal Earnings(lei): ",
+                sum(meta$Earnings),
+                "\nAverage Earnings(lei): ",
+                round(mean(meta$Earnings),2)
+              ))
+  }
+
+  if(city_build == "lyon"){
+    d = ggplot(meta, aes(x = "", y = Earnings, fill = Platform)) +
+      ylab("Earnings [€]") + xlab("") +
+      geom_bar(stat = "identity", width = 14,height=12) +
+      dark_theme() +
+      ggtitle(rider_name,
+              subtitle = paste0(
+                "Total Deliveries: ",
+                nrow(meta),
+                "\nTotal Earnings(€): ",
+                sum(meta$Earnings),
+                "\nAverage Earnings(€): ",
+                round(mean(meta$Earnings),2)
+              ))
+  }
 
 
   g = ggarrange(a, d, b, ncol = 1)
   g
   ggsave(
     paste0(
-      "../scrollydrive-master/riders/data/Manchester/",
+      "../../../Documents/Gigwork-Stories/riders/data/Lyon/",
       rider_name,
       ".jpg"
     ),
@@ -208,7 +231,7 @@ if(city_build == "cluj"){
 #################################################################
 ##                            BUILD                            ##
 #################################################################
-city_build = "cluj"
+city_build = "lyon"
 ## Create dataframe to build analysis for Manchester
 if(city_build == "manchester"){
   riders = tibble::tibble(
@@ -306,16 +329,72 @@ if(city_build == "cluj"){
 
     output_file = "../scrollydrive-master/riders/data/Cluj/"
   )
+
+
+
+
 }
+if(city_build == "lyon"){
+  riders = tibble::tibble(
+    rider_name = c("Abdoulaye",
+                   "Sofiane Day 1",
+                   "Sofiane Day 2",
+                   "Ismael Day 1",
+                   "Ismael Day 2",
+                   "Jacob",
+                   "Jawan"),
+    mode = c("bike",
+             "bike",
+             "bike",
+             "bike",
+             "bike",
+             "bike",
+             "bike"),
+    rider_gpx = c(
+      "../../../Documents/Gigwork-Stories/riders/gpx/12. Abdoulaye.gpx",
+      "../../../Documents/Gigwork-Stories/riders/gpx/13.1.1 Sofiane.gpx",
+      "../../../Documents/Gigwork-Stories/riders/gpx/13.2 Sofiane.gpx",
+      "../../../Documents/Gigwork-Stories/riders/gpx/11.1 Ismael.gpx",
+      "../../../Documents/Gigwork-Stories/riders/gpx/11.2 Ismael.gpx",
+      "../../../Documents/Gigwork-Stories/riders/gpx/14. Jacob.gpx",
+      "../../../Documents/Gigwork-Stories/riders/gpx/15. Jawan.gpx"
+    ),
+    meta = c(
+      "../../../Documents/Gigwork-Stories/riders/metadata/12. Abdoulaye - 27.09.2022 (Tue).xlsx",
+      "../../../Documents/Gigwork-Stories/riders/metadata/Sofiane day 1.xlsx",
+      "../../../Documents/Gigwork-Stories/riders/metadata/Sofiane day 2.xlsx",
+      "../../../Documents/Gigwork-Stories/riders/metadata/11. Ismael day 1.xlsx",
+      "../../../Documents/Gigwork-Stories/riders/metadata/Ismael day 2.xlsx",
+      "../../../Documents/Gigwork-Stories/riders/metadata/14. Jacob - 18.11.2022 (Fri).xlsx",
+      "../../../Documents/Gigwork-Stories/riders/metadata/15. Jawan - 15.10.2022 (Sat).xlsx"
+    ),
+    work_day = c(
+      "2022-09-27",
+      "2022-12-12",
+      "2023-02-08",
+      "2022-07-30",
+      "2022-08-20",
+      "2022-11-18",
+      "2022-10-15"
+    ),
+    start_time = c("12:00:00",
+                   "15:00:00",
+                   "16:00:00",
+                   "11:00:00",
+                   "11:00:00",
+                   "12:00:00",
+                   "12:00:00"),
 
-
+    output_file = "../../../Documents/Gigwork-Stories/riders/data/Lyon/"
+  )
+}
 
 
 # Loop over rider data and produce data output files
 for (i in 1:nrow(riders)) {
   message(paste0("building for ", riders$rider_name[i]))
   # # generate route data for riders
-  gen_rider_route(rider_gpx = riders$rider_gpx[i]) %>%
+  gen_rider_route(rider_gpx = riders$rider_gpx[rider_gpx = i]) %>%
     st_write(paste0(riders$output_file[i], riders$rider_name[i], ".geojson")) %>%
     write.csv(paste0(riders$output_file[i], riders$rider_name[i], ".csv"))
   message(paste0("building graph for ", riders$rider_name[i]))
