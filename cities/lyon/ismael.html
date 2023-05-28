@@ -39,7 +39,7 @@
     <script src="config/ismael-config.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
     <script>
-        const user_path = "../../riders/data/Lyon/Ismael.csv"
+        const user_path = "../../riders/data/Lyon/Ismael Day 1.csv"
     </script>
     <script src="../../code/js/drive.js"></script>
     <script src="../../code/js/map.js"></script>
@@ -47,7 +47,7 @@
 
         $(document).ready(function () {
             $.ajax({
-                url: "../../riders/data/Lyon/Ismael.geojson",
+                url: "../../riders/data/Lyon/Ismael Day 2.geojson",
                 dataType: "json",
                 success: function (data) {
                     routeData = data;
