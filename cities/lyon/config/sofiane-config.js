@@ -22,106 +22,154 @@ var config = {
     chapters: [{
             id: 'slide-0',
             title: 'Sofiane',
-            image: '../../riders/artwork/Sofiane/Sofiane 1.jpg',
-            description: '<b>Location:</b> Lyon </br> <b>Date:</b> Friday 2022-11-18 </br> <b>Platform:</b> Delieveroo </br> </br> It took Sofiane three and a half years to reach Lyon from Nigeria. ‘Before I arrived here, Europe wasn’t in my mind. I didn’t know what to imagine. This person told me about Europe, then I decided to go’, says the car electrician turned Deliveroo rider. One day back in 2014, the 39 years old left his two boys and their mother behind and arrived in a squat in the outskirts of Lyon shortly after Christmas 2017. Sofiane’s journey to Europe is as dramatic as that of many other young African men: multiple attempts at jumping fences in Melilla (Morocco), followed by a dangerous crossing of the Mediterranean. ‘Before taking the boat, I had a dream: I was in my workshop and saw this ju-ju. I took a plastic cup, I peed inside and threw it on the ju-ju, which turned into kittens. I woke up and I knew I broke the ju-ju and I could cross safely to Europe’. Without papers and living in different squats in Lyon, in 2021 Sofiane began renting Deliveroo accounts for 130-150 euros per week. He has rented seven until now as they do not last more than two months before they are blocked. The circle is vicious: he saves some money but uses it to rent another account. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://www.instagram.com/ionut_dulamita/"">Ionuț Dulămiță</a> </h3>',
+            image: '../../riders/artwork/Sofiane/Sofiane 1.png',
+            description: '<b>Location:</b> Lyon </br> <b>Date:</b> Day 1: 12-23-2022 </br> <b>Platform:</b> Delieveroo </br> </br> 28 years old Sofiane left Rabat in 2018 to continue his management studies in Europe. After one year spent in Italy with a resident permit, the young Moroccan could not enrol at university and, one year later, decided to join his sister in France. He failed to register for studies in France as well and, without the right to work, he ended up renting and buying Deliveroo and Uber Eats accounts to earn a living as a courier. He has had seven accounts until now, but he could not hold onto any of them for too long: ‘You buy a fraudulent account for 1,200 euros, you work for six months, then Uber blocks it’. During the Covid lockdown he made nice money, but he also caught the virus three times. I asked Sofiane to keep record of one working day and, on another day, I followed him at work. Below are the voice notes collected at the end of 2022 and beginning of 2023. Sofiane used to ride a motorcycle, which got eventually stolen, so in December 2022 he switched to a rented e-bike. He summarises his sans papiers life in France with an anecdote: ‘One undocumented migrant went to president Macron and asked him “We don’t have any rights?” And Macron answered “First, you have duties and only afterwards rights”. Damn, it is such a cruel thing to say!. </br> </br> <h3 style="text-align:center"> Art by <a target="_blank" href="https://www.instagram.com/ionut_dulamita/"">Ionuț Dulămiță</a> </h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-0',
-            title: '12.44: Charging the phone at the shopping mall',
+            title: '16.35: It is very, very cold',
             audio: '../../riders/audio/Sofiane/1.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '€6.43',
+            earnings: '€0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-1',
-            title: '13.52: Asking clients for aÊthumbs up',
+            title: '16.40 Up the stairs to the 7th floor',
             audio: '../../riders/audio/Sofiane/2.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '€19.80',
+            earnings: '€8.92',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'slide-1',
-            image: '../../riders/artwork/Sofiane/Sofiane 2.jpg',
+            image: '../../riders/artwork/Sofiane/Sofiane 2.png',
             location: {},
-            earnings: '€24.49',
+            earnings: '€14.40',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-2',
-            title: '14.54: Five orders and a break',
+            title: '18.01: This doesnt exist not even in Maroc',
             audio: '../../riders/audio/Sofiane/3.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '€29.93',
+            earnings: '€19.23',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'slide-4',
             title: '',
-            image: '../../riders/artwork/Sofiane/Sofiane 3.jpg',
+            image: '../../riders/artwork/Sofiane/Sofiane 3.png',
             description: '',
             location: {},
-            earnings: '€36.04',
+            earnings: '€26.54',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-3',
-            title: '118.42: The client cant receive a soaked meal',
+            title: '22.01: I was in pain, I already had lung surgery',
             audio: '../../riders/audio/Sofiane/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
             location: {},
-            earnings: '€40.28',
+            earnings: '€30.28',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-4',
-            title: '20.20: Its hard to cycle in this area',
+            title: '22.05: A weird noise on my motorcycle',
             audio: '../../riders/audio/Sofiane/5.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
-            earnings: '€48.66',
+            earnings: '€36.61',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
+
+                // CHARTS AND SUMMARY
+        {
+            id: 'slide-10',
+            title: '',
+            earnings: '£61.07',
+            image: '../../riders/data/Lyon/Sofiane Day 1.jpg',
+            summaryzoom: 10,
+            location: {
+                center: [-2.244644, 53.483959],
+                zoom: 15.23,
+                pitch: 60.00,
+                bearing: 43.61
+            },
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+
         {
             id: 'slide-5',
-            title: '',
-            image: '../../riders/artwork/Sofiane/Sofiane 4.jpg',
+            title: 'Day 2',
+            image: '../../riders/artwork/Sofiane/Sofiane 4.jpeg',
             description: '',
             location: {},
-            earnings: '€55.05',
+            earnings: '€0',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
             id: 'drive-slide-5',
-            title: '21.39: I called two times and he rejected',
+            title: '15.31: School holidays',
             audio: '../../riders/audio/Sofiane/6.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
-            earnings: '€61.06',
+            earnings: '€18.04',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },    
         {
             id: 'drive-slide-6',
-            title: '23.05: Its difficult to bring my children from Afghanistan',
+            title: '16.52: You need to change places to receive orders',
             description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
             audio: '../../riders/audio/Sofiane/7.m4a',
-            earnings: '€68.03',
+            earnings: '€23.29',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-7',
+            title: '17.56: It is frustrating, youve seen I was pissed',
+            description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
+            audio: '../../riders/audio/Sofiane/7.m4a',
+            earnings: '€31.74',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-7',
+            title: '17.56: It is frustrating, youve seen I was pissed',
+            description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
+            audio: '../../riders/audio/Sofiane/8.m4a',
+            earnings: '€37.30',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'drive-slide-8',
+            title: '19.23: I call it the `traditional method`',
+            description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
+            audio: '../../riders/audio/Sofiane/9.m4a',
+            earnings: '€42.03',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -129,21 +177,30 @@ var config = {
         {
             id: 'slide-6',
             title: '',
-            image: '../../riders/artwork/Sofiane/Sofiane 5.jpg',
+            image: '../../riders/artwork/Sofiane/Sofiane 5.png',
             description: '',
             location: {},
-            earnings: '€73.97',
+            earnings: '€48.57',
             onChapterEnter: [],
             onChapterExit: []
         },
-
+        {
+            id: 'drive-slide-9',
+            title: '20.20: Inshallah!',
+            description: '<a target="_blank" href="../../riders/transcript/Sofiane.txt"> Read Transcript </a> ',
+            audio: '../../riders/audio/Sofiane/10.m4a',
+            earnings: '€52.43',
+            location: {},
+            onChapterEnter: [],
+            onChapterExit: []
+        },
 
         // CHARTS AND SUMMARY
         {
             id: 'slide-10',
             title: '',
-            earnings: '£61.07',
-            image: '../../riders/data/Lyon/Sofiane.jpg',
+            earnings: '€57.04',
+            image: '../../riders/data/Lyon/Sofiane Day 2.jpg',
             summaryzoom: 10,
             location: {
                 center: [-2.244644, 53.483959],

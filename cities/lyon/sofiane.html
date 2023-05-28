@@ -39,7 +39,7 @@
     <script src="config/sofiane-config.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
     <script>
-        const user_path = "../../riders/data/Lyon/Sofiane.csv"
+        const user_path = "../../riders/data/Lyon/Sofiane Day 1.csv"
     </script>
     <script src="../../code/js/drive.js"></script>
     <script src="../../code/js/map.js"></script>
@@ -47,7 +47,7 @@
 
         $(document).ready(function () {
             $.ajax({
-                url: "../../riders/data/Lyon/Sofiane.geojson",
+                url: "../../riders/data/Lyon/Sofiane Day 2.geojson",
                 dataType: "json",
                 success: function (data) {
                     routeData = data;
