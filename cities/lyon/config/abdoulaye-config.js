@@ -7,7 +7,7 @@ var followBearing = 29; // bearing follow
 var followPitch = 0; // pitch follow
 
 var config = {
-    style: 'mapbox://styles/nathanaelisamapper/cky28yemc34w215pc71g6p6oz',
+    style: 'mapbox://styles/nathanaelisamapper/clij0ndxz00dh01r02kgu8outz',
     //mapbox://styles/nathanaelisamapper/ckyglczpt23y714pfw1wh7rox
     //style: 'mapbox://styles/nathanaelisamapper/ckxxwjfz05iz514mujwqq827q',
     accessToken: 'pk.eyJ1IjoibmF0aGFuYWVsaXNhbWFwcGVyIiwiYSI6ImNrODNiZzdoZTA4Y2gzZ281YmJiMHNwOWIifQ.d2ntY86sJ7DR7011dUJ2cw',
