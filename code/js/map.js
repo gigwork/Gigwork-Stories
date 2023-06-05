@@ -346,6 +346,20 @@ window.addEventListener('resize', scroller.resize);
 // Waveform
 document.addEventListener('DOMContentLoaded', function () {
     var els = document.querySelectorAll("audio");
+    // First, create a button element
+const button = document.createElement('button')
+button.textContent = 'Play'
+button.style.margin = '1em 0'
+document.body.appendChild(button)
+
+// Next, let's change the text on the button when the audio is playing
+wavesurfer.on('play', () => {
+  button.textContent = 'Pause'
+})
+// And when it's paused
+wavesurfer.on('pause', () => {
+  button.textContent = 'Play'
+})
     for (var i = 0; i < els.length; i++) {
         let i_ = i;
         let src_ = els[i].src;
