@@ -42,7 +42,7 @@ var config = {
             id: 'drive-slide-1',
             title: '13.32: White zones are areas where we do not receive orders',
             audio: '../../riders/audio/Ismael/2.m4a',
-            description: '<a target="_blank" href="01. Ismael transcript 2.txt"> Read Transcript </a> ',
+            description: '<a target="_blank" href="../../riders/transcript/Ismael/01. Ismael transcript 2.txt"> Read Transcript </a> ',
             location: {},
             earnings: '€9.04',
             onChapterEnter: [],
@@ -95,7 +95,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            title: '‘11.59: My bike was stolen, so I couldn’t work for two days',
+            title: '11.59: My bike was stolen, so I couldn’t work for two days',
             audio: '../../riders/audio/Ismael/4.m4a',
             description: '<a target="_blank" href="../../riders/transcript/Ismael/01. Ismael transcript 4.txt"> Read Transcript </a> ',
             location: {},
@@ -143,7 +143,16 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-
+        {
+            id: 'slide-5',
+            title: '',
+            image: '../../riders/artwork/smael/Ismael 5.jpg',
+            description: '',
+            location: {},
+            earnings: '€8.29.',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
 
         // CHARTS AND SUMMARY
         {
