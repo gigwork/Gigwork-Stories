@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Data -->
+    <meta charset='utf-8' />
+    <title>Gigwork: Ismeal </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="icon" type="image/jpg" href="../../../img/logo.png">
+    <!-- Geospatia Librarys -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script> <!-- Mapbox -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <!-- Intersection Observer -->
+    <!-- UI Librarys -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- Internal css styling -->
+    <link href="../../code/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Load map and story -->
+    <div id="map"></div>
+    <div id="story"></div>
+    <div id="earnings"></div>
+    <!-- On document ready fetch riders geojson path -->
+
+    <!-- Local JS -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> <!-- Turf -->
+    <script src="https://unpkg.com/scrollama"></script> <!-- srcollama -->
+    <script src="config/ismael-config.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script>
+        const user_path = "../../riders/data/Lyon/Ismael Day 1.csv"
+    </script>
+    <script src="../../code/js/drive.js"></script>
+    <script src="../../code/js/map.js"></script>
+    <style>
+        img {
+            display: none !important;
+        }
+    
+        #slide-1{
+            position: absolute;
+    left: -999px;
+        }
+    
+        #slide-2{
+            position: absolute;
+    left: -999px;
+        }
+    
+        #slide-3{
+            position: absolute;
+    left: -999px;
+        }
+    
+        #slide-4{
+            position: absolute;
+    left: -999px;
+        }
+    
+        #slide-5{
+            position: absolute;
+    left: -999px;
+        }
+    
+        #slide-6{
+            position: absolute;
+    left: -999px;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+            
+// Waveform
+document.addEventListener('DOMContentLoaded', function () {
+    var els = document.querySelectorAll("audio");
+    for (var i = 0; i < els.length; i++) {
+        let i_ = i;
+        let src_ = els[i].src;
+        let newNode = document.createElement("div")
+        newNode.innerHTML = '<div class="wave"></div>'
+        els[i_].parentNode.insertBefore(newNode, els[i_])
+        els[i].remove();
+        let wavesurfer = WaveSurfer.create({
+            container: document.getElementsByClassName("wave")[i_],
+            waveColor: '#909090',
+            progressColor: '#443e3c',
+            cursorColor: '#ffffff',
+            backend: 'MediaElement',
+            mediaControls: true,
+            hideScrollbar: true,
+            minPxPerSec: 120,
+            normalize: true,
+            height: 124,
+        });
+        wavesurfer.on('error', function (e) {
+            console.warn(e);
+        });
+        wavesurfer.on('play', function (e) {
+            document.getElementsByClassName("playicon")[i_].style.display = "none";
+            document.getElementsByClassName("pauseicon")[i_].style.display = "block";
+        });
+        wavesurfer.on('pause', function (e) {
+            document.getElementsByClassName("playicon")[i_].style.display = "block";
+            document.getElementsByClassName("pauseicon")[i_].style.display = "none";
+        });
+
+        wavesurfer.load(src_);
+    }
+});
+            $.ajax({
+                url: "../../riders/data/Lyon/Ismael Day 2.geojson",
+                dataType: "json",
+                success: function (data) {
+                    routeData = data;
+                },
+                error: function () {
+                    console.log('error loading data');
+                }
+            });
+        });
+
+        
+    </script>
+        <script src="https://unpkg.com/wavesurfer.js@beta/dist/wavesurfer.min.js"></script>
+</body>
+
+</html>
