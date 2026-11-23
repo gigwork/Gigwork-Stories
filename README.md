@@ -29,7 +29,7 @@ Manchester Metropolitan University            |  Leverhulme Trust
 
 ## Contact
 - Research Lead : [Cosmin Popan] - c.popan@mmu.ac.uk
-- Copmuter Science Lead : [Nathanael Sheehan] - ns651@exeter.ac.uk
+- Copmuter Science Lead : [Nathanael Sheehan] - nathanael.sheehan@tum.de
 
 ![image](https://user-images.githubusercontent.com/22789869/153316843-ed0a49d7-4e65-40bd-93e8-46396557ee02.png)
 
